@@ -1,0 +1,12 @@
+.logo{
+    width: 120px;
+    height: 50px;
+    object-fit: cover;
+   
+}
+.bg-body-tertiary {
+    /* background-color: rgba(217, 220, 222, 0.938) !important; */
+    /* background-color: #135a94 !important; */
+      background: linear-gradient(90deg,#c4cbd2 , #1397ea ) !important;
+
+}
