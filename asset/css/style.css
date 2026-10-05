@@ -1,3 +1,17 @@
+body {
+    font-family: 'Poppins', sans-serif;
+     font-family: "Kantumruy Pro", sans-serif;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    
+}
 .logo{
     width: 120px;
     height: 50px;
@@ -5,8 +19,29 @@
    
 }
 .bg-body-tertiary {
-    /* background-color: rgba(217, 220, 222, 0.938) !important; */
-    /* background-color: #135a94 !important; */
-      background: linear-gradient(90deg,#c4cbd2 , #1397ea ) !important;
+    
+  
+      background: linear-gradient(90deg,#2b71b8cd  ) !important;
 
 }
+  .swiper {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #444;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }

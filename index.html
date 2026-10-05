@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Next Step</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.css">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="asset/css/swiper.css">
+</head>
+
+<body class="bg-body-secondary ">
+
+    <!-- ================= NAVBAR ================= -->
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand pt-2" href="#">
+                    <img src="photo/logo.png" alt="LOGO" class="logo">
+                </a>
+
+                <!-- Mobile Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <!-- Desktop Navbar -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" href="#">
+                                ទំព័រដើម
+                            </a>
+                        </li>
+
+                        <!-- University Dropdown -->
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link text-light dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+
+                                សាកលវិទ្យាល័យ
+
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                <li>
+                                    <a class="dropdown-item border-bottom border-secondary-subtle" href="#">
+                                        រដ្ឋ
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        ឯកជន
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <!-- Skill -->
+                        <li class="nav-item">
+
+                            <a class="nav-link text-light" href="#">
+                                ជំនាញ
+                            </a>
+
+                        </li>
+
+                        <!-- Scholarship Dropdown -->
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle text-light" href="scholoship.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+
+                                អាហាររូបករណ៍
+
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                <li>
+                                    <a class="dropdown-item border-bottom border-secondary-subtle"
+                                        href="scholoship.html">
+                                        សម្ដេច
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item border-bottom border-secondary-subtle" href="#">
+                                        សាកលវិទ្យាល័យ
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        ក្រសួងអប់រំយុវជន នឹង កីឡា
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <!-- About -->
+                        <li class="nav-item">
+
+                            <a class="nav-link text-light" href="#">
+                                អំពីយើង
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                    <!-- Search -->
+                    <form class="d-flex" role="search">
+
+                        <input class="form-control me-2" type="search" placeholder="Search">
+
+                        <button class="btn btn-primary text-light" type="submit">
+                            Search
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- ================= MOBILE OFFCANVAS ================= -->
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+            <!-- Offcanvas Header -->
+            <div class="offcanvas-header">
+
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    Next Step
+                </h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+                </button>
+
+            </div>
+
+
+            <!-- Offcanvas Body -->
+            <div class="offcanvas-body">
+
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                    <!-- Home -->
+                    <li class="nav-item">
+
+                        <a class="nav-link active" href="#">
+                            ទំព័រដើម
+                        </a>
+
+                    </li>
+
+
+                    <!-- Skill -->
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">
+                            ជំនាញ
+                        </a>
+
+                    </li>
+
+
+                    <!-- University -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            សាកលវិទ្យាល័យ
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    រដ្ឋ
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    ឯកជន
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!-- Scholarship -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            អាហាររូបករណ៍
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    សម្ដេច
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    សាកលវិទ្យាល័យ
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    ក្រសួងអប់រំយុវជន នឹង កីឡា
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!-- About -->
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">
+                            អំពីយើង
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+                <!-- Search -->
+                <form class="d-flex mt-3" role="search">
+
+                    <input class="form-control me-2" type="search" placeholder="Search">
+
+                    <button class="btn btn-primary" type="submit">
+                        Search
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- ================= SWIPER ================= -->
+
+        <section>
+
+
+            <div class="row">
+
+                <div class="swiper mySwiper">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+
+                            <img src="https://file.sunonglobal.com/wp-content/uploads/2025/04/1631869722621253zxf3.jpg"
+                                alt="" class="hero-banner">
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <img src="photo/photo_2026-10-06_00-21-16.jpg">
+
+                        </div>
+
+
+                        <div class="swiper-slide">
+
+                            <img src="https://uhs.edu.kh/assets/images/news/0116202622455_photo_2026-01-12_15-16-29.jpg"
+                                alt="">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ================= UNIVERSITY ================= -->
+
+        <section class="m-5">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-12">
+
+                        <h1 class="text-center my-3">
+                            University
+                        </h1>
+
+                    </div>
+
+
+                    <!-- Card 1 -->
+                    <div class="col-4">
+
+                        <div class="card h-100">
+
+                            <img src="https://cdn.kiripost.com/static/images/IMG_6542.2e16d0ba.fill-480x360.jpg" alt=""
+                                class="card-img-top   p-2 rounded-2 ">
+
+                            <div class="card-body">
+
+                                <div class="card-title">
+
+                                    <h2 class="card-title">
+                                        សាកលវិទ្យាល័យភូមិន៍​ ភ្នំពេញ
+                                    </h2>
+
+                                    <p class="card-text">
+                                        សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP) គឺជាសាកលវិទ្យាល័យរដ្ឋដ៏ធំ
+                                        និងចំណាស់មួយនៅក្នុងប្រទេសកម្ពុជា។ សាកលវិទ្យាល័យនេះមានកម្មវិធីសិក្សាជាច្រើន ដូចជា
+                                        បច្ចេកវិទ្យាព័ត៌មាន វិទ្យាសាស្ត្រ វិស្វកម្ម វិទ្យាសាស្ត្រសង្គម និងមនុស្សសាស្ត្រ
+
+                                    </p>
+
+                                    <div class="btn btn-primary">
+
+                                        <a class="text-light bg-transparent text-decoration-none" href="">
+                                            See more
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="col-4">
+
+                        <div class="card h-100">
+
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP_FYntmPAMBpG0_60onJQDy3kug2aaAw6pTxWs49Ho0UIytofOQCVgKw&s=10"
+                                alt="" class="card-img-top p-2 rounded-2">
+
+                            <div class="card-body">
+
+                                <div class="card-title">
+
+                                    <h2 class="card-title">
+                                        វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា
+                                    </h2>
+
+                                    <p class="card-text">
+                                        វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា (ITC) គឺជាគ្រឹះស្ថានឧត្តមសិក្សារដ្ឋមួយ
+                                        ដែលផ្តោតសំខាន់លើវិទ្យាសាស្ត្រ បច្ចេកវិទ្យា និងវិស្វកម្ម។ ITC
+                                        ផ្តល់ការអប់រំដែលផ្តោតលើចំណេះដឹងបច្ចេកទេស ការអនុវត្ត ការស្រាវជ្រាវ និងនវានុវត្តន៍
+                                        ដើម្បីរៀបចំនិស្សិតសម្រាប់ការងារក្នុងវិស័យបច្ចេកវិទ្យា និងវិស្វកម្ម
+
+                                    </p>
+
+                                    <div class="btn btn-primary">
+
+                                        <a class="text-light bg-transparent text-decoration-none" href="">
+                                            See more
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="col-4">
+
+                        <div class="card h-100">
+
+                            <img src="https://uhs.edu.kh/assets/images/news/0116202622455_photo_2026-01-12_15-16-29.jpg"
+                                alt="" class="card-img-top rounded-2 p-2 ">
+
+                            <div class="card-body">
+
+                                <div class="card-title">
+
+                                    <h2 class="card-title">
+                                        សាកលវិទ្យាល័យ វិទ្យាសាស្រ្ដសុខាភិបាល
+                                    </h2>
+
+                                    <p class="card-text">
+                                        វិទ្យាសាស្ត្រសុខាភិបាល គឺជាវិស័យសិក្សាដែលផ្តោតលើការថែទាំ
+                                        និងការពារសុខភាពរបស់មនុស្ស។ វារួមមានជំនាញជាច្រើន ដូចជា វេជ្ជសាស្ត្រ ឱសថសាស្ត្រ
+                                        គិលានុបដ្ឋាក ឆ្មប និងសុខាភិបាលសាធារណៈ
+
+                                    </p>
+
+                                    <div class="btn btn-primary">
+
+                                        <a class="text-light bg-transparent text-decoration-none" href="">
+                                            See more
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SCHOLARSHIP ================= -->
+
+        <section class="m-5">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-12">
+
+                        <h1 class="text-center my-3">
+                            Scholarship
+                        </h1>
+
+                    </div>
+
+
+                    <!-- Card 1 -->
+                    <div class="col-4 ">
+
+                        <div class="card h-100">
+
+                            <img src="photo/54e613f6-65ab-42a1-8a7d-d9c173cd3f38.jpg" alt="" class="card-img-top ">
+
+                            <div class="card-body">
+
+                               <h3 class="card-title">
+                                    🎓 RUPP — អាហារូបករណ៍
+                               </h3>
+
+                                    <p class="card-title">
+                                        សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP) មានអាហារូបករណ៍ជាច្រើនប្រភេទ
+                                        សម្រាប់និស្សិតទាំងថ្នាក់បរិញ្ញាបត្រ និងថ្នាក់ក្រោយបរិញ្ញាបត្រ។
+                                        អាហារូបករណ៍មួយចំនួនផ្តល់ការគាំទ្រផ្នែកហិរញ្ញវត្ថុដល់និស្សិត ហើយមានដៃគូដូចជា ÆON
+                                        1% Club Foundation, Marubeni Cambodia Education Foundation, Mitsubishi UFJ
+                                        Foundation, Mitsubishi Corporation, Woori Bank, Lotte Scholarship Foundation
+                                        និងស្ថាប័នផ្សេងៗ
+                                    </p>
+
+                                    
+
+                                     <div class="card-footer">
+                                        <div class="btn btn-primary  ">
+
+                                        <a class="text-light bg-transparent text-decoration-none " href="">
+                                            See more
+                                        </a>
+
+                                     </div>
+                                    </div>
+
+                                
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="col-4">
+
+                        <div class="card h-100">
+
+                            <img src="photo/2efe400c-8d47-43e6-bb06-7ddbff771f77 (1).jpg" alt="" class="card-img-top ">
+
+                            <div class="card-body">
+
+                                 <h3 class="card-title">
+                                    🎓 ITC — អាហារូបករណ៍
+                                 </h3>
+
+                                    <p class="card-title ">
+                                        វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា (ITC) ក៏មានអាហារូបករណ៍សម្រាប់និស្សិតផងដែរ។
+                                        សម្រាប់កម្មវិធី International Engineering Program ឆ្នាំ 2026 ITC បានប្រកាសថា
+                                        និស្សិតដែលមានលទ្ធផលខ្ពស់អាចទទួលបាន 50% ឬ 30% scholarship ហើយមាន Techo Digital
+                                        Talent Scholarship 100% សម្រាប់ជំនាញដូចជា Artificial Intelligence Engineering,
+                                        Cybersecurity, Software Engineering និង Aerospace & Autonomous Systems
+                                        Engineering
+                                    </p>
+
+                                   
+
+                                     <div class="card-footer">
+                                        <div class="btn btn-primary  ">
+
+                                        <a class="text-light bg-transparent text-decoration-none " href="">
+                                            See more
+                                        </a>
+
+                                     </div>
+                                    </div>
+
+                                </div>
+
+                            
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="col-4">
+
+                        <div class="card h-100">
+
+                            <img src="photo/73f033e4-6bd4-43e7-8cc0-c90922c2702f.jpg" alt="" class="card-img-top ">
+
+                            <div class="card-body">
+
+                               <h3 class="card-title">
+                                🎓 អាហារូបករណ៍ UHS
+                               </h3>
+
+                                    <p class="card-text pb-5">
+                                        សាកលវិទ្យាល័យវិទ្យាសាស្ត្រសុខាភិបាល (UHS)
+                                        មានឱកាសអាហារូបករណ៍សម្រាប់និស្សិតផ្នែកសុខាភិបាល។
+                                        និស្សិតអាចមានឱកាសទទួលបានអាហារូបករណ៍ពីរដ្ឋាភិបាល និងកម្មវិធីអាហារូបករណ៍អន្តរជាតិ
+                                        ដូចជា ជប៉ុន ចិន និងកម្មវិធីផ្សេងៗ
+                                         
+                                    </p>
+
+                                    
+
+                                    <div class="card-footer">
+                                        <div class="btn btn-primary  ">
+
+                                        <a class="text-light bg-transparent text-decoration-none " href="">
+                                            See more
+                                        </a>
+
+                                     </div>
+                                    </div>
+
+                                </div>
+
+                           
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="text-bg-dark">
+
+        <section class="mt-5 ">
+
+            <!-- Main Footer -->
+
+            <div class="container border-1 border-bottom border-secondary border-opacity-10 pb-4">
+
+                <div class="row justify-content-between g-4">
+
+
+                    <!-- Logo & Description -->
+
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <a href="#">
+
+                            <img src="photo/logo.png" alt="Education Logo" width="80" height="80">
+
+                        </a>
+
+                        <p class="mt-3" style="text-align: justify;">
+
+                            Start, switch, or advance your career with more than 5,000
+                            courses, Professional Certificates, and degrees from
+                            world-class universities and companies.
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- Company -->
+
+                    <div class="col-auto">
+
+                        <h3>
+                            Company
+                        </h3>
+
+                        <a href="#" class="d-block text-decoration-none text-secondary mb-2">
+                            About
+                        </a>
+
+                        <a href="#" class="d-block text-decoration-none text-secondary mb-2">
+                            Pricing
+                        </a>
+
+                        <a href="#" class="d-block text-decoration-none text-secondary mb-2">
+                            Blog
+                        </a>
+
+                        <a href="#" class="d-block text-decoration-none text-secondary mb-2">
+                            Careers
+                        </a>
+
+                        <a href="#" class="d-block text-decoration-none text-secondary">
+                            Contact
+                        </a>
+
+                    </div>
+
+
+                    <!-- Support -->
+
+                    <div class="col-auto">
+
+                        <h3>
+                            Support
+                        </h3>
+
+                        <a href="#" class="d-block text-decoration-none text-secondary mb-2">
+                            Help and support
+                        </a>
+
+                        <a href="#" class="d-block text-decoration-none text-secondary mb-2">
+                            Become Instructor
+                        </a>
+
+                        <a href="#" class="d-block text-decoration-none text-secondary mb-2">
+                            Get the app
+                        </a>
+
+                        <a href="#" class="d-block text-decoration-none text-secondary mb-2">
+                            Tutorial
+                        </a>
+
+                        <a href="#" class="d-block text-decoration-none text-secondary">
+                            FAQ’s
+                        </a>
+
+                    </div>
+
+
+                    <!-- Get in touch -->
+
+                    <div class="col-auto">
+
+                        <h3>
+                            Get in touch
+                        </h3>
+
+                        <a href="#" class="d-block text-decoration-none text-secondary mb-2">
+                            54 St 606, Phnom Penh
+                        </a>
+
+                        <a href="#" class="d-block text-decoration-none text-secondary mb-2">
+                            Help and support
+                        </a>
+
+                        <a href="#" class="d-block text-decoration-none text-secondary mb-3">
+                            Phone: (855) 016 / 010 666653
+                        </a>
+
+
+                        <!-- App Store -->
+
+                        <img src="https://geeksui.codescandy.com/geeks/assets/images/svg/appstore.svg" alt="App Store"
+                            width="150" class="pt-2">
+
+
+                        <!-- Google Play -->
+
+                        <img src="https://geeksui.codescandy.com/geeks/assets/images/svg/playstore.svg"
+                            alt="Google Play" width="150" class="pt-2">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Copyright -->
+
+            <div class="container">
+
+                <div class="d-lg-flex align-items-center py-4">
+
+                    <p class="text-secondary mb-0">
+
+                        © 2026 mahal kita. All Rights Reserved
+
+                    </p>
+
+                    <div class="d-flex">
+
+                        <a href="#" class="text-decoration-none text-secondary ps-lg-4">
+                            Privacy Policy
+                        </a>
+
+                        <a href="#" class="text-decoration-none text-secondary px-4">
+                            Cookie Notice
+                        </a>
+
+                        <a href="#" class="text-decoration-none text-secondary">
+                            Terms of Use
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+        var swiper = new Swiper('.mySwiper', {
+
+            spaceBetween: 30,
+
+            centeredSlides: true,
+
+            autoplay: {
+
+                delay: 2500,
+
+                disableOnInteraction: false
+
+            },
+
+            pagination: {
+
+                el: '.swiper-pagination',
+
+                clickable: true
+
+            },
+
+            navigation: {
+
+                nextEl: '.swiper-button-next',
+
+                prevEl: '.swiper-button-prev'
+
+            }
+
+        });
+
+    </script>
+
+
+    <!-- Bootstrap JS -->
+    <!-- ONLY ONE Bootstrap JS -->
+    <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
