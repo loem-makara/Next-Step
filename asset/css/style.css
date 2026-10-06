@@ -62,3 +62,6 @@ header {
     border-radius: 8px;
     width: 50%; /* ទំហំប្រអប់អក្សរ */
   }
+.nav-link{
+  color: #444!important;
+}
