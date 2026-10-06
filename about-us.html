@@ -3,9 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About us</title>
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="asset/css/swiper.css">
 </head>
 <body>
+    <!-- ================= NAVBAR ================= -->
+    <header>
+        <nav class="navbar bg-light navbar-expand-lg sticky-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="photo/logo.png" alt="LOGO" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="photo/logo.png" alt="LOGO" class="logo">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <!-- Home -->
+                            <li class="nav-item">
+                                <a class="nav-link active text-primary" href="index.html">
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+                            <!-- University Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-dark dropdown-toggle" href="university.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    សាកលវិទ្យាល័យ
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="text-dark dropdown-item border-bottom border-secondary-subtle"
+                                            href="publish-school.html">
+                                            រដ្ឋ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-dark dropdown-item" href="private-school.html">
+                                            ឯកជន
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Skill -->
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="skill.html">
+                                    ជំនាញ
+                                </a>
+                            </li>
+                            <!-- Scholarship Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="scholoship.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    អាហាររូបករណ៍
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item border-bottom border-secondary-subtle"
+                                            href="somdach.html">
+                                           អាហាររូបករណ៍ សម្ដេចតេជោ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item border-bottom border-secondary-subtle"
+                                            href="university.html">
+                                            សាកលវិទ្យាល័យ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="ministry-of-edu.html">
+                                            ក្រសួងអប់រំយុវជន នឹង កីឡា
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- About -->
+                            <li class="nav-item">
+
+                                <a class="nav-link text-light" href="about-us.html">
+                                    អំពីយើង
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- Search -->
+                        <form class="d-flex" role="search">
+
+                            <input class="form-control me-2" type="search" placeholder="Search">
+
+                            <button class="btn btn-primary text-light" type="submit">
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
     
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+        var swiper = new Swiper('.mySwiper', {
+
+            spaceBetween: 30,
+
+            centeredSlides: true,
+
+            autoplay: {
+
+                delay: 2500,
+
+                disableOnInteraction: false
+
+            },
+
+            pagination: {
+
+                el: '.swiper-pagination',
+
+                clickable: true
+
+            },
+
+            navigation: {
+
+                nextEl: '.swiper-button-next',
+
+                prevEl: '.swiper-button-prev'
+
+            }
+
+        });
+
+    </script>
+
+
+    <!-- Bootstrap JS -->
+    <!-- ONLY ONE Bootstrap JS -->
+    <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
