@@ -18,269 +18,107 @@
 
 <body>
 
+    <!-- ================= NAVBAR ================= -->
     <header>
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-
+        <nav class="navbar bg-light navbar-expand-lg sticky-top">
             <div class="container">
-
                 <!-- Logo -->
-                <a class="navbar-brand pt-2" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="photo/logo.png" alt="LOGO" class="logo">
                 </a>
-
-                <!-- Mobile Button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-
                 </button>
-
-                <!-- Desktop Navbar -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                        <!-- Home -->
-                        <li class="nav-item">
-                            <a class="nav-link active text-light " href="index.html">
-                                ទំព័រដើម
-                            </a>
-                        </li>
-
-                        <!-- University Dropdown -->
-                        <li class="nav-item dropdown">
-
-                            <a class="nav-link text-light dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-
-                                សាកលវិទ្យាល័យ
-
-                            </a>
-
-                            <ul class="dropdown-menu">
-
-                                <li>
-                                    <a class="dropdown-item border-bottom border-secondary-subtle" href="#">
-                                        រដ្ឋ
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        ឯកជន
-                                    </a>
-                                </li>
-
-                            </ul>
-
-                        </li>
-
-                        <!-- Skill -->
-                        <li class="nav-item">
-
-                            <a class="nav-link text-light" href="#">
-                                ជំនាញ
-                            </a>
-
-                        </li>
-
-                        <!-- Scholarship Dropdown -->
-                        <li class="nav-item dropdown">
-
-                            <a class="nav-link dropdown-toggle text-light" href="index.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-
-                                អាហាររូបករណ៍
-
-                            </a>
-
-                            <ul class="dropdown-menu">
-
-                                <li>
-                                    <a class="dropdown-item border-bottom border-secondary-subtle" href="#">
-                                        សម្ដេច
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item border-bottom border-secondary-subtle" href="#">
-                                        សាកលវិទ្យាល័យ
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        ក្រសួងអប់រំយុវជន នឹង កីឡា
-                                    </a>
-                                </li>
-
-                            </ul>
-
-                        </li>
-
-                        <!-- About -->
-                        <li class="nav-item">
-
-                            <a class="nav-link text-light" href="#">
-                                អំពីយើង
-                            </a>
-
-                        </li>
-
-                    </ul>
-
-                    <!-- Search -->
-                    <form class="d-flex" role="search">
-
-                        <input class="form-control me-2" type="search" placeholder="Search">
-
-                        <button class="btn btn-primary text-light" type="submit">
-                            Search
-                        </button>
-
-                    </form>
-
-                </div>
-
-            </div>
-
-        </nav>
-
-
-        <!-- ================= MOBILE OFFCANVAS ================= -->
-
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-
-            <!-- Offcanvas Header -->
-            <div class="offcanvas-header">
-
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                    Next Step
-                </h5>
-
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
-                </button>
-
-            </div>
-
-
-            <!-- Offcanvas Body -->
-            <div class="offcanvas-body">
-
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-
-                    <!-- Home -->
-                    <li class="nav-item">
-
-                        <a class="nav-link active" href="#">
-                            ទំព័រដើម
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="photo/logo.png" alt="LOGO" class="logo">
                         </a>
-
-                    </li>
-
-
-                    <!-- Skill -->
-                    <li class="nav-item">
-
-                        <a class="nav-link" href="#">
-                            ជំនាញ
-                        </a>
-
-                    </li>
-
-
-                    <!-- University -->
-                    <li class="nav-item dropdown">
-
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-
-                            សាកលវិទ្យាល័យ
-
-                        </a>
-
-                        <ul class="dropdown-menu">
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    រដ្ឋ
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <!-- Home -->
+                            <li class="nav-item">
+                                <a class="nav-link active text-primary" href="index.html">
+                                    ទំព័រដើម
                                 </a>
                             </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    ឯកជន
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-
-                    <!-- Scholarship -->
-                    <li class="nav-item dropdown">
-
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-
-                            អាហាររូបករណ៍
-
-                        </a>
-
-                        <ul class="dropdown-menu">
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    សម្ដេច
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
+                            <!-- University Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-dark dropdown-toggle" href="university.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     សាកលវិទ្យាល័យ
                                 </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="text-dark dropdown-item border-bottom border-secondary-subtle"
+                                            href="publish-school.html">
+                                            រដ្ឋ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-dark dropdown-item" href="private-school.html">
+                                            ឯកជន
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
-
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    ក្រសួងអប់រំយុវជន នឹង កីឡា
+                            <!-- Skill -->
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="skill.html">
+                                    ជំនាញ
                                 </a>
                             </li>
+                            <!-- Scholarship Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="scholoship.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    អាហាររូបករណ៍
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item border-bottom border-secondary-subtle"
+                                            href="somdach.html">
+                                           អាហាររូបករណ៍ សម្ដេចតេជោ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item border-bottom border-secondary-subtle"
+                                            href="university.html">
+                                            សាកលវិទ្យាល័យ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="ministry-of-edu.html">
+                                            ក្រសួងអប់រំយុវជន នឹង កីឡា
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- About -->
+                            <li class="nav-item">
 
+                                <a class="nav-link text-light" href="about-us.html">
+                                    អំពីយើង
+                                </a>
+                            </li>
                         </ul>
+                        <!-- Search -->
+                        <form class="d-flex" role="search">
 
-                    </li>
+                            <input class="form-control me-2" type="search" placeholder="Search">
 
-
-                    <!-- About -->
-                    <li class="nav-item">
-
-                        <a class="nav-link" href="#">
-                            អំពីយើង
-                        </a>
-
-                    </li>
-
-                </ul>
-
-
-                <!-- Search -->
-                <form class="d-flex mt-3" role="search">
-
-                    <input class="form-control me-2" type="search" placeholder="Search">
-
-                    <button class="btn btn-primary" type="submit">
-                        Search
-                    </button>
-
-                </form>
-
+                            <button class="btn btn-primary text-light" type="submit">
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
-
-        </div>
+        </nav>
 
     </header>
     <main>
@@ -299,6 +137,53 @@
             </div>
         </div>
     </main>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+        var swiper = new Swiper('.mySwiper', {
+
+            spaceBetween: 30,
+
+            centeredSlides: true,
+
+            autoplay: {
+
+                delay: 2500,
+
+                disableOnInteraction: false
+
+            },
+
+            pagination: {
+
+                el: '.swiper-pagination',
+
+                clickable: true
+
+            },
+
+            navigation: {
+
+                nextEl: '.swiper-button-next',
+
+                prevEl: '.swiper-button-prev'
+
+            }
+
+        });
+
+    </script>
+
+
+    <!-- Bootstrap JS -->
+    <!-- ONLY ONE Bootstrap JS -->
+    <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
