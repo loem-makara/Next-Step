@@ -8,7 +8,7 @@ header {
     z-index: 1030;
 }
 .card-img-top {
-    height: 250px;
+    height: 350px;
     object-fit: cover;
     
 }
@@ -45,3 +45,17 @@ header {
         height: 100%;
         object-fit: cover;
       }
+
+  
+
+  /* កំណត់អក្សរឱ្យនៅពីលើរូបភាព (Overlay) */
+  .text-overlay {
+    position: absolute;
+    top: 23%; /* នៅចំកណ្តាលតាមជួរឈរ */
+    left: 25%; /* នៅចំកណ្តាលតាមជួរដេក */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%; /* ទំហំប្រអប់អក្សរ */
+  }
