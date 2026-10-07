@@ -54,13 +54,18 @@ header {
   /* កំណត់អក្សរឱ្យនៅពីលើរូបភាព (Overlay) */
   .text-overlay {
     position: absolute;
-    top: 23%; /* នៅចំកណ្តាលតាមជួរឈរ */
-    left: 25%; /* នៅចំកណ្តាលតាមជួរដេក */
-    transform: translate(-50%, -50%);
+    top:10%; /* នៅចំកណ្តាលតាមជួរឈរ */
+    right:5%; /* នៅចំកណ្តាលតាមជួរដេក */
+    /* transform: translate(-50%, -50%); */
     text-align: center;
     padding: 20px;
     border-radius: 8px;
     width: 50%; /* ទំហំប្រអប់អក្សរ */
+    
+    
+  }
+   p{
+    color: black;
   }
 .nav-link{
   color: #444!important;
