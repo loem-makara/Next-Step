@@ -7,8 +7,15 @@ header {
     top: 0;
     z-index: 1030;
 }
+.hero-banner{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 .card-img-top {
-    height: 350px;
+  
+    height: 200px;
     object-fit: cover;
     
 }
@@ -26,7 +33,7 @@ header {
 }
   .swiper {
         width: 100%;
-        height: 400px;
+        height: 50%;
         object-fit: cover;
       }
 
@@ -46,7 +53,7 @@ header {
         object-fit: cover;
       }
       .banner{
-        height: 300px;
+        height: 400px;
       }
 
   
@@ -54,14 +61,24 @@ header {
   /* កំណត់អក្សរឱ្យនៅពីលើរូបភាព (Overlay) */
   .text-overlay {
     position: absolute;
-    top: 23%; /* នៅចំកណ្តាលតាមជួរឈរ */
-    left: 25%; /* នៅចំកណ្តាលតាមជួរដេក */
-    transform: translate(-50%, -50%);
+    top:15%; /* នៅចំកណ្តាលតាមជួរឈរ */
+    left:5%; /* នៅចំកណ្តាលតាមជួរដេក */
+    /* transform: translate(-50%, -50%); */
     text-align: center;
     padding: 20px;
     border-radius: 8px;
     width: 50%; /* ទំហំប្រអប់អក្សរ */
+    
+    
+  }
+   p{
+    color: black;
   }
 .nav-link{
   color: #444!important;
 }
+.text-banner{
+ background: linear-gradient(to right, #0d6efd, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;}
