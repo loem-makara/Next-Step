@@ -82,3 +82,14 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;}
+    .user-card{
+      animation: movebox 1.5s ease-in-out infinite;
+    }
+    @keyframes movebox{
+      0%,100%{
+        transform: translateY(0px);
+      }
+      50%{
+        transform: translateY(3px);
+      }
+    }
