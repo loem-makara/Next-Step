@@ -80,6 +80,22 @@ header {
 .nav-link{
   color: #444!important;
 }
+.icon{
+  width: 45px;
+  height: 40px;
+}
+.icon-link{
+  color: darkgray;
+  font-size:28px;
+}
+.icon-link :hover{
+ color:blue;
+ transform: translate(3px);
+}
+.location{
+ border: 1px seashell solid;
+}
+
 .text-banner{
  background: linear-gradient(to bottom, #0d6efd, #cea2f5b8);
     -webkit-background-clip: text;
@@ -257,3 +273,15 @@ p {
     padding: 12px;
     font-weight: bold;
 }
+    .user-card{
+      animation: movebox 1.5s ease-in-out infinite;
+    }
+    @keyframes movebox{
+      0%,100%{
+        transform: translateY(0px);
+      }
+      50%{
+        transform: translateY(3px);
+      }
+    }
+
