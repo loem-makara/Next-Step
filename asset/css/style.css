@@ -77,8 +77,25 @@ header {
 .nav-link{
   color: #444!important;
 }
+.icon{
+  width: 45px;
+  height: 40px;
+}
+.icon-link{
+  color: darkgray;
+  font-size:28px;
+}
+.icon-link :hover{
+ color:blue;
+ transform: translate(3px);
+}
+.location{
+ border: 1px seashell solid;
+}
+
 .text-banner{
  background: linear-gradient(to right, #0d6efd, #a855f7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;}
+    
