@@ -1,5 +1,5 @@
 body {
-     /* font-family: 'Poppins', sans-serif; */
+     font-family: 'Poppins', sans-serif;
      font-family: "Kantumruy Pro", sans-serif;
 }
 header {
@@ -80,18 +80,19 @@ header {
 .nav-link{
   color: #444!important;
 }
-.icon{
-  width: 45px;
-  height: 40px;
+.nav-link:hover,
+.nav-link.active {
+    color: var(--bs-primary) !important;
 }
-.icon-link{
-  color: darkgray;
-  font-size:28px;
+/* .navbar .nav-link:hover {
+    color: var(--bs-primary) !important;
 }
-.icon-link :hover{
- color:blue;
- transform: translate(3px);
-}
+
+ Active 
+.navbar .nav-link.active {
+    color: var(--bs-primary) !important;
+   
+} */
 .location{
  border: 1px seashell solid;
 }
@@ -268,4 +269,18 @@ p {
 .btn-login {
     padding: 12px;
     font-weight: bold;
+}
+    .user-card{
+      animation: movebox 1.5s ease-in-out infinite;
+    }
+    @keyframes movebox{
+      0%,100%{
+        transform: translateY(0px);
+      }
+      50%{
+        transform: translateY(3px);
+      }
+    }
+.account{
+    margin-left: 50px;
 }

@@ -20,13 +20,13 @@
     <link rel="stylesheet" href="asset/css/swiper.css">
     
 </head>
-<body>
+<body >
     <div class="container-fluid p-0 position-relative">
 
         <!-- Background Image -->
         <img src="photo/photo_2026-10-11_22-10-11.jpg"
              alt="Background"
-             class="login-bg">
+             class="login-bg ">
 
         <!-- Login Form -->
         <div class="login-card position-absolute top-50 start-50 translate-middle">
@@ -70,13 +70,14 @@
                         </label>
                     </div>
 
-                    <a href="#" class="text-decoration-none">Forgot Password?</a>
+                    <a href="forget-password.html" class="text-decoration-none">Forgot Password?</a>
                 </div>
 
-                <button type="submit" class="btn btn-primary w-100 btn-login">
-                    <i class="bi bi-box-arrow-in-right me-2"></i>
-                    Login
-                </button>
+                <button type="submit"
+                            class="btn btn-primary w-100 btn-register">
+                            <i class="bi bi-person-check me-2"></i>
+                           <a href="index.html" class="text-light text-decoration-none"> login</a>
+                        </button>
 
                 <p class="text-center mt-4 mb-0">
                     Don't have an account?
@@ -88,7 +89,7 @@
             </form>
         </div>
     </div>
-
+ <!-- close and open eye -->
     <script>
         function togglePassword() {
             const password = document.getElementById("password");
