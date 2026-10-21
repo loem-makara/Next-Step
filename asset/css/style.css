@@ -96,6 +96,17 @@ header {
 .location{
  border: 1px seashell solid;
 }
+.img-logo{
+  width: 200px;
+  height: auto;
+}
+.img-logo-s{
+  width: 140px;
+  height: 140px;
+}
+
+
+
 
 .text-banner{
  background: linear-gradient(to bottom, #0d6efd, #cea2f5b8);
