@@ -92,6 +92,17 @@ header {
 .location{
  border: 1px seashell solid;
 }
+.img-logo{
+  width: 200px;
+  height: auto;
+}
+.img-logo-s{
+  width: 140px;
+  height: 140px;
+}
+
+
+
 
 .text-banner{
  background: linear-gradient(to right, #0d6efd, #a855f7);
@@ -99,3 +110,4 @@ header {
     -webkit-text-fill-color: transparent;
     background-clip: text;}
     
+  
