@@ -53,7 +53,7 @@ header {
         object-fit: cover;
       }
       .banner{
-        height: 400px;
+        height: 330px;
       }
 
   
@@ -98,7 +98,6 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;}
-<<<<<<< HEAD
     .user-card{
       animation: movebox 1.5s ease-in-out infinite;
     }
@@ -110,6 +109,3 @@ header {
         transform: translateY(3px);
       }
     }
-=======
-    
->>>>>>> dd0327583ac2f07573d77d4148bf3fe8c8cc6c26
