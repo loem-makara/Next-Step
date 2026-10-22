@@ -80,19 +80,15 @@ header {
 .nav-link{
   color: #444!important;
 }
-.nav-link:hover,
-.nav-link.active {
-    color: var(--bs-primary) !important;
-}
-/* .navbar .nav-link:hover {
-    color: var(--bs-primary) !important;
+.navbar .navbar-nav .nav-link.active {
+    color: #0d6efd !important;
+    
 }
 
- Active 
-.navbar .nav-link.active {
-    color: var(--bs-primary) !important;
-   
-} */
+.navbar .dropdown-menu .dropdown-item.active {
+    background-color: #0d6efd;
+    color: white !important;
+}
 .location{
  border: 1px seashell solid;
 }
