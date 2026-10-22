@@ -56,7 +56,12 @@ header {
         object-fit: cover;
       }
       .banner{
-        height: 330px;
+        height: 230px;
+      }
+      .skill-banner{
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
       }
 
   
