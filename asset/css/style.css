@@ -1,6 +1,7 @@
 body {
      font-family: 'Poppins', sans-serif;
      font-family: "Kantumruy Pro", sans-serif;
+     background-color: var(--bg-light);
 }
 header {
     position: sticky;
@@ -16,12 +17,7 @@ header {
     color: darkblue;
 }
 
-.card-img-top {
-  
-    height: 200px;
-    object-fit: cover;
-    
-}
+
 .logo{
     width: 120px;
     height: 50px;
@@ -86,7 +82,7 @@ header {
   color: #444!important;
 }
 .navbar .navbar-nav .nav-link.active {
-    color: #0d6efd !important;
+    color: #2563EB!important;
     
 }
 
@@ -105,9 +101,6 @@ header {
   width: 140px;
   height: 140px;
 }
-
-
-
 
 .text-banner{
  background: linear-gradient(to bottom, #0d6efd, #cea2f5b8);
@@ -296,3 +289,68 @@ p {
 .account{
     margin-left: 50px;
 }
+
+ /* class for teammate use*/
+
+:root {
+    --primary: #4d81f1ee;
+    --heading: #2f3031;
+    --text: #475569;
+    --bg-light: #f6eee866;
+    --border: #e2e8f0;
+    --radius: 12px;
+    --section-space: 10px;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--primary);
+    font-weight: 600;
+    line-height:1.7 ;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+section {
+    padding-top: var(--section-space);
+    padding-bottom: var(--section-space);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    padding: 12px 14px;
+    border-radius: 8px;
+}
+
+.card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.bi {
+    font-size: 20px;
+    color: #2563eb;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+.bi:hover {
+    color: rgb(71, 3, 181);
+    transform: scale(1.2);
+}
+
