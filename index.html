@@ -17,116 +17,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="asset/css/swiper.css">
+    <link rel="stylesheet" href="asset/css/theme.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <!-- ================= NAVBAR ================= -->
-    <header>
-        <nav class="navbar bg-light navbar-expand-lg sticky-top">
-            <div class="container">
-                <!-- Logo -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="photo/logo.png" alt="LOGO" class="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="photo/logo.png" alt="LOGO" class="logo">
-                        </a>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <!-- Home -->
-                            <li class="nav-item">
-                                <a class="nav-link  active" href="index.html">
-                                    <i class="bi bi-house"></i> ទំព័រដើម
-                                </a>
-                            </li>
-                            <!-- University Dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-dark dropdown-toggle" href="university.html" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-building"></i> សាកលវិទ្យាល័យ
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="text-dark dropdown-item border-bottom border-secondary-subtle"
-                                            href="publish-school.html">
-                                            រដ្ឋ
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="text-dark dropdown-item" href="private-school.html">
-                                            ឯកជន
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- Skill -->
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" href="skill.html">
-                                    <i class="bi bi-tools"></i> ជំនាញ
-                                </a>
-                            </li>
-                            <!-- Scholarship Dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-light" href="scholoship.html" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-mortarboard"></i> អាហាររូបករណ៍
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item border-bottom border-secondary-subtle"
-                                            href="somdach.html">
-                                            អាហាររូបករណ៍ សម្ដេចតេជោ
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item border-bottom border-secondary-subtle"
-                                            href="university.html">
-                                            សាកលវិទ្យាល័យ
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="ministry-of-edu.html">
-                                            ក្រសួងអប់រំយុវជន នឹង កីឡា
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- About -->
-                            <li class="nav-item">
-
-                                <a class="nav-link text-light" href="about-us.html">
-                                    <i class="bi bi-info-circle"></i> អំពីយើង
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- Search -->
-                        <form class="d-flex" role="search">
-
-                            <!-- <input class="form-control me-2" type="search" placeholder="Search"> -->
-
-                            <button class="btn  text-black fs-5" type="submit">
-                               <i class="bi bi-search"></i>
-                            </button>
-                        </form>
-                        <button class="btn btn-primary text-light account " type="submit">
-                            <a class="text-decoration-none text-light" href="login.html">គណនី</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-    </header>
+    <!-- Navbar -->
+    <div id="navbar"></div>
 
     <!-- ================= MAIN ================= -->
     <main>
@@ -136,7 +34,7 @@
             <div class=" col-12">
                 <div class="hero-banner position-relative">
                     <img src="photo/photo_2026-10-11_22-10-11.jpg" alt="photo">
-                    <div class="text-overlay position-absolute fs-5">
+                    <div class="text-overlay position-absolute fs-5 ">
                         <span>W</span>
                         <span>h</span>
                         <span>a</span>
@@ -159,110 +57,228 @@
                         <span>e</span>
                         <span>p</span>
                         <span>?</span>
-                        <h1 class="text-banner ">
-                            ជ្រើសរើសសាកល វិទ្យាល័យសមស្របសម្រាប់អ្នក
+                        <h1 data-aos="fade-down" class="text-banner ">
+                            ជ្រើសរើសសាកលវិទ្យាល័យសមស្របសម្រាប់អ្នក
                         </h1>
-                        <p class="text-banner">ស្វែងយល់ពីសាកលវិទ្យាល័យ នឹង ពីជំនាញសិក្សា ដែលអាច
+                        <p data-aos="fade-right" class="text-secondary">ស្វែងយល់ពីសាកលវិទ្យាល័យ នឹង ពីជំនាញសិក្សា ដែលអាច
                             ជ្រើសរើសទៅថ្ងៃអនាគតដែលត្រូវនិងចំណង់ចំណូល​ចិត្ដអ្នក</p>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <section class="py-4">
+        <section>
             <div class="container">
-                <h4 class="container  text-primary"><i class="bi bi-building"></i>ជ្រើសរើសតាមប្រភេទសាលា</h4>
+                <div data-aos="fade-right" class="row justify-content-between">
+                    <div class="col-6">
+                        <img src="photo/tim-gouw-1K9T5YiZ2WU-unsplash.jpg" alt="" class="card-img-top rounded-3">
+                    </div>
+                    <div class="col-6">
+                        <h5>Stress!!ចប់វិទ្យាល័យហើយ អត់ដឹងរៀនជំនាញអ្វីមេនទេ? ចង់ដឹងព័ត៏មានខាងសាលាខ្លះត្រូវអត់​!
+                        </h5>
+                        <p>Next Step អាចជួយអ្នកបាន គ្រប់បញ្ហារបស់អ្នកបានជួបគឺមាននៅទីនេះ ព័ត៏មានសាលា​
+                            សាលានីមួយមួយមានជំនាញអ្វីខ្លះ​​​ ទាក់ទងនិងអាហាររូបករណ៍ ​ទាក់ទងនិងវេនសិក្សា​​ ទីតាំងសាលា</p>
+                        <div class="btn btn-primary mt-3 rounded-3">មើលបន្ថែម</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section>
+            <div class="container">
+                <div data-aos="fade-up-left" class="row">
+                    <h4 >តើ Next Step ជួយអ្នកបានអ្វីខ្លះ?</h4>
+
+                    <div class="col-3">
+                        <div>
+                            <img src="photo/erika-fletcher-MZxqc6n9qCw-unsplash.jpg" alt="" class="rounded-3"
+                                style="height: 150px;width: 100%;">
+                        </div>
+                        <h5> <i class="bi bi-bank"></i> <br> សាកលវិទ្យាល័យ</h5>
+                        <p>ស្វែងរកសាលា ថ្លៃសិក្សា ទីតាំង <br> និងលក្ខខណ្ឌចូលរៀន</p>
+
+                    </div>
+                    <div class="col-3">
+
+                        <div>
+                            <img src="photo/skill.jpg" alt="" class="rounded-3"
+                                style="height: 150px;width: 100%;">
+                        </div>
+                        <h5> <i class="bi bi-lightbulb"></i> <br> ជំនាញ</h5>
+                        <p>IT,Engineering,Law,Business <br>និងជំនាញផ្សេងៗទៀត</p>
+
+                    </div>
+                    <div class="col-3">
+
+                        <div>
+                            <img src="photo/scholarship.jpg" alt="" class="rounded-3"
+                                style="height: 150px;width: 100%;">
+                        </div>
+                        <h5> <i class="bi bi-cash-coin"></i> <br> អាហារូបករណ៍</h5>
+                        <p>ស្វែងរកឪកាសទទួលបានអាហាររូករណ៍និង <br>ជំនួយថ្លៃសិក្សា</p>
+
+                    </div>
+                    <div class="col-3">
+
+                        <div>
+                            <img src="photo/Career.jpg" alt="" class="rounded-3"
+                                style="height: 150px;width: 100%;">
+                        </div>
+                        <h5> <i class="bi bi-briefcase"></i> <br> ជំនាញ និងអាជីព</h5>
+                        <p>ស្វែងយល់ពីជំនាញដែលត្រូវការសម្រាប់<br>ការងារ និងអាជីពនាពេលអនាគត</p>
+
+                    </div>
+
+                    <!-- <div class="col-4">
+                        <img src="photo/pexels-delot-16420473.jpg" alt="" class="card-img-top rounded-3">
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="py-4">
+            <div class="container">
+                <h3 class="container  text-banner">
+                    <i class="bi bi-building"></i>
+                    ជ្រើសរើសតាមប្រភេទសាលា
+                </h3>
                 <div class="row">
-
                     <div class="col-6">
-                        <div class="bg-info bg-opacity-10 rounded-3 p-3
+                        <div class="bg-banner bg-opacity-10 rounded-3 p-3
                 d-flex justify-content-between align-items-center">
-
-                            <!-- Title ខាងឆ្វេង -->
+                         
                             <div>
                                 <i class="bi bi-mortarboard bg-primary text-white
                       p-2 rounded-circle fs-4"></i>
-
-                                <h4 class="mt-3 text-primary">សាកលវិទ្យាល័យរដ្ឋ</h4>
-                                <p class="mb-0 text-secondary">សាកលវិទ្យាល័យ</p>
-                                <div class="btn btn-primary bg-transparent rounded-4 text-primary">មើលបញ្ចីសាលាទាំងអស់
+                                <h4 class="mt-3 text-banner">សាកលវិទ្យាល័យរដ្ឋ</h4>
+                                <p class=" text-secondary">សាកលវិទ្យាល័យ</p>
+                                <div class="btn btn-light bg-transparent rounded-4 text-light">មើលបញ្ចីសាលាទាំងអស់
                                 </div>
                             </div>
-
-                            <!-- Photo ខាងស្ដាំ -->
-                            <img src="photo/images (2).jpg" alt="សាកលវិទ្យាល័យរដ្ឋ" class="rounded-3"
-                                style="width: 150px; height: 100px; object-fit: cover;">
+                          
+                            <img src="photo/erika-fletcher-MZxqc6n9qCw-unsplash.jpg" alt="សាកលវិទ្យាល័យរដ្ឋ"
+                                class="rounded-3" style="width: 150px; height: 100px; object-fit: cover;">
                         </div>
                     </div>
 
 
                     <div class="col-6">
-                        <div class="bg-info bg-opacity-10 rounded-3 p-3
-                d-flex justify-content-between align-items-center">
+                        <div class="bg-banner bg-opacity-10 rounded-3 p-3
+                          d-flex justify-content-between align-items-center">
 
-                            <!-- Title ខាងឆ្វេង -->
+                          
                             <div>
                                 <i class="bi bi-mortarboard bg-primary text-white
-                      p-2 rounded-circle fs-4"></i>
+                                p-2 rounded-circle fs-4"></i>
 
-                                <h4 class="mt-3 text-primary">សាកលវិទ្យាល័យរដ្ឋ</h4>
-                                <p class="mb-0 text-secondary">សាកលវិទ្យាល័យ</p>
-                                <div class="btn btn-primary bg-transparent rounded-4 text-primary">មើលបញ្ចីសាលាទាំងអស់
+                                <h4 class="mt-3 text-banner">សាកលវិទ្យាល័យឯកជន</h4>
+                                <p class=" text-secondary">សាកលវិទ្យាល័យ</p>
+                                <div class="btn btn-light bg-transparent rounded-4 text-light">មើលបញ្ចីសាលាទាំងអស់
                                 </div>
                             </div>
 
-                            <!-- Photo ខាងស្ដាំ -->
-                            <img src="photo/images (2).jpg" alt="សាកលវិទ្យាល័យរដ្ឋ" class="rounded-3"
-                                style="width: 150px; height: 100px; object-fit: cover;">
+                            
+                            <img src="photo/pexels-alexey-k-458081116-37653654.jpg" alt="សាកលវិទ្យាល័យរដ្ឋ"
+                                class="rounded-3" style="width: 150px; height: 100px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <section class="subject-section py-5">
+            <div class="container">
+                <div data-aos="fade-up" class="row g-3 justify-content-center">
+                    <h4><i class="bi bi bi-mortarboard"></i> ជំនាញដែលពេញនិយម</h4>
+
+                    <!-- Information Technology -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="bg-banner text-center rounded-3">
+                            <i class="bi bi-laptop subject-icon"></i>
+                            <p class="text-center">ព័ត៌មានវិទ្យា</p>
                         </div>
                     </div>
 
+                    <!-- Literature -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="bg-banner text-center rounded-3">
+                            <i class="bi bi-book subject-icon"></i>
+                            <p class="text-center">អក្សរសាស្ត្រ</p>
+                        </div>
+                    </div>
+
+                    <!-- Chemistry -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="bg-banner text-center rounded-3">
+                            <i class="bi bi-flask subject-icon"></i>
+                            <p class="text-center">គីមីវិទ្យា</p>
+                        </div>
+                    </div>
+
+                    <!-- Medicine -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="bg-banner text-center rounded-3 ">
+                            <i class="bi bi-heart-pulse  subject-icon"></i>
+                            <p class="text-center">វេជ្ជសាស្ត្រ</p>
+                        </div>
+                    </div>
+
+                    <!-- Engineering -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="bg-banner text-center rounded-3 ">
+                            <i class="bi bi-gear subject-icon"></i>
+                            <p class="text-center">វិស្វកម្ម</p>
+                        </div>
+                    </div>
+
+                    <!-- Law -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="bg-banner text-center rounded-3">
+                            <i class="bi bi-bank subject-icon"></i>
+                            <p class="text-center">ច្បាប់</p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
         </section>
+
         <!-- ================= UNIVERSITY ================= -->
 
         <section class="m-5">
             <div class="container">
-                <div class="row g-4">
+                <div data-aos="fade-down-right" class=" row g-4">
 
                     <!-- Title -->
                     <div class="col-12 ">
-                        <h1 class="text-center text-banner scholarship-title">
-                            សាកលវិទ្យាល័យ-University
-                        </h1>
+                        <h4>
+                            <i class="bi bi-star-fill "></i>សាកលវិទ្យាល័យពេញនិយម
+                        </h4>
 
-                        <p class="text-center fs-5 btn-seemore">
-                            ស្វែងរកសាកលវិទ្យាល័យដែលសាកសមនឹងអ្នក បង្ហាញទីតាំង ជំនាញ ថ្លៃសិក្សា
-                            និងព័ត៌មានសំខាន់ទាក់ទងនឹងសាលា
-                        </p>
                     </div>
 
                     <!-- Card 1: RUPP -->
                     <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card h-100 ">
+                        <div class="card ">
 
-                            <img src="https://cdn.kiripost.com/static/images/IMG_6542.2e16d0ba.fill-480x360.jpg"
-                                alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top university-img">
+                            <img src="photo/RUPPPP.jpg" alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
 
                             <div class="card-body d-flex flex-column">
-                                <h2 class="card-title text-banner">
-                                    សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ
-                                </h2>
+                                <h5>
+                                    <a href="" class="text-decoration-none">សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ</a>
+                                </h5>
 
-                                <p class="card-text text-secondary">
+                                <!-- <p class="card-text text-secondary">
                                     សាកលវិទ្យាល័យ RUPP មានកម្មវិធីសិក្សាជាច្រើន ដូចជា
-                                    បច្ចេកវិទ្យាព័ត៌មាន វិទ្យាសាស្ត្រ អក្សរសាស្ត្រ...
-                                </p>
+                                    បច្ចេកវិទ្យាព័ត៌មាន
+                                </p> -->
 
-                                <div class="mt-auto pt-3">
-                                    <a href="" class="btn btn-primary text-light text-decoration-none btn-seemore">
+                                <!-- <div class="mt-auto pt-3">
+                                    <a href="" class="btn btn-primary text-light ">
                                         មើលបន្ថែម
                                     </a>
-                                </div>
+                                </div> -->
                             </div>
 
                         </div>
@@ -270,88 +286,81 @@
 
                     <!-- Card 2: ITC -->
                     <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card h-100 ">
+                        <div class="card ">
 
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP_FYntmPAMBpG0_60onJQDy3kug2aaAw6pTxWs49Ho0UIytofOQCVgKw&s=10"
-                                alt="វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា" class="card-img-top university-img">
+                            <img src="photo/ITC.jpg" alt="វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា" class="card-img-top ">
 
                             <div class="card-body d-flex flex-column">
-                                <h2 class="card-title text-banner">
-                                    វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា
-                                </h2>
-
+                                <h5>
+                                    <a href="">វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា</a>
+                                </h5>
+                                <!-- 
                                 <p class="card-text text-secondary">
                                     វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា (ITC) គឺជាគ្រឹះស្ថាន
-                                    ឧត្តមសិក្សារដ្ឋមួយដែលផ្តោតសំខាន់លើវិទ្យាសាស្ត្រ
-                                    និងវិស្វកម្ម។
+                                    ឧត្តមសិក្សារដ្ឋមួយដែលផ្តោត
                                 </p>
 
                                 <div class="mt-auto pt-3">
-                                    <a href="" class="btn btn-primary text-light text-decoration-none btn-seemore">
+                                    <a href="" class="btn btn-primary text-light text-decoration-none ">
                                         មើលបន្ថែម
-                                    </a>
-                                </div>
+                                    </a> -->
                             </div>
-
                         </div>
+
                     </div>
-
-                    <!-- Card 3: UHS -->
                     <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card h-100 ">
+                        <div class="card ">
 
-                            <img src="https://uhs.edu.kh/assets/images/news/0116202622455_photo_2026-01-12_15-16-29.jpg"
-                                alt="សាកលវិទ្យាល័យវិទ្យាសាស្ត្រសុខាភិបាល" class="card-img-top university-img">
-
-                            <div class="card-body d-flex flex-column ">
-                                <h2 class="card-title text-banner">
-                                    សាកលវិទ្យាល័យ វិទ្យាសាស្ត្រសុខាភិបាល
-                                </h2>
-
-                                <p class="card-text text-secondary">
-                                    វិទ្យាសាស្ត្រសុខាភិបាល គឺជាវិស័យសិក្សាដែលផ្តោតលើ
-                                    ការថែទាំ និងការការពារសុខភាពរបស់មនុស្ស។
-                                </p>
-
-                                <div class="mt-auto pt-3">
-                                    <a href="" class="btn btn-primary text-light text-decoration-none btn-seemore">
-                                        មើលបន្ថែម
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Card 4: UC -->
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card h-100 ">
-
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiu8wTpLsWBOOBJ4-B5thBY0Aux9SFCdjDvCxWPHJHZf_CDuPitCEGwbCm&s=10"
-                                alt="សាកលវិទ្យាល័យកម្ពុជា" class="card-img-top university-img">
+                            <img src="photo/UHS.jpg" alt="វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា" class="card-img-top ">
 
                             <div class="card-body d-flex flex-column">
-                                <h2 class="card-title text-banner">
-                                    សាកលវិទ្យាល័យកម្ពុជា
-                                </h2>
-
+                                <h5>
+                                 ​<a href="">វិទ្យាសាស្ដ្រ​សុខាភិបាល</a>
+                                </h5>
+                                <!-- 
                                 <p class="card-text text-secondary">
-                                    សាកលវិទ្យាល័យកម្ពុជា (The University of Cambodia - UC)
-                                    មានជំនាញដូចជា Business, Law, International Relations
-                                    និង IT។
+                                    វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា (ITC) គឺជាគ្រឹះស្ថាន
+                                    ឧត្តមសិក្សារដ្ឋមួយដែលផ្តោត
                                 </p>
 
                                 <div class="mt-auto pt-3">
-                                    <a href="" class="btn btn-primary text-light text-decoration-none btn-seemore">
+                                    <a href="" class="btn btn-primary text-light text-decoration-none ">
                                         មើលបន្ថែម
-                                    </a>
-                                </div>
+                                    </a> -->
                             </div>
-
                         </div>
-                    </div>
 
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card ">
+
+                            <img src="photo/Rule.jpg" alt="វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា" class="card-img-top ">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5>
+                                    <a href="">វិទ្យាសាស្ដ្រសេដ្ធកិច្ច</a>
+                                </h5>
+
+                                <!-- <p class="card-text text-secondary">
+                                    វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា (ITC) គឺជាគ្រឹះស្ថាន
+                                    ឧត្តមសិក្សារដ្ឋមួយដែលផ្តោត
+                                </p> -->
+
+                                <!-- <div class="mt-auto pt-3">
+                                    <a href="" class="btn btn-primary text-light text-decoration-none ">
+                                        មើលបន្ថែម
+                                    </a>  -->
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
+
+
+
+
+
+            </div>
             </div>
         </section>
 
@@ -362,137 +371,31 @@
 
             <div class="container">
 
-                <div class="row g-4">
+                <div data-aos="fade-up-left" class=" row g-4">
 
                     <div class="col-12">
 
-                        <h1 class="text-center text-banner scholarship-title ">
-                            អាហាររូបករណ៍-Scholarship
-                        </h1>
-                        <p class="text-center fs-5 btn-seemore">ផ្ដល់ព័ត៌មានអំពីអាហារូបករណ៍ លក្ខខណ្ឌដាក់ពាក្យ
-                            ឯកសារត្រូវការ
-                            និងថ្ងៃផុតកំណត់ ដោយយោងតាមប្រភពដែលអាចទុកចិត្តបាន </p>
+                        <h4>
+                            <i class="bi bi-award"></i>ឱកាសអាហារូបករណ៍
+                        </h4>
 
                     </div>
-                    <!-- Card 1 -->
-                    <div class=" col-md-6 col-lg-3 ">
-
-                        <div class="card h-100 ">
-
-                            <img src="photo/54e613f6-65ab-42a1-8a7d-d9c173cd3f38.jpg" alt="" class="card-img-top ">
-
-                            <div class="card-body d-flex flex-column">
-
-                                <h3 class="card-title text-banner">
-                                    🎓អាហារូបករណ៍RUPP
-                                </h3>
-
-                                <p class="card-title text-secondary">
-                                    សម្រាប់និស្សិតទាំងថ្នាក់បរិញ្ញាបត្រ និងថ្នាក់ក្រោយបរិញ្ញាបត្រ
-                                    អាហារូបករណ៍មួយចំនួនផ្តល់ការគាំទ្រផ្នែកហិរញ្ញវត្ថុដល់និស្សិត ហើយមានដៃគូដូចជា ÆON
-                                    1% Club Foundation...
-                                </p>
-
-                                <div class="mt-auto pt-3">
-                                    <a href="" class="btn btn-primary text-light text-decoration-none btn-seemore ">
-                                        មើលបន្ថែម
-                                    </a>
-                                </div>
-                            </div>
-
-
-                        </div>
+                    <div class="col-5">
+                        <img src="photo/pang-yuhao-_kd5cxwZOK4-unsplash.jpg" alt="" class="card-img-top">
                     </div>
-                    <!-- Card 2 -->
-                    <div class=" col-md-6 col-lg-3">
-
-                        <div class="card h-100 ">
-
-                            <img src="photo/2efe400c-8d47-43e6-bb06-7ddbff771f77 (1).jpg" alt="" class="card-img-top ">
-
-                            <div class="card-body d-flex flex-column">
-
-                                <h3 class="card-title text-banner">
-                                    🎓អាហារូបករណ៍-ITC
-                                </h3>
-
-                                <p class="card-text text-secondary">
-                                    សម្រាប់កម្មវិធី International Engineering Program ឆ្នាំ 2026 ITC បានប្រកាសថា
-                                    និស្សិតដែលមានលទ្ធផលខ្ពស់អាចទទួលបាន 50% ឬ 30% scholarship ហើយមាន Techo Digital
-
-                                </p>
-
-                                <div class="mt-auto pt-3">
-                                    <a href="" class="btn btn-primary text-light text-decoration-none btn-seemore">
-                                        មើលបន្ថែម
-                                    </a>
-                                </div>
-
-                            </div>
-
-
-                        </div>
+                    <div class="col-6">
+                        <h4>
+                            ឱកាសទទួលបានអាហារូបករណ៍
+                        </h4>
+                        <p>ស្វែងយល់ពីអាហាររូបករណ៍​ តម្រូវការ ដូចជាការប្រឡង ចំនួនអ្នកទទួលបាន និទ្ទេសដែលអាចប្រឡង
+                            ដើម្បីងាយស្រួលដាក់ពាក្យចុះឈ្មោះ</p>
+                        <div class="btn btn-primary mt-5"><a href="see-more.html#scholarship" class="text-light">មើលបន្ថែម</a></div>
                     </div>
 
 
-                    <!-- Card 3 -->
-                    <div class=" col-md-6 col-lg-3">
-
-                        <div class="card h-100 ">
-
-                            <img src="photo/73f033e4-6bd4-43e7-8cc0-c90922c2702f.jpg" alt="" class="card-img-top ">
-
-                            <div class="card-body d-flex flex-column">
-
-                                <h3 class="card-title text-banner">
-                                    🎓 អាហារូបករណ៍-UHS
-                                </h3>
-
-                                <p class="card-text pb-5 text-secondary">
-                                    និស្សិតអាចមានឱកាសទទួលបានអាហារូបករណ៍ពីរដ្ឋាភិបាល និងកម្មវិធីអាហារូបករណ៍អន្តរជាតិ
-                                    ដូចជា ជប៉ុន ចិន និងកម្មវិធីផ្សេងៗ
-
-                                </p>
-
-                                <div class="mt-auto pt-3">
-                                    <a href="" class="btn btn-primary text-light text-decoration-none btn-seemore">
-                                        មើលបន្ថែម
-                                    </a>
-                                </div>
-                            </div>
 
 
-                        </div>
-                    </div>
-                    <div class=" col-md-6 col-lg-3">
 
-                        <div class="card h-100 ">
-
-                            <img src="photo/aa55f4b3-fc72-444d-a7b7-4490d261af77.png" alt="" class="card-img-top ">
-
-                            <div class="card-body d-flex flex-column">
-
-                                <h3 class="card-title text-banner">
-                                    🎓 អាហារូបករណ៍
-                                    សាកលវិទ្យាល័យកម្ពុជា
-                                </h3>
-
-                                <p class="card-text pb-5 text-secondary">
-                                    មានកម្មវិធីអាហារូបករណ៍សម្រាប់និស្សិតថ្នាក់បរិញ្ញាបត្រ រួមមានអាហារូបករណ៍ពេញលេញ
-                                    និងអាហារូបករណ៍មួយផ្នែក
-
-                                </p>
-
-                                <div class="mt-auto pt-3">
-                                    <a href="" class="btn btn-primary text-light text-decoration-none btn-seemore">
-                                        មើលបន្ថែម
-                                    </a>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
                 </div>
 
             </div>
@@ -501,140 +404,8 @@
 
     </main>
 
-    <!-- ================= FOOTER ================= -->
-
-    <footer class="text-bg-secondary bg-opacity-75">
-
-        <section class="mt-5 ">
-
-            <!-- Main Footer -->
-
-            <div class="container border-1 border-bottom border-secondary border-opacity-10 pb-4">
-
-                <div class="row justify-content-between g-4">
-
-
-                    <!-- Logo & Description -->
-
-                    <div class="col-12 col-md-6 col-lg-3">
-
-                        <a href="index.html">
-
-                            <img src="photo/logo.png" alt="Education Logo" width="80" height="60">
-
-                        </a>
-
-                        <p class="mt-3 text-footer">
-
-                            Next Step គឺជា Website
-                            ដែលត្រូវបានបង្កើតឡើងដើម្បីជួយសិស្សវិទ្យាល័យនៅកម្ពុជាស្វែងយល់អំពីឱកាសសិក្សាបន្ត
-                            បន្ទាប់ពីបញ្ចប់ការសិក្សាថ្នាក់ទី១២Websiteនេះផ្ដល់ព័ត៌មានអំពីសាកលវិទ្យាល័យកម្មវិធីសិក្សា
-                            អាហារូបករណ៍និងជំនាញមានប្រយោជន៍
-                            ដើម្បីជួយសិស្សឱ្យធ្វើការសម្រេចចិត្តបានកាន់តែល្អអំពីអនាគតរបស់ខ្លួន
-
-                        </p>
-
-                    </div>
-                    <!-- Company -->
-                    <div class="col-auto ">
-
-                        <h3 class="text-footer">
-                            គេហទំព័រផ្សេង
-                        </h3>
-
-                        <a href="index.html" class="d-block text-decoration-none text-light mb-2">
-                            ទំព័រដើម
-                        </a>
-
-                        <a href="private-school.html" class="d-block text-decoration-none text-light mb-2">
-                            សាកលវិទ្យាល័យ
-                        </a>
-
-                        <a href="skill.html" class="d-block text-decoration-none text-light mb-2">
-                            ជំនាញ
-                        </a>
-
-                        <a href="somdach.html" class="d-block text-decoration-none text-light mb-2">
-                            អាហារូបករណ៍
-                        </a>
-
-                        <a href="about-us.html" class="d-block text-decoration-none text-light">
-                            អំពីយើង
-                        </a>
-
-                    </div>
-
-
-
-                    <!-- Get in touch -->
-
-                    <div class="col-auto">
-
-                        <h3 class="text-footer">
-                            ទំនាក់ទំនង
-                        </h3>
-
-                        <a href="#" class="d-block text-decoration-none text-light mb-2">
-                            54 St 606, Phnom Penh
-                        </a>
-
-                        <a href="#" class="d-block text-decoration-none text-light mb-2">
-                            Help and support
-                        </a>
-
-                        <a href="#" class="d-block text-decoration-none text-light mb-3">
-                            Phone: (855) 096 2694005
-                        </a>
-                        <a href="#" class="d-block text-decoration-none text-light mb-3">
-                            Gmail:nextstep5@gmail.com
-                        </a>
-                        <div class="justify-content-between align-items-center">
-                            <i class="bi bi-facebook fs-3 mx-3"></i>
-                            <i class="bi bi-chat fs-3 mx-3"></i>
-                            <i class="bi bi-envelope-slash fs-3 mx-3"></i>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Copyright -->
-
-            <div class="container">
-
-                <div class="d-lg-flex align-items-center py-4">
-
-                    <p class="text-footer mb-0">
-
-                        2026 12 22
-
-                    </p>
-
-                    <div class="d-flex">
-
-                        <a href="#" class="text-decoration-none text-footer ps-lg-4">
-                            ANT TRANNING
-                        </a>
-
-                        <a href="#" class="text-decoration-none text-footer px-4">
-                            STUDENT HTML CSS BOOSTRAP5
-                        </a>
-
-                        <a href="#" class="text-decoration-none text-footer">
-                            G5
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </footer>
+    <!-- Footer -->
+    <div id="footer"></div>
 
 
     <!-- ================= JAVASCRIPT ================= -->
@@ -679,10 +450,19 @@
 
     </script>
 
+    <!-- JavaScript -->
+    <script src="components.js"></script>
+
 
     <!-- Bootstrap JS -->
     <!-- ONLY ONE Bootstrap JS -->
     <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        once: true
+    </script>
 
 </body>
 

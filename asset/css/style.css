@@ -1,6 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
      font-family: 'Poppins', sans-serif;
      font-family: "Kantumruy Pro", sans-serif;
+     background-color: var(--bg-light);
 }
 header {
     position: sticky;
@@ -16,12 +20,7 @@ header {
     color: darkblue;
 }
 
-.card-img-top {
-  
-    height: 200px;
-    object-fit: cover;
-    
-}
+
 .logo{
     width: 120px;
     height: 50px;
@@ -56,7 +55,12 @@ header {
         object-fit: cover;
       }
       .banner{
-        height: 400px;
+        height: 230px;
+      }
+      .skill-banner{
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
       }
 
   
@@ -64,8 +68,8 @@ header {
   /* កំណត់អក្សរឱ្យនៅពីលើរូបភាព (Overlay) */
   .text-overlay {
     position: absolute;
-    top:15%; /* នៅចំកណ្តាលតាមជួរឈរ */
-    left:5%; /* នៅចំកណ្តាលតាមជួរដេក */
+    top:10%; /* នៅចំកណ្តាលតាមជួរឈរ */
+    left:25%; /* នៅចំកណ្តាលតាមជួរដេក */
     /* transform: translate(-50%, -50%); */
     text-align: center;
     padding: 20px;
@@ -80,19 +84,15 @@ header {
 .nav-link{
   color: #444!important;
 }
-.nav-link:hover,
-.nav-link.active {
-    color: var(--bs-primary) !important;
-}
-/* .navbar .nav-link:hover {
-    color: var(--bs-primary) !important;
+.navbar .navbar-nav .nav-link.active {
+    color: #2563EB!important;
+    
 }
 
- Active 
-.navbar .nav-link.active {
-    color: var(--bs-primary) !important;
-   
-} */
+.navbar .dropdown-menu .dropdown-item.active {
+    background-color: #0d6efd;
+    color: white !important;
+}
 .location{
  border: 1px seashell solid;
 }
@@ -105,19 +105,19 @@ header {
   height: 140px;
 }
 
-
-
-
 .text-banner{
- background: linear-gradient(to bottom, #0d6efd, #cea2f5b8);
+ background: linear-gradient(to bottom, #0d6efd, #0e2f77ee);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-
+.bg-banner{
+ background: linear-gradient(to top, #0f81eb, #0a7ae3bb);
+  
+}
 
 .text-footer{
- background: linear-gradient(to bottom, #f8f9fa, #94e0e7b8);
+ background: linear-gradient(to bottom, #a9cef2, #94e0e7b8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;}
@@ -295,3 +295,94 @@ p {
 .account{
     margin-left: 50px;
 }
+
+ 
+
+:root {
+    --primary: #0e2f77ee;
+    --heading: #2f3031;
+    --text: #475569;
+    --bg-light: #f6eee866;
+    --border: #e2e8f0;
+    --section-space: 10px;
+    --radius:12px;
+   
+}
+h1, h2, h3, h4, h5, h6 ,a{
+    color: var(--primary);
+    font-weight: 600;
+    line-height:1.7 ;
+    text-decoration: none;
+}
+p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text);
+}
+section {
+    padding-top: var(--section-space);
+    padding-bottom: var(--section-space);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.btn{
+    border-radius: 16px;
+
+}
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    padding: 8px 10px;
+      border-radius: var(--radius);
+    /* text-decoration: none; */
+}
+
+.card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.bi {
+    font-size: 20px;
+    color: #0a0eeaa8;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+.bi:hover {
+    color: rgb(71, 3, 181);
+    transform: scale(1.2);
+}
+.h-80{
+    height: 470px;
+}
+
+
+
+
+.subject-icon {
+    font-size: 35px;
+    color: #f9f9fa;
+    transition: all 0.3s ease;
+}
+
+.bg-banner:hover {
+    background-color: #0d6efd;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.2);
+}
+
+.bg-banner:hover .subject-icon,
+.bg-banner:hover p {
+    color: #ffffff;
+}
+
+
