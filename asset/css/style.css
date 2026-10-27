@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
      font-family: 'Poppins', sans-serif;
      font-family: "Kantumruy Pro", sans-serif;
@@ -65,8 +68,8 @@ header {
   /* កំណត់អក្សរឱ្យនៅពីលើរូបភាព (Overlay) */
   .text-overlay {
     position: absolute;
-    top:15%; /* នៅចំកណ្តាលតាមជួរឈរ */
-    left:5%; /* នៅចំកណ្តាលតាមជួរដេក */
+    top:10%; /* នៅចំកណ្តាលតាមជួរឈរ */
+    left:25%; /* នៅចំកណ្តាលតាមជួរដេក */
     /* transform: translate(-50%, -50%); */
     text-align: center;
     padding: 20px;
@@ -103,15 +106,18 @@ header {
 }
 
 .text-banner{
- background: linear-gradient(to bottom, #0d6efd, #cea2f5b8);
+ background: linear-gradient(to bottom, #0d6efd, #0e2f77ee);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-
+.bg-banner{
+ background: linear-gradient(to top, #0f81eb, #0a7ae3bb);
+  
+}
 
 .text-footer{
- background: linear-gradient(to bottom, #f8f9fa, #94e0e7b8);
+ background: linear-gradient(to bottom, #a9cef2, #94e0e7b8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;}
@@ -290,30 +296,28 @@ p {
     margin-left: 50px;
 }
 
- /* class for teammate use*/
+ 
 
 :root {
-    --primary: #4d81f1ee;
+    --primary: #0e2f77ee;
     --heading: #2f3031;
     --text: #475569;
     --bg-light: #f6eee866;
     --border: #e2e8f0;
-    --radius: 12px;
     --section-space: 10px;
+    --radius:12px;
+   
 }
-
-
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 ,a{
     color: var(--primary);
     font-weight: 600;
     line-height:1.7 ;
-    margin-bottom: 10px;
+    text-decoration: none;
 }
 p {
     font-size: 16px;
     line-height: 1.7;
     color: var(--text);
-    margin-bottom: 8px;
 }
 section {
     padding-top: var(--section-space);
@@ -324,12 +328,16 @@ section {
     text-align: center;
     margin-bottom: 32px;
 }
+.btn{
+    border-radius: 16px;
 
+}
 .btn-primary {
     background-color: var(--primary);
     border-color: var(--primary);
-    padding: 12px 14px;
-    border-radius: 8px;
+    padding: 8px 10px;
+      border-radius: var(--radius);
+    /* text-decoration: none; */
 }
 
 .card {
@@ -345,7 +353,7 @@ section {
 }
 .bi {
     font-size: 20px;
-    color: #2563eb;
+    color: #0a0eeaa8;
     vertical-align: middle;
     transition: all 0.3s ease;
 }
@@ -353,4 +361,28 @@ section {
     color: rgb(71, 3, 181);
     transform: scale(1.2);
 }
+.h-80{
+    height: 470px;
+}
+
+
+
+
+.subject-icon {
+    font-size: 35px;
+    color: #f9f9fa;
+    transition: all 0.3s ease;
+}
+
+.bg-banner:hover {
+    background-color: #0d6efd;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.2);
+}
+
+.bg-banner:hover .subject-icon,
+.bg-banner:hover p {
+    color: #ffffff;
+}
+
 
