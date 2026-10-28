@@ -23,9 +23,89 @@
       <!-- ================= NAVBAR ================= -->
      <div id="navbar"></div>
 
-    
-     <!-- Footer -->
-    <div id="footer"></div>
+<body style="font-family: 'Kantumruy Pro', 'Poppins', sans-serif;">
+    <!-- ================= NAVBAR ================= -->
+    <header>
+        <nav class="navbar bg-light navbar-expand-lg sticky-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="photo/logo.png" alt="LOGO" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="photo/logo.png" alt="LOGO" class="logo">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <!-- Home -->
+                            <li class="nav-item">
+                                <a class="nav-link  active" href="index.html">
+                                    <i class="bi bi-house"></i> ទំព័រដើម
+                                </a>
+                            </li>
+                            <!-- University Dropdown -->        
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-dark dropdown-toggle" href="university.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-building"></i> សាកលវិទ្យាល័យ
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="text-dark dropdown-item border-bottom border-secondary-subtle"
+                                            href="publish-school.html">
+                                            រដ្ឋ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-dark dropdown-item" href="private-school.html">
+                                            ឯកជន
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Skill -->
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="skill.html">
+                                    <i class="bi bi-tools"></i> ជំនាញ
+                                </a>
+                            </li>
+                            <!-- Scholarship Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="scholoship.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-mortarboard"></i> អាហាររូបករណ៍
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item border-bottom border-secondary-subtle"
+                                            href="somdach.html">
+                                            អាហាររូបករណ៍ សម្ដេចតេជោ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item border-bottom border-secondary-subtle"
+                                            href="university.html">
+                                            សាកលវិទ្យាល័យ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="ministry-of-edu.html">
+                                            ក្រសួងអប់រំយុវជន នឹង កីឡា
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- About -->
+                            <li class="nav-item">
 
     <!-- ================= JAVASCRIPT ================= -->
 
@@ -37,7 +117,12 @@
     <!-- Initialize Swiper -->
     <script>
 
-        var swiper = new Swiper('.mySwiper', {
+        <!-- Page Title -->
+        <div class="text-center mb-5 ">
+            <h1 class="fw-bold text-primary"> សេចក្តីណែនាំអំពីគម្រោង (About Us)</h1>
+            <p class="text-muted fs-5 text-center"> ជំហានបន្ទាប់ (Next Step)</p>
+            <div class="mx-auto bg-primary rounded" style="width: 80px; height: 4px;"></div>
+        </div>
 
             spaceBetween: 30,
 
@@ -45,11 +130,34 @@
 
             autoplay: {
 
-                delay: 2500,
+        <!-- 3. Team Members -->
+        <section class="mb-5">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold text-dark">
+                    <i class="bi bi-people-fill text-primary me-2"></i> ៣. សមាជិកក្រុម (Our Team)
+                </h2>
+                <p class="text-muted text-center"> ជំហានបន្ទាប់ (Next Step)</p>
+            </div>
 
                 disableOnInteraction: false
 
-            },
+                <!-- Team Member 1: Team Leader -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3">
+                        <div class="card-body">
+                            <div class="rounded-circle bg-primary text-light d-flex align-items-center justify-content-center mx-auto mb-3 shadow"
+                                style="width: 80px; height: 80px; font-size: 32px;">
+                                <i class="bi bi-person-badge"></i>
+                            </div>
+                            <h3 class="h5 fw-bold text-dark mb-1">លឹម មករា</h3>
+                            <span class="badge bg-primary mb-3 px-3 py-2 rounded-pill">ប្រធានក្រុម (Team Leader)</span>
+                            <p class="card-text text-muted small mb-0">
+                                <strong>តួនាទី:</strong> ដឹកនាំគម្រោង,រៀបចំរចនាសម្ព័ន្ធគេហទំព័រ និងការអភិវឌ្ឍន៍
+                                Front-End
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
             pagination: {
 
