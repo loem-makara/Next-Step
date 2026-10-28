@@ -1,108 +1,126 @@
  <!-- ================= NAVBAR ================= -->
     <header>
-        <nav class="navbar bg-light navbar-expand-lg sticky-top">
-            <div class="container">
-                <!-- Logo -->
+        
+<nav class="navbar navbar-expand-lg bg-light sticky-top py-1">
+    <div class="container">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="photo/logo.png" alt="LOGO" class="logo">
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Menu -->
+        <div class="offcanvas offcanvas-end" tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+
+            <div class="offcanvas-header">
                 <a class="navbar-brand" href="index.html">
                     <img src="photo/logo.png" alt="LOGO" class="logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="photo/logo.png" alt="LOGO" class="logo">
-                        </a>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <!-- Home -->
-                            <li class="nav-item">
-                                <a class="nav-link  active" href="index.html">
-                                    <i class="bi bi-house"></i> ទំព័រដើម
-                                </a>
-                            </li>
-                            <!-- University Dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active" href="university.html" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-building"></i> សាកលវិទ្យាល័យ
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class=" dropdown-item border-bottom border-secondary-subtle "
-                                            href="publish-school.html">
-                                            រដ្ឋ
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class=" dropdown-item" href="private-school.html">
-                                            ឯកជន
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- Skill -->
-                            <li class="nav-item">
-                                <a class="nav-link active" href="skill.html">
-                                    <i class="bi bi-tools"></i> ជំនាញ
-                                </a>
-                            </li>
-                            <!-- Scholarship Dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active" href="scholoship.html" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-mortarboard"></i> អាហាររូបករណ៍
-                                </a>
-                                <ul class="dropdown-menu ">
-                                    <li>
-                                        <a class="dropdown-item border-bottom border-secondary-subtle   "
-                                            href="somdach.html">
-                                            អាហាររូបករណ៍ សម្ដេចតេជោ
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item border-bottom border-secondary-subtle "
-                                            href="university.html">
-                                            សាកលវិទ្យាល័យ
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item " href="ministry-of-edu.html">
-                                            ក្រសួងអប់រំយុវជន នឹង កីឡា
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- About -->
-                            <li class="nav-item">
+                <button type="button" class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
 
-                                <a class="nav-link active" href="about-us.html">
-                                    <i class="bi bi-info-circle"></i> អំពីយើង
+            <div class="offcanvas-body">
+
+                <!-- Menu Center -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house"></i>
+                            ទំព័រដើម
+                        </a>
+                    </li>
+
+                    <!-- Skill -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="skill.html">
+                            <i class="bi bi-tools"></i>
+                            ជំនាញ
+                        </a>
+                    </li>
+
+                    <!-- Scholarship Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                            href="scholoship.html"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-mortarboard"></i>
+                            អាហារូបករណ៍
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item border-bottom border-secondary-subtle"
+                                    href="somdach.html">
+                                    អាហារូបករណ៍ សម្ដេចតេជោ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item border-bottom border-secondary-subtle"
+                                    href="university.html">
+                                    សាកលវិទ្យាល័យ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item"
+                                    href="ministry-of-edu.html">
+                                    ក្រសួងអប់រំ យុវជន និងកីឡា
                                 </a>
                             </li>
                         </ul>
-                        <!-- Search -->
-                        <form class="d-flex" role="search">
+                    </li>
 
-                            <!-- <input class="form-control me-2" type="search" placeholder="Search"> -->
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">
+                            <i class="bi bi-info-circle"></i>
+                            អំពីយើង
+                        </a>
+                    </li>
 
-                            <button class="btn  fs-5" type="submit">
-                               <i class="bi bi-search "></i>
-                               <i class="bi bi-bell mx-3"></i>
-                               <i class="bi bi-person-circle"></i>
-                            </button>
-                        </form>
-                        <button class="btn btn-primary  account " type="submit">
-                            <a class="text-decoration-none text-light" href="login.html">គណនី</a>
-                        </button>
-                    </div>
+                </ul>
+
+                <!-- Right Icons and Button -->
+                <div class="navbar-actions d-flex align-items-center gap-3">
+
+                    <a href="search.html" class="nav-icon" aria-label="Search">
+                        <i class="bi bi-search"></i>
+                    </a>
+
+                    <a href="notification.html" class="nav-icon" aria-label="Notifications">
+                        <i class="bi bi-bell"></i>
+                    </a>
+
+                    <a href="account.html" class="nav-icon" aria-label="Account">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+
+                    <a href="university.html" class="btn btn-primary btn-more">
+                        គណនី
+                    </a>
+
                 </div>
+
             </div>
-        </nav>
+        </div>
+    </div>
+</nav>
+
 
     </header>
