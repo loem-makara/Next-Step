@@ -74,6 +74,18 @@ header {
     
     
   }
+  .text-conten {
+    position: absolute;
+    top:19%; /* នៅចំកណ្តាលតាមជួរឈរ */
+    left:4%; /* នៅចំកណ្តាលតាមជួរដេក */
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%; /* ទំហំប្រអប់អក្សរ */
+    
+    
+  }
    p{
     color: black;
   }
