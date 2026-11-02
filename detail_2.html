@@ -24,60 +24,241 @@
 
 </head>
 <style>
-    .back{
-       background-color: beige;
-    padding: 4px 16px;
-    border-radius: 16px;
-    /* position: absolute; */
-    top: 16px;
-    left: 16px; 
-    text-decoration: none;
+    .back {
+        background-color: beige;
+        padding: 4px 16px;
+        border-radius: 16px;
+        /* position: absolute; */
+        top: 16px;
+        left: 16px;
+        text-decoration: none;
     }
+
+    .check-list {
+        list-style: none;
+        padding-left: 0
+    }
+
+    .check-list li {
+        position: relative;
+        padding: 5px 0 5px 29px
+    }
+
+    .check-list li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        top: 4px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #e0f5e8;
+        color: #19834b;
+        display: grid;
+        place-items: center;
+        font-weight: 800;
+        font-size: 12px
+    }
+    .contact-line{display:flex;gap:12px;padding:14px 0;border-top:1px solid var(--line)}
+    .contact-line>span{font-size:22px}
+    .contact-line small,
+    .contact-line b,
+    .contact-line a{display:block}
+    .contact-line small{font-size:11px;color:var(--muted)}
+    .contact-line b,
+    .contact-line a{font-size:12px;overflow-wrap:anywhere}
+    .contact-line a{color:var(--blue)}
 </style>
+
 <body>
 
     <!-- ================= NAVBAR ================= -->
     <div id="navbar"></div>
 
-    <section class="py-5">
-            <div class="container"><a href="somdach.html" class="back "><i class="bi bi-arrow-left-short"></i> ត្រទ្បប់ទៅអាហាររូបករណ៍</a>
+    </header>
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <a href="somdach.html" class="back "><i class="bi bi-arrow-left-short"></i> ត្រទ្បប់ទៅអាហាររូបករណ៍</a>
                 <div class="row g-4">
-                    <div class="col-6">
+                    <div class="col-sm-12 col-lg-5 p-4">
                         <div class="card">
-                            <img src="photo/scholoship_2.jpg" alt="">
+                            <img src="photo/scholoship_pic_1.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="card-body">
-                            <h3 class="card-title">
-                                <p>🎓 RUPP — អាហារូបករណ៍</p>
-                            </h3>
-                            <p class="card-title">
-                                សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP) មានអាហារូបករណ៍ជាច្រើនប្រភេទ
-                                សម្រាប់និស្សិតទាំងថ្នាក់បរិញ្ញាបត្រ និងថ្នាក់ក្រោយបរិញ្ញាបត្រ។
-                            </p>
-                            <div class="card-footer">
-                                <h1 class="fw-bold"><i class="bi bi-building-fill"></i>លក្ខខណ្ឌនៃការជ្រើសរើស</h1>
-                                <p>១. បេក្ខជនដែលបានប្រលងជាប់សញ្ញាបត្រមធ្យមសិក្សាទុតិយភុមិ គ្រប់ឆ្នាំសិក្សា
-                                    ដែលទទួលបាននិទ្ទេស A,B,C(សម្រាប់អាហាររូបករណ៍លើថ្លៃសិក្សាថ្នាក់បរិញ្ញាបត្រ ១០០%)</p>
-                                <p>២. បេក្ខជនដែលបានប្រលងជាប់សញ្ញាបត្រមធ្យមសិក្សាទុតិយភុមិ គ្រប់ឆ្នាំសិក្សា
-                                    ដែលទទួលបាននិទ្ទេស C,D,E(សម្រាប់អាហាររូបករណ៍លើថ្លៃសិក្សាថ្នាក់បរិញ្ញាបត្រ ៥០%)</p>
-                                <p>៣. មានឆន្ទពិតប្រាកដក្នុងការបន្ដការសិក្សា ខិតខំរៀនសូត្រ</p>
-                                <p>៤. ពុំមែនជានិស្សិតដែលធ្លាប់ ឬកំពុងទទួលបានអាហររូបករណ៍ពីគណ:កម្មាធិការអាហាររូបករណ៍</p>
-                                <p>៥ ពុំមែនជានិស្សិតដែលកំពុងសិក្សានៅសាកលវិទ្យាល័យកម្ពុជា</p>
-                                <p>៤. គោរពតាមការណែនាំ និងព្រមទទួលយកលក្ខខណ្ឌដែលមានចែងរបស់
-                                    គណ:កម្មាធិការអាហាររូបករណ៍សិស្សនិស្សិតក្រីក្រ <span
-                                        class="fw-bold">សម្ដេចអង្គមហាសេនាបតីតេជោ ហ៊ុនសែន </span> និង <span
-                                        class="fw-bold">សម្ដេចកិត្ដិព្រឹទ្ធបណ្ឌិត </span> និង សាកលវិទ្យាល័យកម្ពុជា</p>
+                    <div class="col-sm-12 col-lg-7 p-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    <p> Paragon International University — អាហារូបករណ៍របស់សម្ដេចតេជោហ៊ុនសែន
+                                        និងសម្ដេចកិត្ដិព្រឹទ្ធបណ្ឌិត</p>
+                                </h3>
+                                <p class="card-title">
+                                    ថ្នាក់បរិញ្ញាបត្រ សម្រាប់ឆ្នាំ២០២៦-២០១៧ ចំនួន១៥កន្លែង ដោយឆ្លងកាត់ការការប្រលង។
+                                </p>
+                                <div class="card-footer">
+                                    <h5 class="fw-bold">🎓លក្ខខណ្ឌនៃការជ្រើសរើស</h5>
+                                    <ul class="check-list">
+                                        <li>បេក្ខជនដែលបានប្រទ្បងជាប់សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឆ្នាំ២០២៥-២០២៦ ដោយទទួលបាននិទ្ទេស A B</li>
+                                        <li>ពុំមែនជាសិស្សដែលដាក់ពាក្យស្នើរសុំអាហាររូបករណ៍ពីសាកលវិទ្យាល័យអន្ដរជាតិផារ៉ាហ្គនដោយផ្ទាល់។ ករណីសិស្សដែលដាក់ពាក្យស្នើរសុំអាហាររូបករណ៍ពីសាកលវិទ្យាល័យដោយផ្ទាល់ ពុំត្រូវបាន យកមកពិចារណាក្នុងអាហារូបករណ៍នេះទេ</li>
+                                        <li>ពុំមែនជាសិស្ស ឬនិស្សិត ដែលបានចុះឈ្មោះចូលសិក្សា ឬកំពុងសិក្សានៅសាកលវិទ្យាល័យអន្ដរជាតិផារ៉ាហ្គន។</li>
+                                        <li>មានឆន្ទ:ពិតប្រាកដក្នុងការបន្ដការសិក្សាខិតខំរៀនសូត្រ</li>
+                                        <li>គោរពតាមការណែនាំ និងព្រមទទួលយកលក្ខខណ្ឌដែលមានចែងរបស់
+                                        គណ:កម្មាធិការអាហាររូបករណ៍សិស្សនិស្សិតក្រីក្រ <span
+                                            class="fw-bold">សម្ដេចអង្គមហាសេនាបតីតេជោ ហ៊ុនសែន </span> និង <span
+                                            class="fw-bold">សម្ដេចកិត្ដិព្រឹទ្ធបណ្ឌិត </span> និង សាកលវិទ្យាល័យអន្ដរជាតិផារ៉ាហ្គន។</li>
+
+                                        
+                                        
+                                    </ul>
+                                    
+                                    <h5>🎓 អំពីជំនាញនិង ព័ត៌មានទាក់ទងនឹងគ្រឹះស្ថានឧត្ដមសិក្សា</h5>
+                                    <p>១. ផ្ដល់ជូនសម្រាប់:</p>
+                                    <p>- សិស្សនិទ្ទេសA ចំនួន ១០ កន្លែង</p>
+                                    <p>- សិស្សនិទ្ទេសB ចំនួន ៥ កន្លែង។</p>
+                                    <p>ផ្ដល់ជូនជំនាញ: </p>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+    </main>
+  <footer class="text-bg-secondary bg-opacity-75">
 
-     <!-- Footer -->
-    <div id="footer"></div>
+        <section class="mt-5 ">
+
+            <!-- Main Footer -->
+
+            <div class="container border-1 border-bottom border-secondary border-opacity-10 pb-4">
+
+                <div class="row justify-content-between g-4">
+
+
+                    <!-- Logo & Description -->
+
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <a href="index.html">
+
+                            <img src="photo/logo.png" alt="Education Logo" width="80" height="60">
+
+                        </a>
+
+                        <p class="mt-3 text-footer">
+
+                            Next Step គឺជា Website
+                            ដែលត្រូវបានបង្កើតឡើងដើម្បីជួយសិស្សវិទ្យាល័យនៅកម្ពុជាស្វែងយល់អំពីឱកាសសិក្សាបន្ត
+                            បន្ទាប់ពីបញ្ចប់ការសិក្សាថ្នាក់ទី១២Websiteនេះផ្ដល់ព័ត៌មានអំពីសាកលវិទ្យាល័យកម្មវិធីសិក្សា
+                            អាហារូបករណ៍និងជំនាញមានប្រយោជន៍
+                            ដើម្បីជួយសិស្សឱ្យធ្វើការសម្រេចចិត្តបានកាន់តែល្អអំពីអនាគតរបស់ខ្លួន
+
+                        </p>
+
+                    </div>
+                    <!-- Company -->
+                    <div class="col-auto ">
+
+                        <h3 class="text-footer">
+                            គេហទំព័រផ្សេង
+                        </h3>
+
+                        <a href="index.html" class="d-block text-decoration-none text-light mb-2">
+                            ទំព័រដើម
+                        </a>
+
+                        <a href="private-school.html" class="d-block text-decoration-none text-light mb-2">
+                            សាកលវិទ្យាល័យ
+                        </a>
+
+                        <a href="skill.html" class="d-block text-decoration-none text-light mb-2">
+                            ជំនាញ
+                        </a>
+
+                        <a href="somdach.html" class="d-block text-decoration-none text-light mb-2">
+                            អាហារូបករណ៍
+                        </a>
+
+                        <a href="about-us.html" class="d-block text-decoration-none text-light">
+                            អំពីយើង
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- Get in touch -->
+
+                    <div class="col-auto">
+
+                        <h3 class="text-footer">
+                            ទំនាក់ទំនង
+                        </h3>
+
+                        <a href="#" class="d-block text-decoration-none text-light mb-2">
+                            54 St 606, Phnom Penh
+                        </a>
+
+                        <a href="#" class="d-block text-decoration-none text-light mb-2">
+                            Help and support
+                        </a>
+
+                        <a href="#" class="d-block text-decoration-none text-light mb-3">
+                            Phone: (855) 096 2694005
+                        </a>
+                        <a href="#" class="d-block text-decoration-none text-light mb-3">
+                            Gmail:nextstep5@gmail.com
+                        </a>
+                        <div class="justify-content-between align-items-center">
+                            <i class="bi bi-facebook fs-3 mx-3"></i>
+                            <i class="bi bi-chat fs-3 mx-3"></i>
+                            <i class="bi bi-envelope-slash fs-3 mx-3"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+
+            <div class="container">
+
+                <div class="d-lg-flex align-items-center py-4">
+
+                    <p class="text-footer mb-0">
+
+                        2026 12 22
+
+                    </p>
+
+                    <div class="d-flex">
+
+                        <a href="#" class="text-decoration-none text-footer ps-lg-4">
+                            ANT TRANNING
+                        </a>
+
+                        <a href="#" class="text-decoration-none text-footer px-4">
+                            STUDENT HTML CSS BOOSTRAP5
+                        </a>
+
+                        <a href="#" class="text-decoration-none text-footer">
+                            G5
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </footer>
+
     <!-- ================= JAVASCRIPT ================= -->
 
     <!-- Swiper JS -->
