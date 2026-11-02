@@ -46,3 +46,19 @@ async function loadComponents() {
 }
 
 loadComponents();
+
+// Load Navbar
+fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+
+        window.dispatchEvent(new Event("navbarLoaded"));
+    });
+
+// Load Footer
+fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    });
