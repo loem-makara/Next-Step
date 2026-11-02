@@ -23,6 +23,97 @@
 </head>
 
 <body>
+     <style>
+        /* * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        } */
+
+.search-container {
+    position: relative;
+    height: 60px;
+}
+
+.search-input {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 18px;
+    color: transparent;
+    box-shadow: none;
+    transition: width 0.4s ease, color 0.4s ease;
+}
+
+.search-input:focus {
+    width: 320px;
+    color: #333;
+    padding: 0 70px 0 25px;
+    background: transparent;
+    box-shadow:  0 15px 70px rgba(0, 0, 0, 0.3);
+}
+
+.search-input::placeholder {
+    color: transparent;
+}
+
+.search-input:focus::placeholder {
+    color: #aaa;
+}
+
+.search-icon-btn {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: none;
+    box-shadow: none;
+}
+
+.search-input:focus + .search-icon-btn {
+    background: transparent;
+    pointer-events: auto;
+}
+
+.search-icon-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: #555;
+}
+
+.search-input:focus + .search-icon-btn svg {
+    fill: #764ba2;
+}
+
+@media (max-width: 400px) {
+    .search-input:focus {
+        width: 65vw;
+    }
+}
+
+    </style>
     <!-- Navbar -->
     <div id="navbar" class="sticky-top"></div>
 
@@ -87,12 +178,12 @@
                     <div class="col-12 col-md-6">
                         <img src="photo/tim-gouw-1K9T5YiZ2WU-unsplash.jpg" alt="" class="card-img-top rounded-3">
                     </div>
-                    <div class="col-12 col-md-6 ">
+                    <div class="col-12 col-md-6 m-auto">
                         <h5>Stress!!ចប់វិទ្យាល័យហើយ អត់ដឹងរៀនជំនាញអ្វីមេនទេ? ចង់ដឹងព័ត៏មានខាងសាលាខ្លះត្រូវអត់​!
                         </h5>
                         <p>Next Step អាចជួយអ្នកបាន គ្រប់បញ្ហារបស់អ្នកបានជួបគឺមាននៅទីនេះ ព័ត៏មានសាលា​
                             នីមួយៗមានជំនាញអ្វីខ្លះ​​​ ទាក់ទងនិងអាហាររូបករណ៍ ​ទាក់ទងនិងវេនសិក្សា​​ និង ទីតាំងសាលា</p>
-                        <div class="btn btn-primary mt-3 rounded-3">មើលបន្ថែម</div>
+                        <!-- <div class="btn btn-primary mt-3 rounded-3">មើលបន្ថែម</div> -->
                     </div>
                 </div>
             </div>
@@ -530,17 +621,17 @@
                         </h4>
 
                     </div>
-                    <div data-aos="fade-up-left" data-aos-duration="1300" class="col-col-12 col-md-6">
+                    <div data-aos="fade-up-left" data-aos-duration="1300" class="col-12 col-md-6">
                         <img src="photo/pang-yuhao-_kd5cxwZOK4-unsplash.jpg" alt="" class="card-img-top rounded-3">
                     </div>
-                    <div data-aos="fade-up-left" data-aos-duration="1000" class="col-col-12 col-md-6">
+                    <div data-aos="fade-up-left" data-aos-duration="1000" class="col-col-12 col-md-6 m-auto">
                         <h4>
                             ឱកាសទទួលបានអាហារូបករណ៍
                         </h4>
                         <p>ស្វែងយល់ពីអាហាររូបករណ៍​ តម្រូវការ ដូចជាការប្រឡង ចំនួនអ្នកទទួលបាន និទ្ទេសដែលអាចប្រឡង
                             ដើម្បីងាយស្រួលដាក់ពាក្យចុះឈ្មោះ</p>
-                        <div class="btn btn-primary mt-5"><a href="see-more.html#scholarship"
-                                class="text-light">មើលបន្ថែម</a></div>
+                        <!-- <div class="btn btn-primary mt-5"><a href="see-more.html#scholarship"
+                                class="text-light">មើលបន្ថែម</a></div> -->
                     </div>
                 </div>
 
@@ -596,6 +687,8 @@
 
     </script>
 
+    <script src="asset/js/auth.js"></script>
+
     <!-- JavaScript -->
     <script src="components.js"></script>
 
@@ -610,6 +703,9 @@
 
         });
     </script>
+
+  <script src="load-components.js"></script>
+<script type="module" src="auth.js"></script>
 
 </body>
 
