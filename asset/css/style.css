@@ -1,6 +1,12 @@
 html {
     scroll-behavior: smooth;
 }
+*{
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -655,4 +661,3 @@ section {
     font-weight: 500;
     color: #1f2d3d;
 }
-
