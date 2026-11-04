@@ -23,7 +23,7 @@
 </head>
 
 <body>
-     <style>
+    <style>
         /* * {
             box-sizing: border-box;
             margin: 0;
@@ -39,80 +39,79 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         } */
 
-.search-container {
-    position: relative;
-    height: 60px;
-}
+        .search-container {
+            position: relative;
+            height: 60px;
+        }
 
-.search-input {
-    width: 60px;
-    height: 60px;
-    background: transparent;
-    border-radius: 30px;
-    border: none;
-    outline: none;
-    padding: 0 20px;
-    font-size: 18px;
-    color: transparent;
-    box-shadow: none;
-    transition: width 0.4s ease, color 0.4s ease;
-}
+        .search-input {
+            width: 60px;
+            height: 60px;
+            background: transparent;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            padding: 0 20px;
+            font-size: 18px;
+            color: transparent;
+            box-shadow: none;
+            transition: width 0.4s ease, color 0.4s ease;
+        }
 
-.search-input:focus {
-    width: 320px;
-    color: #333;
-    padding: 0 70px 0 25px;
-    background: transparent;
-    box-shadow:  0 15px 70px rgba(0, 0, 0, 0.3);
-}
+        .search-input:focus {
+            width: 320px;
+            color: #333;
+            padding: 0 70px 0 25px;
+            background: transparent;
+            box-shadow: 0 15px 70px rgba(0, 0, 0, 0.3);
+        }
 
-.search-input::placeholder {
-    color: transparent;
-}
+        .search-input::placeholder {
+            color: transparent;
+        }
 
-.search-input:focus::placeholder {
-    color: #aaa;
-}
+        .search-input:focus::placeholder {
+            color: #aaa;
+        }
 
-.search-icon-btn {
-    position: absolute;
-    top: 50%;
-    right: 5px;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background: transparent;
-    border-radius: 50%;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    pointer-events: none;
-    box-shadow: none;
-}
+        .search-icon-btn {
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background: transparent;
+            border-radius: 50%;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            pointer-events: none;
+            box-shadow: none;
+        }
 
-.search-input:focus + .search-icon-btn {
-    background: transparent;
-    pointer-events: auto;
-}
+        .search-input:focus+.search-icon-btn {
+            background: transparent;
+            pointer-events: auto;
+        }
 
-.search-icon-btn svg {
-    width: 24px;
-    height: 24px;
-    fill: #555;
-}
+        .search-icon-btn svg {
+            width: 24px;
+            height: 24px;
+            fill: #555;
+        }
 
-.search-input:focus + .search-icon-btn svg {
-    fill: #764ba2;
-}
+        .search-input:focus+.search-icon-btn svg {
+            fill: #764ba2;
+        }
 
-@media (max-width: 400px) {
-    .search-input:focus {
-        width: 65vw;
-    }
-}
-
+        @media (max-width: 400px) {
+            .search-input:focus {
+                width: 65vw;
+            }
+        }
     </style>
     <!-- Navbar -->
     <div id="navbar" class="sticky-top"></div>
@@ -122,51 +121,52 @@
         <!-- ================= SWIPER ================= -->
 
 
-<section>
+        <section>
             <div class=" col-12 col-md-12 col-lg-12">
-                <div class="hero-banner position-relative">
-                    <img src="photo/photo_2026-10-11_22-10-11.jpg" alt="photo">
+                <div class=" position-relative">
+                    <img src="photo/photo_2026-10-11_22-10-11.jpg" alt="photo" class="img-fluid">
                     <div class="text-overlay">
-    <p class="hero-eyebrow" aria-label="What are the next step?">
-        <span class="hero-word">
-            <span class="hero-letter" style="--i:0">W</span>
-            <span class="hero-letter" style="--i:1">h</span>
-            <span class="hero-letter" style="--i:2">a</span>
-            <span class="hero-letter" style="--i:3">t</span>
-        </span>
-        <span class="hero-word">
-            <span class="hero-letter" style="--i:4">a</span>
-            <span class="hero-letter" style="--i:5">r</span>
-            <span class="hero-letter" style="--i:6">e</span>
-        </span>
-        <span class="hero-word">
-            <span class="hero-letter" style="--i:7">t</span>
-            <span class="hero-letter" style="--i:8">h</span>
-            <span class="hero-letter" style="--i:9">e</span>
-        </span>
-        <span class="hero-word">
-            <span class="hero-letter" style="--i:10">n</span>
-            <span class="hero-letter" style="--i:11">e</span>
-            <span class="hero-letter" style="--i:12">x</span>
-            <span class="hero-letter" style="--i:13">t</span>
-        </span>
-        <span class="hero-word">
-            <span class="hero-letter" style="--i:14">s</span>
-            <span class="hero-letter" style="--i:15">t</span>
-            <span class="hero-letter" style="--i:16">e</span>
-            <span class="hero-letter" style="--i:17">p</span>
-            <span class="hero-letter" style="--i:18">?</span>
-        </span>
-    </p>
+                        <p class="hero-eyebrow" aria-label="What are the next step?">
+                            <span class="hero-word">
+                                <span class="hero-letter" style="--i:0">W</span>
+                                <span class="hero-letter" style="--i:1">h</span>
+                                <span class="hero-letter" style="--i:2">a</span>
+                                <span class="hero-letter" style="--i:3">t</span>
+                            </span>
+                            <span class="hero-word">
+                                <span class="hero-letter" style="--i:4">a</span>
+                                <span class="hero-letter" style="--i:5">r</span>
+                                <span class="hero-letter" style="--i:6">e</span>
+                            </span>
+                            <span class="hero-word">
+                                <span class="hero-letter" style="--i:7">t</span>
+                                <span class="hero-letter" style="--i:8">h</span>
+                                <span class="hero-letter" style="--i:9">e</span>
+                            </span>
+                            <span class="hero-word">
+                                <span class="hero-letter" style="--i:10">n</span>
+                                <span class="hero-letter" style="--i:11">e</span>
+                                <span class="hero-letter" style="--i:12">x</span>
+                                <span class="hero-letter" style="--i:13">t</span>
+                            </span>
+                            <span class="hero-word">
+                                <span class="hero-letter" style="--i:14">s</span>
+                                <span class="hero-letter" style="--i:15">t</span>
+                                <span class="hero-letter" style="--i:16">e</span>
+                                <span class="hero-letter" style="--i:17">p</span>
+                                <span class="hero-letter" style="--i:18">?</span>
+                            </span>
+                        </p>
 
-    <h2 data-aos="fade-down" data-aos-duration="2000" class="text-banner fw-bold">
-        ជ្រើសរើសសាកលវិទ្យាល័យសមស្របសម្រាប់អ្នក
-    </h2>
+                        <h2 data-aos="fade-down" data-aos-duration="2000" class="text-banner fw-bold">
+                            ជ្រើសរើសសាកលវិទ្យាល័យសមស្របសម្រាប់អ្នក
+                        </h2>
 
-    <p data-aos="fade-right" class="hero-desc">
-        ស្វែងយល់ពីសាកលវិទ្យាល័យ និង ជំនាញសិក្សា ដែលអាចជ្រើសរើសទៅថ្ងៃអនាគត ដែលត្រូវនឹងចំណង់ចំណូលចិត្តរបស់អ្នក
-    </p>
-</div>
+                        <p data-aos="fade-right" class="hero-desc">
+                            ស្វែងយល់ពីសាកលវិទ្យាល័យ និង ជំនាញសិក្សា ដែលអាចជ្រើសរើសទៅថ្ងៃអនាគត
+                            ដែលត្រូវនឹងចំណង់ចំណូលចិត្តរបស់អ្នក
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -462,11 +462,62 @@
                     <div data-aos="fade-down-right" data-aos-duration="1300" class="col-12 col-md-6 col-lg-3">
                         <div class="card ">
 
-                            <img src="https://www.aub.edu.kh/tc/assets/image/banner-A-1.jpg" alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
+                            <img src="https://www.aub.edu.kh/tc/assets/image/banner-A-1.jpg"
+                                alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
 
                             <div class="card-body d-flex flex-column">
                                 <h5>
-                                    <a href="" class="text-decoration-none">ACLEDA University of Business (AUB)</a>
+                                    <a href="" class="text-decoration-none">សាកលវិទ្យាល័យ អេសុីលីដា</a>
+                                </h5>
+
+                                <!-- <p class="card-text text-secondary">
+                                    សាកលវិទ្យាល័យ RUPP មានកម្មវិធីសិក្សាជាច្រើន ដូចជា
+                                    បច្ចេកវិទ្យាព័ត៌មាន
+                                </p> -->
+
+                                <!-- <div class="mt-auto pt-3">
+                                    <a href="" class="btn btn-primary text-light ">
+                                        មើលបន្ថែម
+                                    </a>
+                                </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                               <div data-aos="fade-down-right" data-aos-duration="1300" class="col-12 col-md-6 col-lg-3">
+                        <div class="card ">
+
+                            <img src="photo/Num.jpg"
+                                alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5>
+                                    <a href="" class="text-decoration-none">សាកលវិទ្យាល័យ ជាតិគ្រប់គ្រង</a>
+                                </h5>
+
+                                <!-- <p class="card-text text-secondary">
+                                    សាកលវិទ្យាល័យ RUPP មានកម្មវិធីសិក្សាជាច្រើន ដូចជា
+                                    បច្ចេកវិទ្យាព័ត៌មាន
+                                </p> -->
+
+                                <!-- <div class="mt-auto pt-3">
+                                    <a href="" class="btn btn-primary text-light ">
+                                        មើលបន្ថែម
+                                    </a>
+                                </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                               <div data-aos="fade-down-right" data-aos-duration="1300" class="col-12 col-md-6 col-lg-3">
+                        <div class="card ">
+
+                            <img src="photo/ckk2.jpg"
+                                alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5>
+                                    <a href="" class="text-decoration-none">វិទ្យាស្ថានពហុបច្ចេកទេសជាតិ</a>
                                 </h5>
 
                                 <!-- <p class="card-text text-secondary">
@@ -486,11 +537,12 @@
                     <div data-aos="fade-down-right" data-aos-duration="1500" class="col-12 col-md-6 col-lg-3">
                         <div class="card ">
 
-                            <img src="https://www.puthisastra.edu.kh/wp-content/uploads/2018/09/Campus-Information-570-x-300_570x300.jpg" alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
+                            <img src="https://www.puthisastra.edu.kh/wp-content/uploads/2018/09/Campus-Information-570-x-300_570x300.jpg"
+                                alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
 
                             <div class="card-body d-flex flex-column">
                                 <h5>
-                                    <a href="" class="text-decoration-none">University of Puthisastra (UP)</a>
+                                    <a href="" class="text-decoration-none">សាកលវិទ្យាល័យ ពុទ្ធិសាស្ត្រ</a>
                                 </h5>
 
                                 <!-- <p class="card-text text-secondary">
@@ -510,11 +562,12 @@
                     <div data-aos="fade-down-right" data-aos-duration="1700" class="col-12 col-md-6 col-lg-3">
                         <div class="card ">
 
-                            <img src="https://www.aupp.edu.kh/wp-content/uploads/AUPP-Building.jpg" alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
+                            <img src="https://www.aupp.edu.kh/wp-content/uploads/AUPP-Building.jpg"
+                                alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
 
                             <div class="card-body d-flex flex-column">
                                 <h5>
-                                    <a href="" class="text-decoration-none">American University of Phnom Penh (AUPP)</a>
+                                    <a href="" class="text-decoration-none">សាកលវិទ្យាល័យអាមេរិកាំងភ្នំពេញ</a>
                                 </h5>
 
                                 <!-- <p class="card-text text-secondary">
@@ -534,11 +587,12 @@
                     <div data-aos="fade-down-right" data-aos-duration="1900" class="col-12 col-md-6 col-lg-3">
                         <div class="card ">
 
-                            <img src="https://www.beltei.edu.kh/asset/img/school/campus/school-B17.jpg" alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
+                            <img src="https://www.beltei.edu.kh/asset/img/school/campus/school-B17.jpg"
+                                alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
 
                             <div class="card-body d-flex flex-column">
                                 <h5>
-                                    <a href="" class="text-decoration-none">BELTEI International University</a>
+                                    <a href="" class="text-decoration-none">សាកលវិទ្យាល័យអន្តរជាតិ ប៊ែលធី</a>
                                 </h5>
 
                                 <!-- <p class="card-text text-secondary">
@@ -555,14 +609,15 @@
 
                         </div>
                     </div>
-                     <div data-aos="fade-down-right" data-aos-duration="1900" class="col-12 col-md-6 col-lg-3">
+                    <div data-aos="fade-down-right" data-aos-duration="1900" class="col-12 col-md-6 col-lg-3">
                         <div class="card ">
 
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh5Ka-j2AACRIXiy8_YLpYg9lDUTLbqgAHpBgXA5kWlBTtDp2SV8edzps&s=10" alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh5Ka-j2AACRIXiy8_YLpYg9lDUTLbqgAHpBgXA5kWlBTtDp2SV8edzps&s=10"
+                                alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
 
                             <div class="card-body d-flex flex-column">
                                 <h5>
-                                    <a href="" class="text-decoration-none">Norton University</a>
+                                    <a href="" class="text-decoration-none">សាកលវិទ្យាល័យ ន័រតុន</a>
                                 </h5>
 
                                 <!-- <p class="card-text text-secondary">
@@ -579,14 +634,15 @@
 
                         </div>
                     </div>
-                     <div data-aos="fade-down-right" data-aos-duration="1900" class="col-12 col-md-6 col-lg-3">
+                    <div data-aos="fade-down-right" data-aos-duration="1900" class="col-12 col-md-6 col-lg-3">
                         <div class="card ">
 
-                            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/The-main-CamEd-Building.jpg/250px-The-main-CamEd-Building.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
+                            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/The-main-CamEd-Building.jpg/250px-The-main-CamEd-Building.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                                alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
 
                             <div class="card-body d-flex flex-column">
                                 <h5>
-                                    <a href="" class="text-decoration-none">CamEd Business School</a>
+                                    <a href="" class="text-decoration-none">សាលាពាណិជ្ជសាស្ត្រ ខេមអេដ</a>
                                 </h5>
 
                                 <!-- <p class="card-text text-secondary">
@@ -643,7 +699,6 @@
 
     <!-- Footer -->
     <div id="footer"></div>
-
 
     <!-- ================= JAVASCRIPT ================= -->
 
@@ -704,8 +759,8 @@
         });
     </script>
 
-  <script src="load-components.js"></script>
-<script type="module" src="auth.js"></script>
+    <script src="load-components.js"></script>
+    <script type="module" src="auth.js"></script>
 
 </body>
 
