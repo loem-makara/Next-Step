@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+    <title>Login & Register</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.css">
@@ -35,12 +35,10 @@
             alt="Background"
             class="login-bg">
 
-        <!-- Login Form -->
-        <div class="login-card position-absolute top-50 start-50 translate-middle">
+    <div class="container">
 
-            <div class="login-icon">
-                <i class="bi bi-person-lock"></i>
-            </div>
+        <!-- LOGIN FORM -->
+        <div class="form-box login">
 
             <h2 class="text-center fw-bold mb-2">សូមស្វាគមន៏</h2>
 
@@ -108,11 +106,103 @@
                         class="text-primary text-decoration-none fw-bold">
                         ចុះឈ្មោះថ្មី
                     </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <!-- REGISTER FORM -->
+        <div class="form-box register">
+
+            <form action="#" id="registerForm">
+
+                <h1>Register</h1>
+
+                <p>Create your account to get started.</p>
+
+                <!-- Username -->
+                <div class="input-box">
+                    <input type="text" name="username"
+                        placeholder="Username"
+                        autocomplete="username"
+                        minlength="3" required>
+                    <i class="bi bi-person"></i>
+                </div>
+
+                <!-- Email -->
+                <div class="input-box">
+                    <input type="email" name="email"
+                        placeholder="Email"
+                        autocomplete="email" required>
+                    <i class="bi bi-envelope"></i>
+                </div>
+
+                <!-- Password -->
+                <div class="input-box">
+                    <input type="password" name="password"
+                        id="registerPassword"
+                        placeholder="Password"
+                        autocomplete="new-password"
+                        minlength="8" required>
+
+                    <i class="bi bi-eye password-toggle"
+                        onclick="togglePassword('registerPassword', this)"></i>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="input-box">
+                    <input type="password" name="confirmPassword"
+                        id="confirmPassword"
+                        placeholder="Confirm Password"
+                        autocomplete="new-password" required>
+
+                    <i class="bi bi-eye password-toggle"
+                        onclick="togglePassword('confirmPassword', this)"></i>
+                </div>
+
+                <button type="submit" class="btn">
+                    Register
+                </button>
+
+                <p class="text-center">
+                    or register with social platforms
                 </p>
 
             </form>
 
         </div>
+
+        <!-- TOGGLE PANEL -->
+        <div class="toggle-box">
+
+            <div class="toggle-panel toggle-left">
+
+                <h1>Hello, Welcome!</h1>
+
+                <p>Don't have an account?</p>
+
+                <button type="button" class="btn register-btn">
+                    Register
+                </button>
+
+            </div>
+
+            <div class="toggle-panel toggle-right">
+
+                <h1>Welcome Back!</h1>
+
+                <p>Already have an account?</p>
+
+                <button type="button" class="btn login-btn">
+                    Login
+                </button>
+
+            </div>
+
+        </div>
+
     </div>
 
     <!-- Show / Hide Password -->
@@ -122,14 +212,100 @@
             const password = document.getElementById("loginPassword");
             const eyeIcon = document.getElementById("eyeIcon");
 
-            if (password.type === "password") {
-                password.type = "text";
-                eyeIcon.classList.replace("bi-eye", "bi-eye-slash");
+        // SHOW / HIDE PASSWORD
+        function togglePassword(inputId, icon) {
+
+            const password = document.getElementById(inputId);
+
+            if (password.type === 'password') {
+
+                password.type = 'text';
+
+                icon.classList.replace('bi-eye', 'bi-eye-slash');
+
             } else {
-                password.type = "password";
-                eyeIcon.classList.replace("bi-eye-slash", "bi-eye");
+
+                password.type = 'password';
+
+                icon.classList.replace('bi-eye-slash', 'bi-eye');
+
             }
         }
+
+        // SWITCH LOGIN / REGISTER
+        const container = document.querySelector('.container');
+
+        const registerBtn = document.querySelector('.register-btn');
+
+        const loginBtn = document.querySelector('.login-btn');
+
+        registerBtn.addEventListener('click', function () {
+
+            container.classList.add('active');
+
+        });
+
+        loginBtn.addEventListener('click', function () {
+
+            container.classList.remove('active');
+
+        });
+
+        // CONFIRM PASSWORD VALIDATION
+        const registerForm = document.getElementById('registerForm');
+
+        const password = document.getElementById('registerPassword');
+
+        const confirmPassword = document.getElementById('confirmPassword');
+
+        function checkPassword() {
+
+            if (confirmPassword.value !== password.value) {
+
+                confirmPassword.setCustomValidity(
+                    'Password and Confirm Password do not match.'
+                );
+
+            } else {
+
+                confirmPassword.setCustomValidity('');
+
+            }
+        }
+
+        password.addEventListener('input', checkPassword);
+
+        confirmPassword.addEventListener('input', checkPassword);
+
+        registerForm.addEventListener('submit', function (event) {
+
+            checkPassword();
+
+            if (!registerForm.checkValidity()) {
+
+                event.preventDefault();
+
+                registerForm.reportValidity();
+
+            } else {
+
+                event.preventDefault();
+
+                alert('Register form validation successful!');
+
+            }
+
+        });
+
+        // LOGIN DEMO
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+
+            event.preventDefault();
+
+            alert('Please connect Firebase Authentication to log in.');
+
+        });
+
     </script>
 
     <!-- Bootstrap JS -->
