@@ -20,7 +20,7 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="asset/css/swiper.css">
     <link rel="stylesheet" href="asset/css/theme.min.css">
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <style>
@@ -32,6 +32,64 @@
         top: 16px;
         left: 16px;
         text-decoration: none;
+    }
+
+    .check-list {
+        list-style: none;
+        padding-left: 0
+    }
+
+    .check-list li {
+        position: relative;
+        padding: 5px 0 5px 29px
+    }
+
+    .check-list li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        top: 4px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #e0f5e8;
+        color: #19834b;
+        display: grid;
+        place-items: center;
+        font-weight: 800;
+        font-size: 12px
+    }
+
+    .contact-line {
+        display: flex;
+        gap: 12px;
+        padding: 14px 0;
+        border-top: 1px solid var(--line)
+    }
+
+    .contact-line>span {
+        font-size: 22px
+    }
+
+    .contact-line small,
+    .contact-line b,
+    .contact-line a {
+        display: block
+    }
+
+    .contact-line small {
+        font-size: 11px;
+        color: var(--muted)
+    }
+
+    .contact-line b,
+    .contact-line a {
+        font-size: 12px;
+        overflow-wrap: anywhere
+    }
+
+    .contact-line a {
+        color: var(--blue)
     }
 </style>
 
@@ -164,23 +222,41 @@
                                     ថ្នាក់បរិញ្ញាបត្រ សម្រាប់ឆ្នាំ២០២៦-២០១៧ ចំនួន១៥កន្លែង ដោយឆ្លងកាត់ការការប្រលង។
                                 </p>
                                 <div class="card-footer">
-                                    <h5 class="fw-bold"><i class="bi bi-building-fill"></i>🎓លក្ខខណ្ឌនៃការជ្រើសរើស</h5>
-                                    <p>១. ផ្ដល់ជូនបេក្ខជនទូទាំងប្រទេស<br>
-                                        ២. ជាប់បេក្ខជនបានប្រលងជាប់សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឬ សមមូល<br>
-                                        ៣. មានឆន្ទ:ពិតប្រាកដក្នុងការបន្ដការសិក្សា ខិតខំរៀន<br>
-                                        ៤. គោរពតាមការណែនាំ និងព្រមទទួលយកលក្ខខណ្ឌដែលមានចែងរបស់
-                                        គណ:កម្មាធិការអាហាររូបករណ៍សិស្សនិស្សិតក្រីក្រ <span
-                                            class="fw-bold">សម្ដេចអង្គមហាសេនាបតីតេជោ ហ៊ុនសែន </span> និង <span
-                                            class="fw-bold">សម្ដេចកិត្ដិព្រឹទ្ធបណ្ឌិត </span> និង វិទ្យាស្ថានទាំងពីរ
-                                    </p>
-                                    <h5>ខ អំពីជំនាញនិង ព័ត៌មានទាក់ទងនឹងគ្រឹះស្ថានឧត្ដមសិក្សា</h5>
-                                    <p>១. ផ្ដល់ជូនសម្រាប់:</p>
-                                    <p>- សិស្សនិទ្ទេសA ចំនួន ១០ កន្លែង</p>
-                                    <p>- សិស្សនិទ្ទេសB ចំនួន ៥ កន្លែង។</p>
-                                    <p>ផ្ដល់ជូនជំនាញ: </p>
+                                    <h5 class="fw-bold">🎓លក្ខខណ្ឌនៃការជ្រើសរើស</h5>
+                                    <ul class="check-list">
+                                        <li>ផ្ដល់ជូនបេក្ខជនទូទាំងប្រទ្បងជាប់សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិគ្រប់ឆ្នាំសិក្សា
+                                            និទ្ទេស A ឬB</li>
+                                        <li>មានឆន្ទ:ពិតប្រាកដក្នុងការបន្ដការសិក្សា ខិតខំរៀន</li>
+                                        <li>ពុំមែនជាសិស្សដែលធ្លាប់ ឬកំពុងទទួលបានអាហាររូបករណ៍ពីគណ:គម្មាធិការអាហាររូបករណ៍
+                                        </li>
+                                        <li>ពុំមែនជាសិស្សដែលកំពុងសិក្សានៅសាកវិទ្យាល័យ ពុទ្ធិសាស្រ្ដ</li>
+                                        <li>គោរពតាមការណែនាំ និងព្រមទទួលយកលក្ខខណ្ឌដែលមានចែងរបស់
+                                            គណ:កម្មាធិការអាហាររូបករណ៍សិស្សនិស្សិតក្រីក្រ <span
+                                                class="fw-bold">សម្ដេចអង្គមហាសេនាបតីតេជោ ហ៊ុនសែន </span> និង <span
+                                                class="fw-bold">សម្ដេចកិត្ដិព្រឹទ្ធបណ្ឌិត </span> និង
+                                            គណកម្មាធិការប្រទ្បងថ្នាក់ជាតិសម្រាប់ការបណ្ដុះបណ្ដាលក្នុងវិស័យសុខាភិបាលនិង
+                                            សាកលវិទ្យាល័យ ពុទ្ធិសាស្រ្ដ។</li>
+                                    </ul>
+
+                                    <h5>សម័យប្រទ្បង មណ្ឌលប្រទ្បងនិងព័ត៏មានបន្ថែម</h5>
+                                    <ul class="check-list">
+                                        <li><span>សម័យប្រទ្បង និង មណ្ដ</span></li>
+                                    </ul>
 
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card p-4">
+                            <span class="tip-icon">💡</span>
+                            <h2>គន្លឹះសម្រាប់អ្នកដាក់ពាក្យ</h2>
+                            <ul>
+                                <li>អានលក្ខខណ្ឌឱ្យបានច្បាស់</li>
+                                <li>រៀបចំឯកសារជាមុន</li>
+                                <li>ពិនិត្យ Deadline ពីប្រភពផ្លូវការ</li>
+                                <li>កុំបង់ប្រាក់តាមតំណដែលមិនទុកចិត្ត</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -369,10 +445,10 @@
     <!-- ONLY ONE Bootstrap JS -->
     <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
-    AOS.init({
-        
-    });
-</script>
+        AOS.init({
+
+        });
+    </script>
 
 </body>
 
