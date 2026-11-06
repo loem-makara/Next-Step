@@ -143,7 +143,7 @@ html, body {
   }
   .text-conten {
     position: absolute;
-    top:19%; /* នៅចំកណ្តាលតាមជួរឈរ */
+    top: 24%; /* នៅចំកណ្តាលតាមជួរឈរ */
     left:4%; /* នៅចំកណ្តាលតាមជួរដេក */
     /* transform: translate(-50%, -50%); */
     text-align: center;
@@ -1205,4 +1205,17 @@ section {
         right: 0;
         top: 30%;
     }
+}
+.button {
+    text-decoration: none;
+    border: 1px solid rgb(128, 125, 125);
+    color: black;
+    background-color: aliceblue;
+    border-radius: 8px;
+    padding: 0 5px 0 5px;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: var#0d6efd
+(--bs-nav-pills-link-active-bg);
 }

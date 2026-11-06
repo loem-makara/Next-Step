@@ -33,7 +33,199 @@
         }
     </style>
     <!-- ================= NAVBAR ================= -->
-    <div id="navbar"></div>
+     <header>
+
+        <nav class="navbar navbar-expand-lg bg-light sticky-top py-1">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="photo/logo.png" alt="LOGO" class="logo">
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="photo/logo.png" alt="LOGO" class="logo">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+
+                        <!-- Menu Center -->
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                            <!-- Home -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    <i class="bi bi-house"></i>
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+
+                            <!-- Skill -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="skill.html">
+                                    <i class="bi bi-tools"></i>
+                                    ជំនាញ
+                                </a>
+                            </li>
+
+                            <!-- Scholarship Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="scholoship.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-mortarboard"></i>
+                                    អាហារូបករណ៍
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item border-bottom border-secondary-subtle"
+                                            href="somdach.html">
+                                            អាហារូបករណ៍ សម្ដេចតេជោ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item border-bottom border-secondary-subtle"
+                                            href="university.html">
+                                            សាកលវិទ្យាល័យ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="ministry-of-edu.html">
+                                            ក្រសួងអប់រំ យុវជន និងកីឡា
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- About -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">
+                                    <i class="bi bi-info-circle"></i>
+                                    អំពីយើង
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <!-- Right Icons and Button -->
+                        <div class="navbar-actions d-flex align-items-center gap-3 ">
+
+                            <div class="search-container">
+                                <input type="text" class="search-input" placeholder="Type to search...">
+
+                                <button class="search-icon-btn" aria-label="Search">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5 3a7.5 7.5 0 1 0 5.035 13.064l5.258 5.258 1.414-1.414-5.258-5.258A7.5 7.5 0 0 0 10.5 3zm0 2a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11z" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <a href="notification.html" class="nav-icon" aria-label="Notifications">
+                                <i class="bi bi-bell"></i>
+                            </a>
+
+                            <!-- User Authentication -->
+                            <div id="authArea" class="d-flex align-items-center gap-2">
+
+                                <!-- Before Login -->
+                                <!-- <div id="guestMenu" class="d-flex gap-2">
+                                    <a href="login.html" class="btn btn-outline-primary">
+                                        Login
+                                    </a>
+
+
+                                </div> -->
+                                <div >
+                                    <img src="photo/logo-email2.jpg" alt="" class="rounded-circle" style="width: 40px;height: 40px;object-fit: cover;">
+                                </div>
+
+                                <!-- After Login -->
+                                <div id="userMenu" class="d-none align-items-center gap-3">
+
+                                    <!-- Notification -->
+                                    <a href="#" class="text-dark position-relative">
+                                        <i class="bi bi-bell fs-5"></i>
+                                    </a>
+
+                                    <!-- Profile Dropdown -->
+                                    <div class="dropdown">
+
+                                        <button class="btn border-0 dropdown-toggle d-flex
+                                                align-items-center gap-2" data-bs-toggle="dropdown">
+
+                                            <img id="userPhoto" src="https://placehold.co/40x40" class="rounded-circle"
+                                                width="38" height="38" style="object-fit: cover;">
+
+                                            <span id="userName">User</span>
+
+                                        </button>
+
+                                        <ul class="dropdown-menu dropdown-menu-end">
+
+                                            <li class="px-3 py-2">
+                                                <strong id="profileName">User</strong>
+                                                <br>
+                                                <small id="profileEmail" class="text-muted">
+                                                    user@gmail.com
+                                                </small>
+                                            </li>
+
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+
+                                            <li>
+                                                <a class="dropdown-item" href="profile.html">
+                                                    <i class="bi bi-person me-2"></i>
+                                                    My Profile
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a class="dropdown-item" href="saved.html">
+                                                    <i class="bi bi-bookmark me-2"></i>
+                                                    Saved Universities
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+
+                                            <li>
+                                                <button class="dropdown-item text-danger" id="logoutBtn">
+                                                    <i class="bi bi-box-arrow-right me-2"></i>
+                                                    Logout
+                                                </button>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
 
     <section class="subject-section ">
         <div class="col-12">
@@ -46,7 +238,7 @@
                 <div class="row">
                     <div class="col-6">
                         <p class="text-banner fs-1 fw-bold">វិទ្យាសាស្ត្រផែនដី និងអវកាស</p>
-                        <p class="text-body">គឺជាវិស័យវិទ្យាសាស្ត្រដ៏ទូលំទូលាយមួយ ដែលសិក្សាអំពីភពផែនដីរបស់យើង ប្រព័ន្ធព្រះអាទិត្យ
+                        <p class="text-light">គឺជាវិស័យវិទ្យាសាស្ត្រដ៏ទូលំទូលាយមួយ ដែលសិក្សាអំពីភពផែនដីរបស់យើង ប្រព័ន្ធព្រះអាទិត្យ
                                 និងចក្រវាឡទាំងមូល។</p>
                     </div>
                 </div>
