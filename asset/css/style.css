@@ -1216,6 +1216,6 @@ section {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: var(--bs-nav-pills-link-active-color);
-    background-color: var#0d6efd
+    background-color:#a9cef2;!important
 (--bs-nav-pills-link-active-bg);
 }
