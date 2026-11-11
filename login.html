@@ -1,11 +1,11 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+
+    <title>Form Login</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.css">
@@ -13,132 +13,113 @@
     <!-- Your CSS -->
     <link rel="stylesheet" href="asset/css/style.css">
 
-    <!-- Google Font -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- FONT ICON -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="asset/css/swiper.css">
+    <link rel="stylesheet" href="asset/css/theme.min.css">
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- <img src="photo/photo_2026-10-11_22-10-11.jpg" alt="" class="bg"> -->
 
-    <div class="container-fluid p-0 position-relative">
 
-        <!-- Background Image -->
-        <img src="photo/photo_2026-10-11_22-10-11.jpg"
-            alt="Background"
-            class="login-bg">
+    <div class="login-container">
 
         <!-- Login Form -->
-        <div class="login-card position-absolute top-50 start-50 translate-middle">
+        <div class="form-box login">
+            <form action="index.html">
+                <h1>Login</h1>
 
-            <div class="login-icon">
-                <i class="bi bi-person-lock"></i>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <div class="forgot-link">
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn">
+                    Login
+                </button>
+            </form>
+        </div>
+
+        <!-- Register Form -->
+        <div class="form-box register">
+            <form action="#">
+                <h1>Registration</h1>
+
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <button type="submit" class="btn">Register</button>
+
+                <p class="text-center">or register with social platforms</p>
+
+                <div class="social-icons">
+                    <a href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Toggle Box -->
+        <div class="toggle-box">
+
+            <!-- Left Panel -->
+            <div class="toggle-panel toggle-left">
+                <h1>Hello, Welcome!</h1>
+                <p>Don't have an account?</p>
+                <button type="button" class="btn register-btn">Register</button>
             </div>
 
-            <h2 class="text-center fw-bold mb-2">សូមស្វាគមន៏</h2>
-
-            <p class="text-center text-secondary mb-4">
-                សូមចូលគណនីរបស់អ្នក
-            </p>
-
-            <!-- Login Form -->
-            <form id="loginForm">
-
-                <div class="mb-3">
-                    <label for="loginEmail" class="form-label">អុីមែល</label>
-                    <input type="email" class="form-control" id="loginEmail"
-                        name="email" placeholder="បញ្ចូលអុីមែលរបស់អ្នក" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="loginPassword" class="form-label">ពាក្យសម្ងាត់</label>
-
-                    <div class="input-group">
-                        <input type="password" class="form-control" id="loginPassword"
-                            name="password" placeholder="បញ្ចូលពាក្យសម្ងាត់" required>
-
-                        <button class="btn btn-outline-secondary" type="button"
-                            onclick="togglePassword()">
-                            <i class="bi bi-eye" id="eyeIcon"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-between align-items-center mb-4">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="remember">
-                        <label class="form-check-label" for="remember">
-                            ចងចាំខ្ញុំ
-                        </label>
-                    </div>
-
-                    <a href="forget-password.html" class="text-decoration-none">
-                        ភ្លេចពាក្យសម្ងាត់?
-                    </a>
-                </div>
-
-                <!-- Error Message -->
-                <p id="loginError" class="text-danger small"></p>
-
-                <!-- Login Button -->
-                <button type="submit" class="btn btn-primary w-100 btn-register">
-                    <i class="bi bi-person-check me-2"></i>
-                    ចូលគណនី
-                </button>
-
-                <!-- Google Login -->
-                <div class="text-center my-3">OR</div>
-
-                <button type="button" id="googleLogin"
-                    class="btn btn-outline-dark w-100">
-                    <i class="bi bi-google me-2"></i>
-                    Continue with Google
-                </button>
-
-                <p class="text-center mt-4 mb-0">
-                    មិនទាន់មានគណនីមែនទេ?
-                    <a href="create-account.html"
-                        class="text-primary text-decoration-none fw-bold">
-                        ចុះឈ្មោះថ្មី
-                    </a>
-                </p>
-
-            </form>
+            <!-- Right Panel -->
+            <div class="toggle-panel toggle-right">
+                <h1>Welcome Back!</h1>
+                <p>Already have an account?</p>
+                <button type="button" class="btn login-btn">Login</button>
+            </div>
 
         </div>
+
     </div>
 
-    <!-- Show / Hide Password -->
-    <script>
-        function togglePassword() {
-
-            const password = document.getElementById("loginPassword");
-            const eyeIcon = document.getElementById("eyeIcon");
-
-            if (password.type === "password") {
-                password.type = "text";
-                eyeIcon.classList.replace("bi-eye", "bi-eye-slash");
-            } else {
-                password.type = "password";
-                eyeIcon.classList.replace("bi-eye-slash", "bi-eye");
-            }
-        }
-    </script>
-
-    <!-- Bootstrap JS -->
-    <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Firebase Authentication -->
-    <script type="module" src="auth.js"></script>
+    <!-- Your JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 
 </html>
-```

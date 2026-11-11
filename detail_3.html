@@ -20,53 +20,470 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="asset/css/swiper.css">
     <link rel="stylesheet" href="asset/css/theme.min.css">
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
+<style>
+    .back {
+        background-color: beige;
+        padding: 4px 16px;
+        border-radius: 16px;
+        /* position: absolute; */
+        top: 16px;
+        left: 16px;
+        text-decoration: none;
+    }
+
+    .check-list {
+        list-style: none;
+        padding-left: 0
+    }
+
+    .check-list li {
+        position: relative;
+        padding: 5px 0 5px 29px
+    }
+
+    .check-list li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        top: 4px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #e0f5e8;
+        color: #19834b;
+        display: grid;
+        place-items: center;
+        font-weight: 800;
+        font-size: 12px
+    }
+
+    .contact-line {
+        display: flex;
+        gap: 12px;
+        padding: 14px 0;
+        border-top: 1px solid var(--line)
+    }
+
+    .contact-line>span {
+        font-size: 22px
+    }
+
+    .contact-line small,
+    .contact-line b,
+    .contact-line a {
+        display: block
+    }
+
+    .contact-line small {
+        font-size: 11px;
+        color: var(--muted)
+    }
+
+    .contact-line b,
+    .contact-line a {
+        font-size: 12px;
+        overflow-wrap: anywhere
+    }
+
+    .contact-line a {
+        color: var(--blue)
+    }
+</style>
 
 <body>
 
     <!-- ================= NAVBAR ================= -->
-     <div id="navbar"></div>
-     <main>
-         <div class="container">
-                <div class="row">
-                    <div class="col-6">
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-light sticky-top py-1">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="photo/logo.png" alt="LOGO" class="logo">
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="photo/logo.png" alt="LOGO" class="logo">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+
+                        <!-- Menu Center -->
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                            <!-- Home -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    <i class="bi bi-house"></i>
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+
+                            <!-- Skill -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="skill.html">
+                                    <i class="bi bi-tools"></i>
+                                    ជំនាញ
+                                </a>
+                            </li>
+
+                            <!-- Scholarship Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="scholoship.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-mortarboard"></i>
+                                    អាហារូបករណ៍
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item border-bottom border-secondary-subtle"
+                                            href="somdach.html">
+                                            អាហារូបករណ៍ សម្ដេចតេជោ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item border-bottom border-secondary-subtle"
+                                            href="university.html">
+                                            សាកលវិទ្យាល័យ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="ministry-of-edu.html">
+                                            ក្រសួងអប់រំ យុវជន និងកីឡា
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- About -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">
+                                    <i class="bi bi-info-circle"></i>
+                                    អំពីយើង
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <!-- Right Icons and Button -->
+                        <div class="navbar-actions d-flex align-items-center gap-3 ">
+
+                            <div class="search-container">
+                                <input type="text" class="search-input" placeholder="Type to search...">
+
+                                <button class="search-icon-btn" aria-label="Search">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5 3a7.5 7.5 0 1 0 5.035 13.064l5.258 5.258 1.414-1.414-5.258-5.258A7.5 7.5 0 0 0 10.5 3zm0 2a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11z" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <a href="notification.html" class="nav-icon" aria-label="Notifications">
+                                <i class="bi bi-bell"></i>
+                            </a>
+
+                            <!-- User Authentication -->
+                            <div id="authArea" class="d-flex align-items-center gap-2">
+
+                                <!-- Before Login -->
+                                <!-- <div id="guestMenu" class="d-flex gap-2">
+                                    <a href="login.html" class="btn btn-outline-primary">
+                                        Login
+                                    </a>
+
+
+                                </div> -->
+                                <div >
+                                    <img src="photo/logo-email2.jpg" alt="" class="rounded-circle" style="width: 40px;height: 40px;object-fit: cover;">
+                                </div>
+
+                                <!-- After Login -->
+                                <div id="userMenu" class="d-none align-items-center gap-3">
+
+                                    <!-- Notification -->
+                                    <a href="#" class="text-dark position-relative">
+                                        <i class="bi bi-bell fs-5"></i>
+                                    </a>
+
+                                    <!-- Profile Dropdown -->
+                                    <div class="dropdown">
+
+                                        <button class="btn border-0 dropdown-toggle d-flex
+                                                align-items-center gap-2" data-bs-toggle="dropdown">
+
+                                            <img id="userPhoto" src="https://placehold.co/40x40" class="rounded-circle"
+                                                width="38" height="38" style="object-fit: cover;">
+
+                                            <span id="userName">User</span>
+
+                                        </button>
+
+                                        <ul class="dropdown-menu dropdown-menu-end">
+
+                                            <li class="px-3 py-2">
+                                                <strong id="profileName">User</strong>
+                                                <br>
+                                                <small id="profileEmail" class="text-muted">
+                                                    user@gmail.com
+                                                </small>
+                                            </li>
+
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+
+                                            <li>
+                                                <a class="dropdown-item" href="profile.html">
+                                                    <i class="bi bi-person me-2"></i>
+                                                    My Profile
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a class="dropdown-item" href="saved.html">
+                                                    <i class="bi bi-bookmark me-2"></i>
+                                                    Saved Universities
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+
+                                            <li>
+                                                <button class="dropdown-item text-danger" id="logoutBtn">
+                                                    <i class="bi bi-box-arrow-right me-2"></i>
+                                                    Logout
+                                                </button>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <a href="somdach.html" class="back "><i class="bi bi-arrow-left-short"></i> ត្រទ្បប់ទៅអាហាររូបករណ៍</a>
+                <div class="row g-4">
+                    <div class="col-sm-12 col-lg-5 p-4">
                         <div class="card">
                             <img src="photo/scholoship_pic_1.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-12 col-lg-7 p-4">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h3 class="card-title">
-                                    <p>🎓 RUPP — អាហារូបករណ៍</p>
+                                    <p> Paragon International University — អាហារូបករណ៍របស់សម្ដេចតេជោហ៊ុនសែន
+                                        និងសម្ដេចកិត្ដិព្រឹទ្ធបណ្ឌិត</p>
                                 </h3>
                                 <p class="card-title">
-                                    សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP) មានអាហារូបករណ៍ជាច្រើនប្រភេទ
-                                    សម្រាប់និស្សិតទាំងថ្នាក់បរិញ្ញាបត្រ និងថ្នាក់ក្រោយបរិញ្ញាបត្រ។
+                                    ថ្នាក់បរិញ្ញាបត្រ សម្រាប់ឆ្នាំ២០២៦-២០១៧ ចំនួន១៥កន្លែង ដោយឆ្លងកាត់ការការប្រលង។
                                 </p>
                                 <div class="card-footer">
-                                    <h1 class="fw-bold"><i class="bi bi-building-fill"></i>លក្ខខណ្ឌនៃការជ្រើសរើស</h1>
-                                    <p>១. ផ្ដល់ជូនបេក្ខជនទូទាំងប្រទេស<br>
-                                        ២. ជាប់បេក្ខជនបានប្រលងជាប់សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឬ សមមូល<br>
-                                        ៣. មានឆន្ទ:ពិតប្រាកដក្នុងការបន្ដការសិក្សា ខិតខំរៀន<br>
-                                        ៤. គោរពតាមការណែនាំ និងព្រមទទួលយកលក្ខខណ្ឌដែលមានចែងរបស់
-                                        គណ:កម្មាធិការអាហាររូបករណ៍សិស្សនិស្សិតក្រីក្រ <span
-                                            class="fw-bold">សម្ដេចអង្គមហាសេនាបតីតេជោ ហ៊ុនសែន </span> និង <span
-                                            class="fw-bold">សម្ដេចកិត្ដិព្រឹទ្ធបណ្ឌិត </span> និង វិទ្យាស្ថានទាំងពីរ
-                                    </p>
+                                    <h5 class="fw-bold">🎓លក្ខខណ្ឌនៃការជ្រើសរើស</h5>
+                                    <ul class="check-list">
+                                        <li>ផ្ដល់ជូនបេក្ខជនទូទាំងប្រទ្បងជាប់សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិគ្រប់ឆ្នាំសិក្សា
+                                            និទ្ទេស A ឬB</li>
+                                        <li>មានឆន្ទ:ពិតប្រាកដក្នុងការបន្ដការសិក្សា ខិតខំរៀន</li>
+                                        <li>ពុំមែនជាសិស្សដែលធ្លាប់ ឬកំពុងទទួលបានអាហាររូបករណ៍ពីគណ:គម្មាធិការអាហាររូបករណ៍
+                                        </li>
+                                        <li>ពុំមែនជាសិស្សដែលកំពុងសិក្សានៅសាកវិទ្យាល័យ ពុទ្ធិសាស្រ្ដ</li>
+                                        <li>គោរពតាមការណែនាំ និងព្រមទទួលយកលក្ខខណ្ឌដែលមានចែងរបស់
+                                            គណ:កម្មាធិការអាហាររូបករណ៍សិស្សនិស្សិតក្រីក្រ <span
+                                                class="fw-bold">សម្ដេចអង្គមហាសេនាបតីតេជោ ហ៊ុនសែន </span> និង <span
+                                                class="fw-bold">សម្ដេចកិត្ដិព្រឹទ្ធបណ្ឌិត </span> និង
+                                            គណកម្មាធិការប្រទ្បងថ្នាក់ជាតិសម្រាប់ការបណ្ដុះបណ្ដាលក្នុងវិស័យសុខាភិបាលនិង
+                                            សាកលវិទ្យាល័យ ពុទ្ធិសាស្រ្ដ។</li>
+                                    </ul>
+
+                                    <h5>សម័យប្រទ្បង មណ្ឌលប្រទ្បងនិងព័ត៏មានបន្ថែម</h5>
+                                    <ul class="check-list">
+                                        <li><span>សម័យប្រទ្បង និង មណ្ដ</span></li>
+                                    </ul>
 
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card p-4">
+                            <span class="tip-icon">💡</span>
+                            <h2>គន្លឹះសម្រាប់អ្នកដាក់ពាក្យ</h2>
+                            <ul>
+                                <li>អានលក្ខខណ្ឌឱ្យបានច្បាស់</li>
+                                <li>រៀបចំឯកសារជាមុន</li>
+                                <li>ពិនិត្យ Deadline ពីប្រភពផ្លូវការ</li>
+                                <li>កុំបង់ប្រាក់តាមតំណដែលមិនទុកចិត្ត</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
     </main>
-    
-      <!-- Footer -->
-    <div id="footer"></div>
+    <footer class="text-bg-secondary bg-opacity-75">
+
+        <section class="mt-5 ">
+
+            <!-- Main Footer -->
+
+            <div class="container border-1 border-bottom border-secondary border-opacity-10 pb-4">
+
+                <div class="row justify-content-between g-4">
+
+
+                    <!-- Logo & Description -->
+
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <a href="index.html">
+
+                            <img src="photo/logo.png" alt="Education Logo" width="80" height="60">
+
+                        </a>
+
+                        <p class="mt-3 text-footer">
+
+                            Next Step គឺជា Website
+                            ដែលត្រូវបានបង្កើតឡើងដើម្បីជួយសិស្សវិទ្យាល័យនៅកម្ពុជាស្វែងយល់អំពីឱកាសសិក្សាបន្ត
+                            បន្ទាប់ពីបញ្ចប់ការសិក្សាថ្នាក់ទី១២Websiteនេះផ្ដល់ព័ត៌មានអំពីសាកលវិទ្យាល័យកម្មវិធីសិក្សា
+                            អាហារូបករណ៍និងជំនាញមានប្រយោជន៍
+                            ដើម្បីជួយសិស្សឱ្យធ្វើការសម្រេចចិត្តបានកាន់តែល្អអំពីអនាគតរបស់ខ្លួន
+
+                        </p>
+
+                    </div>
+                    <!-- Company -->
+                    <div class="col-auto ">
+
+                        <h3 class="text-footer">
+                            គេហទំព័រផ្សេង
+                        </h3>
+
+                        <a href="index.html" class="d-block text-decoration-none text-light mb-2">
+                            ទំព័រដើម
+                        </a>
+
+                        <a href="private-school.html" class="d-block text-decoration-none text-light mb-2">
+                            សាកលវិទ្យាល័យ
+                        </a>
+
+                        <a href="skill.html" class="d-block text-decoration-none text-light mb-2">
+                            ជំនាញ
+                        </a>
+
+                        <a href="somdach.html" class="d-block text-decoration-none text-light mb-2">
+                            អាហារូបករណ៍
+                        </a>
+
+                        <a href="about-us.html" class="d-block text-decoration-none text-light">
+                            អំពីយើង
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- Get in touch -->
+
+                    <div class="col-auto">
+
+                        <h3 class="text-footer">
+                            ទំនាក់ទំនង
+                        </h3>
+
+                        <a href="#" class="d-block text-decoration-none text-light mb-2">
+                            54 St 606, Phnom Penh
+                        </a>
+
+                        <a href="#" class="d-block text-decoration-none text-light mb-2">
+                            Help and support
+                        </a>
+
+                        <a href="#" class="d-block text-decoration-none text-light mb-3">
+                            Phone: (855) 096 2694005
+                        </a>
+                        <a href="#" class="d-block text-decoration-none text-light mb-3">
+                            Gmail:nextstep5@gmail.com
+                        </a>
+                        <div class="justify-content-between align-items-center">
+                            <i class="bi bi-facebook fs-3 mx-3"></i>
+                            <i class="bi bi-chat fs-3 mx-3"></i>
+                            <i class="bi bi-envelope-slash fs-3 mx-3"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+
+            <div class="container">
+
+                <div class="d-lg-flex align-items-center py-4">
+
+                    <p class="text-footer mb-0">
+
+                        2026 12 22
+
+                    </p>
+
+                    <div class="d-flex">
+
+                        <a href="#" class="text-decoration-none text-footer ps-lg-4">
+                            ANT TRANNING
+                        </a>
+
+                        <a href="#" class="text-decoration-none text-footer px-4">
+                            STUDENT HTML CSS BOOSTRAP5
+                        </a>
+
+                        <a href="#" class="text-decoration-none text-footer">
+                            G5
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </footer>
+
     <!-- ================= JAVASCRIPT ================= -->
 
     <!-- Swiper JS -->
@@ -116,10 +533,10 @@
     <!-- ONLY ONE Bootstrap JS -->
     <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
-    AOS.init({
-        
-    });
-</script>
+        AOS.init({
+
+        });
+    </script>
 
 </body>
 
