@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lernning</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.css">
     <!-- Your CSS -->
-    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/style.css">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100;200;300;400;500;600;700&display=swap"
@@ -97,7 +97,7 @@
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-12 col-md-6">
-                        <img src="asset/css/photo/Ai-.jpg" alt="" class="card-img-top rounded-3 h-75">
+                        <!-- <img src="asset/css/photo/Ai-.jpg" alt="" class="card-img-top rounded-3 h-75"> -->
                     </div>
                     <div class="col-12 col-md-6 mt-10 ">
                         <h5 class="text-align-justify">ការរើសជំនាញសិក្សាគឺវាសំខាន់សម្រាប់សម្រាប់យើងមេនទេន ចឹងហើយមុនសម្រាច់ចិត្តត្រូវគិតអោយបានវែងឆ្ងាយ បើរើសខុសវាអាចអោយយើង ខាតពេល ខាតវេលា ខាតទាំងលុយកាក់ យើងត្រូវស្វែងយល់អំពីជំនាញនោះ លក្ខខ័ណ្ឌកាងារ ដើម្បីអានាគតយើងទទួលបានផលល្អ
@@ -111,12 +111,75 @@
     </main>
 
     <!-- JavaScript -->
-    <script src="components.js"></script>
+    <!-- <script src="../asset/bootstrap/js/components.js"></script> -->
      <!-- Footer -->
-    <div id="footer"></div>
-    <!-- JavaScript -->
-    <script src="components.js"></script>
+    <!-- <div id="footer"></div> -->
 
+    
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+        var swiper = new Swiper('.mySwiper', {
+
+            spaceBetween: 30,
+
+            centeredSlides: true,
+
+            autoplay: {
+
+                delay: 2500,
+
+                disableOnInteraction: false
+
+            },
+
+            pagination: {
+
+                el: '.swiper-pagination',
+
+                clickable: true
+
+            },
+
+            navigation: {
+
+                nextEl: '.swiper-button-next',
+
+                prevEl: '.swiper-button-prev'
+
+            }
+
+        });
+
+    </script>
+
+    <script src="asset/js/auth.js"></script>
+
+    <!-- JavaScript -->
+    <script src="asset/bootstrap/js/components.js"></script>
+
+
+    <!-- Bootstrap JS -->
+    <!-- ONLY ONE Bootstrap JS -->
+    <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+
+        });
+    </script>
+
+    <script src="asset/bootstrap/js/load-components.js"></script>
+    <script type="module" src="asset/bootstrap/js/auth.js"></script>
 </body>
 
 </html>
