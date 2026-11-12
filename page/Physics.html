@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="asset/css/swiper.css">
+    <link rel="stylesheet" href="asset/css/theme.min.css">
+</head>
+
+<body>
+
+    <style>
+        .icon {
+            width: 80px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+    </style>
+    <!-- ================= NAVBAR ================= -->
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-light sticky-top py-1">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="home-page.html">
+                    <img src="../asset/css/photo/logo.png" alt="LOGO" class="logo">
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="home-page.html">
+                            <img src="../asset/css/photo/logo.png" alt="LOGO" class="logo">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+
+                        <!-- Menu Center -->
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                            <!-- Home -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="home-page.html">
+                                    <i class="bi bi-house"></i>
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+
+                            <!-- Skill -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="skill.html">
+                                    <i class="bi bi-tools"></i>
+                                    ជំនាញ
+                                </a>
+                            </li>
+
+                            <!-- Scholarship Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="scholoship.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-mortarboard"></i>
+                                    អាហារូបករណ៍
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item border-bottom border-secondary-subtle"
+                                            href="somdach.html">
+                                            អាហារូបករណ៍ សម្ដេចតេជោ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item border-bottom border-secondary-subtle"
+                                            href="university.html">
+                                            សាកលវិទ្យាល័យ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="ministry-of-edu.html">
+                                            ក្រសួងអប់រំ យុវជន និងកីឡា
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- About -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">
+                                    <i class="bi bi-info-circle"></i>
+                                    អំពីយើង
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <!-- Right Icons and Button -->
+                        <div class="navbar-actions d-flex align-items-center gap-3 ">
+
+                            <div class="search-container">
+                                <input type="text" class="search-input" placeholder="Type to search...">
+
+                                <button class="search-icon-btn" aria-label="Search">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5 3a7.5 7.5 0 1 0 5.035 13.064l5.258 5.258 1.414-1.414-5.258-5.258A7.5 7.5 0 0 0 10.5 3zm0 2a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11z" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <a href="notification.html" class="nav-icon" aria-label="Notifications">
+                                <i class="bi bi-bell"></i>
+                            </a>
+
+                            <!-- User Authentication -->
+                            <div id="authArea" class="d-flex align-items-center gap-2">
+
+                                <!-- Before Login -->
+                                <!-- <div id="guestMenu" class="d-flex gap-2">
+                                    <a href="login.html" class="btn btn-outline-primary">
+                                        Login
+                                    </a>
+
+
+                                </div> -->
+                                <div >
+                                    <img src="../asset/css/photo/logo-email2.jpg" alt="" class="rounded-circle" style="width: 40px;height: 40px;object-fit: cover;">
+                                </div>
+
+                                <!-- After Login -->
+                                <div id="userMenu" class="d-none align-items-center gap-3">
+
+                                    <!-- Notification -->
+                                    <a href="#" class="text-dark position-relative">
+                                        <i class="bi bi-bell fs-5"></i>
+                                    </a>
+
+                                    <!-- Profile Dropdown -->
+                                    <div class="dropdown">
+
+                                        <button class="btn border-0 dropdown-toggle d-flex
+                                                align-items-center gap-2" data-bs-toggle="dropdown">
+
+                                            <img id="userPhoto" src="https://placehold.co/40x40" class="rounded-circle"
+                                                width="38" height="38" style="object-fit: cover;">
+
+                                            <span id="userName">User</span>
+
+                                        </button>
+
+                                        <ul class="dropdown-menu dropdown-menu-end">
+
+                                            <li class="px-3 py-2">
+                                                <strong id="profileName">User</strong>
+                                                <br>
+                                                <small id="profileEmail" class="text-muted">
+                                                    user@gmail.com
+                                                </small>
+                                            </li>
+
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+
+                                            <li>
+                                                <a class="dropdown-item" href="profile.html">
+                                                    <i class="bi bi-person me-2"></i>
+                                                    My Profile
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a class="dropdown-item" href="saved.html">
+                                                    <i class="bi bi-bookmark me-2"></i>
+                                                    Saved Universities
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+
+                                            <li>
+                                                <button class="dropdown-item text-danger" id="logoutBtn">
+                                                    <i class="bi bi-box-arrow-right me-2"></i>
+                                                    Logout
+                                                </button>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <section class="subject-section ">
+        <div class="col-12">
+            <div class=" position-relative">
+                <img src="../asset/css/photo/banner Physics.jpg" alt="" class="skill-banner">
+            </div>
+        </div>
+        <div class="container">
+            <div class="position-absolute text-conten ">
+                <div class="row ">
+                    <div class="col-9">
+                        <p class="text-banner fs-1 fw-bold">រូបវិទ្យា</p>
+                        <p>ជាវិទ្យាសាស្ត្រធម្មជាតិដែលសិក្សាអំពីរូបធាតុ
+                            អង្គធាតុផ្សំមូលដ្ឋានរបស់វា ចលនា
+                            និងឥរិយាបថរបស់វាតាមលំហនិងកាល ព្រមទាំងថាមពលនិងកម្លាំង ។
+                            វាជាផ្នែកមួយដ៏សំខាន់នៃវិទ្យាសាស្ត្រគ្រឹះ
+                            ដែលជួយពន្យល់ពីរបៀបដែលសកលលោកដំណើរការ។</p>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="row g-3 py-4 ">
+                    <!-- Information Technology -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div
+                            class="bg-banner text-center rounded-3 d-flex justify-content-center align-items-center p-1">
+                            <i class="bi bi-laptop subject-icon"></i>
+                            <span class="ms-3 ">
+                                <p class="pb-0 mb-0 ">រយពេលសិក្សា</p>
+                                <p class="pb-0 mb-0 ">4ឆ្នាំ</p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Literature -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div
+                            class="bg-banner text-center rounded-3 bg-banner text-center rounded-3 d-flex justify-content-center align-items-center p-1">
+                            <i class="bi bi-book subject-icon"></i>
+                            <span class="ms-3 ">
+                                <p class="pb-0 mb-0 ">ប្រភេទអាជីប</p>
+                                <p class="pb-0 mb-0 ">ច្រើន</p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Chemistry -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div
+                            class="bg-banner  rounded-3 bg-banner text-center rounded-3 d-flex justify-content-center align-items-center p-1">
+                            <i class="bi bi-flask subject-icon"></i>
+                            <span class="ms-3 ">
+                                <p class="pb-0 mb-0 ">ឪកាសកាងារ</p>
+                                <p class="pb-0 mb-0 ">ខ្ពស់</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="m-5 ">
+        <div class="container">
+            <div data-aos="fade-up-left" class=" row g-4">
+                <div class="col-6">
+                    <h4>
+                        <i class="bi bi-award"></i>អំពីជំនាញនេះ
+                    </h4>
+                    <p> ជាវិទ្យាសាស្ត្រធម្មជាតិដែលសិក្សាអំពីរូបធាតុ
+                        អង្គធាតុផ្សំមូលដ្ឋានរបស់វា ចលនា
+                        និងឥរិយាបថរបស់វាតាមលំហនិងកាល ព្រមទាំងថាមពលនិងកម្លាំង ។</p>
+                    <div class="card-footer">
+                        <div class="d-inline-flex w-100">
+                            <button class="btn btn-primary " data-bs-toggle="modal"
+                                data-bs-target="#example-ComputerScience" data-bs-backdrop="static">
+                                មើលបន្ថែម</button>
+                            <div class="modal fade " id="example-ComputerScience">
+                                <div class="modal-dialog modal-lg modal-dialog-centered modal-content">
+                                    <div class="modal-content ">
+                                        <div class="modal-header ">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <h4>រូបវិទ្យា</h4>
+                                                </div>
+                                                <div class="d-flex text-center">
+                                                    <span><i class="bi bi-clock text-primary"></i>
+                                                        រយពេលសិក្សា៥ឆ្នាំ
+                                                    </span>
+                                                    <span class="ms-4"><i class="bi bi-award text-primary"></i>
+                                                        ថ្នាក់បរិញ្ញាបត្យ</span>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6>អំពីជំនាញនេះ (Overview)</h6>
+                                            <p>គឺជាមុខវិជ្ជាសិក្សាដែលផ្តោតលើការប្រើប្រាស់បច្ចេកវិទ្យា កុំព្យូទ័រ
+                                                និងប្រព័ន្ធទិន្នន័យដើម្បីដោះស្រាយបញ្ហា បង្កើតកម្មវិធី
+                                                និងគ្រប់គ្រងប្រព័ន្ធព័ត៌មាន។</p>
+                                            <h6>ជំនាញឯកទេសរង</h6>
+                                            <p> ជាវិទ្យាសាស្ត្រធម្មជាតិដែលសិក្សាអំពីរូបធាតុ
+                                                អង្គធាតុផ្សំមូលដ្ឋានរបស់វា ចលនា
+                                                និងឥរិយាបថរបស់វាតាមលំហនិងកាល ព្រមទាំងថាមពលនិងកម្លាំង ។
+                                                វាជាផ្នែកមួយដ៏សំខាន់នៃវិទ្យាសាស្ត្រគ្រឹះ
+                                                ដែលជួយពន្យល់ពីរបៀបដែលសកលលោកដំណើរការ។ </p>
+                                            <h6><i
+                                                    class="bi bi-bookmark-fill text-primary me-1"></i>ខ្លឹមសារចំណេះដឹងសំខាន់ៗ
+                                            </h6>
+                                            <p>
+                                                • មេកានិច (Mechanics): សិក្សាអំពីចលនារបស់វត្ថុ
+                                                និងកម្លាំងដែលធ្វើឱ្យវត្ថុមានចលនា (ដូចជាមេកានិចបុរាណ)។<br>
+                                                • អគ្គិសនី និងអេឡិចត្រូម៉ាញេទិច (Electricity and Magnetism):
+                                                សិក្សាអំពីចរន្តអគ្គិសនី សមាសធាតុអគ្គិសនី និងដែនម៉ាញេទិច។<br>
+                                                • ទែម៉ូមេកានិច (Thermodynamics): សិក្សាអំពីកម្ដៅ
+                                                និងការផ្លាស់ប្តូរថាមពលកម្ដៅ។<br>
+                                                • អុបទិច (Optics): សិក្សាអំពីពន្លឺ និងកញ្ចក់ផ្សេងៗ
+                                                (កញ្ចក់ស្វ៊ែផត)។<br>
+                                                • រូបវិទ្យាកង់ទិក (Quantum Physics): សិក្សាអំពីបាតុភូតនៅកម្រិតអាតូម
+                                                និងអនុអាតូម។<br>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <img src="../asset/css/photo/Physics images.jpg" alt="" class="image-box rounded-2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row ">
+                <h4>ឱកាសការងារ<i class="bi bi-question-circle-fill"></i></h4>
+
+                <div data-aos="fade-up-left" data-aos-duration="300" class="col-12 col-md-6 col-lg-3">
+                    <div>
+                        <img src="../asset/css/photo/Technology-Data Science.jpg" alt="" class="rounded-3 object-fit-cover"
+                            style="height: 150px;width: 100%;">
+                    </div>
+                    <h5> <i class="bi bi-bank"></i> <br> វិស័យបច្ចេកវិទ្យា និងវិទ្យាសាស្ត្រទិន្នន័យ</h5>
+                    <p> Frontend Development <br> Backend Development <br>Mobile App Architecture និងជំនាញផ្សេងៗទៀត</p>
+
+                </div>
+                <div data-aos="fade-up-left" data-aos-duration="700" class="col-12 col-md-6 col-lg-3">
+
+                    <div>
+                        <img src="../asset/css/photo/Energy-Engineering.jpg" alt="" class="rounded-3 object-fit-cover"
+                            style="height: 150px;width: 100%;">
+                    </div>
+                    <h5> <i class="bi bi-lightbulb"></i> <br> វិស័យថាមពល និងវិស្វកម្ម</h5>
+                    <p>Networking Fundamentals Network Hardware Network Security<br>និងដោះស្រាយបញ្ហាផ្សេងៗទៀត</p>
+
+                </div>
+                <div data-aos="fade-up-left" data-aos-duration="1000" class="col-12 col-md-6 col-lg-3">
+
+                    <div>
+                        <img src="../asset/css/photo/Medical-Physics.jpg" alt="" class="rounded-3 object-fit-cover"
+                            style="height: 150px;width: 100%;">
+                    </div>
+                    <h5> <i class="bi bi-cash-coin"></i> <br> វិស័យសុខាភិបាល</h5>
+                    <p>ការយល់ដឹងពីបណ្តាញ និងប្រព័ន្ធប្រតិបត្តិការ <br>ការធ្វើតេស្តស្វែងរកចន្លោះប្រហោង
+                        ការឆ្លើយតបឧប្បត្តិហេតុ សុវត្ថិភាពលើប្រព័ន្ធ</p>
+
+                </div>
+                <div data-aos="fade-up-left" data-aos-duration="1200" class="col-12 col-md-6 col-lg-3">
+
+                    <div>
+                        <img src="../asset/css/photo/Education-Research.jpg" alt="" class="rounded-3 object-fit-cover"
+                            style="height: 150px;width: 100%;">
+                    </div>
+                    <h5> <i class="bi bi-briefcase"></i> <br> វិស័យអប់រំ និងការស្រាវជ្រាវ</h5>
+                    <p>ការប្រមូល និងវិភាគតម្រូវការ ការរចនាស្ថាបត្យកម្មប្រព័ន្ធ<br>ការយល់ដឹងពីដំណើរការអាជីវកម្ម</p>
+
+                </div>
+
+                <!-- <div class="col-4">
+                        <img src="photo/pexels-delot-16420473.jpg" alt="" class="card-img-top rounded-3">
+                    </div> -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="../asset/bootstrap/js/components.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+        var swiper = new Swiper('.mySwiper', {
+
+            spaceBetween: 30,
+
+            centeredSlides: true,
+
+            autoplay: {
+
+                delay: 2500,
+
+                disableOnInteraction: false
+
+            },
+
+            pagination: {
+
+                el: '.swiper-pagination',
+
+                clickable: true
+
+            },
+
+            navigation: {
+
+                nextEl: '.swiper-button-next',
+
+                prevEl: '.swiper-button-prev'
+
+            }
+
+        });
+
+    </script>
+
+
+    <!-- Bootstrap JS -->
+    <!-- ONLY ONE Bootstrap JS -->
+    <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>អំពីយើង - Next Step</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FONT ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="asset/css/swiper.css">
+    <link rel="stylesheet" href="asset/css/theme.min.css">
+</head>
+     <!-- ================= NAVBAR ================= -->
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-light sticky-top py-1">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="home-page.html">
+                    <img src="../asset/css/photo/logo.png" alt="LOGO" class="logo">
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="home-page.html">
+                            <img src="../asset/css/photo/logo.png" alt="LOGO" class="logo">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+
+                        <!-- Menu Center -->
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                            <!-- Home -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="home-page.html">
+                                    <i class="bi bi-house"></i>
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+
+                            <!-- Skill -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="skill.html">
+                                    <i class="bi bi-tools"></i>
+                                    ជំនាញ
+                                </a>
+                            </li>
+
+                            <!-- Scholarship Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="scholoship.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-mortarboard"></i>
+                                    អាហារូបករណ៍
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item border-bottom border-secondary-subtle"
+                                            href="somdach.html">
+                                            អាហារូបករណ៍ សម្ដេចតេជោ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item border-bottom border-secondary-subtle"
+                                            href="university.html">
+                                            សាកលវិទ្យាល័យ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="ministry-of-edu.html">
+                                            ក្រសួងអប់រំ យុវជន និងកីឡា
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- About -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">
+                                    <i class="bi bi-info-circle"></i>
+                                    អំពីយើង
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <!-- Right Icons and Button -->
+                        <div class="navbar-actions d-flex align-items-center gap-3 ">
+
+                            <div class="search-container">
+                                <input type="text" class="search-input" placeholder="Type to search...">
+
+                                <button class="search-icon-btn" aria-label="Search">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5 3a7.5 7.5 0 1 0 5.035 13.064l5.258 5.258 1.414-1.414-5.258-5.258A7.5 7.5 0 0 0 10.5 3zm0 2a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11z" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <a href="notification.html" class="nav-icon" aria-label="Notifications">
+                                <i class="bi bi-bell"></i>
+                            </a>
+
+                            <!-- User Authentication -->
+                            <div id="authArea" class="d-flex align-items-center gap-2">
+
+                                <!-- Before Login -->
+                                <!-- <div id="guestMenu" class="d-flex gap-2">
+                                    <a href="login.html" class="btn btn-outline-primary">
+                                        Login
+                                    </a>
+
+
+                                </div> -->
+                                <div >
+                                    <img src="../asset/css/photo/logo-email2.jpg" alt="" class="rounded-circle" style="width: 40px;height: 40px;object-fit: cover;">
+                                </div>
+
+                                <!-- After Login -->
+                                <div id="userMenu" class="d-none align-items-center gap-3">
+
+                                    <!-- Notification -->
+                                    <a href="#" class="text-dark position-relative">
+                                        <i class="bi bi-bell fs-5"></i>
+                                    </a>
+
+                                    <!-- Profile Dropdown -->
+                                    <div class="dropdown">
+
+                                        <button class="btn border-0 dropdown-toggle d-flex
+                                                align-items-center gap-2" data-bs-toggle="dropdown">
+
+                                            <img id="userPhoto" src="https://placehold.co/40x40" class="rounded-circle"
+                                                width="38" height="38" style="object-fit: cover;">
+
+                                            <span id="userName">User</span>
+
+                                        </button>
+
+                                        <ul class="dropdown-menu dropdown-menu-end">
+
+                                            <li class="px-3 py-2">
+                                                <strong id="profileName">User</strong>
+                                                <br>
+                                                <small id="profileEmail" class="text-muted">
+                                                    user@gmail.com
+                                                </small>
+                                            </li>
+
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+
+                                            <li>
+                                                <a class="dropdown-item" href="profile.html">
+                                                    <i class="bi bi-person me-2"></i>
+                                                    My Profile
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a class="dropdown-item" href="saved.html">
+                                                    <i class="bi bi-bookmark me-2"></i>
+                                                    Saved Universities
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+
+                                            <li>
+                                                <button class="dropdown-item text-danger" id="logoutBtn">
+                                                    <i class="bi bi-box-arrow-right me-2"></i>
+                                                    Logout
+                                                </button>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="container my-5">
+
+        <!-- Page Title -->
+        <div class="text-center mb-5 ">
+            <h1 class="fw-bold text-primary"> សេចក្តីណែនាំអំពីគម្រោង (About Us)</h1>
+            <p class="text-muted fs-5 text-center"> ជំហានបន្ទាប់ (Next Step)</p>
+            <div class="mx-auto bg-primary rounded" style="width: 80px; height: 4px;"></div>
+        </div>
+
+        <!-- 1. Project Introduction -->
+        <section class="mb-5 p-4 bg-light rounded-4 shadow-sm border-start border-primary border-4">
+            <h2 class="h3 fw-bold text-dark mb-3">
+                <i class="bi bi-book text-primary me-2"></i> ១. សេចក្តីណែនាំអំពីគម្រោង (Project Introduction)
+            </h2>
+            <blockquote class="blockquote fs-5 text-secondary fst-italic mb-3">
+                «តើអ្នកគួរធ្វើអ្វីបន្តទៀត បន្ទាប់ពីបញ្ចប់ការសិក្សាថ្នាក់វិទ្យាល័យ?»
+            </blockquote>
+            <p class="text-dark lh-lg" style="text-align: justify;">
+                <strong>Next Step (ជំហានបន្ទាប់)</strong> គឺជាគេហទំព័រដែលបង្កើតឡើងក្នុងគោលបំណងជួយតម្រង់ទិស
+                និងសម្រួលដល់ការស្វែងរកព័ត៌មានអប់រំសម្រាប់សិស្សានុសិស្សវិទ្យាល័យ និងយុវជនកម្ពុជា។ យើងមើលឃើញថា
+                សិស្សជាច្រើនជួបប្រទះការលំបាកក្នុងការជ្រើសរើសជំនាញសិក្សា មិនទាន់ស្គាល់ច្បាស់ពីចំណង់ចំណូលចិត្ត
+                ឬខ្វះខាតប្រភពព័ត៌មានជឿជាក់បានអំពីសាកលវិទ្យាល័យ និងអាហារូបករណ៍។
+            </p>
+            <p class="text-dark lh-lg mb-0" style="text-align: justify;">
+                ដូច្នេះ Next Step ត្រូវ​បាន​បង្កើត​ឡើង​ដើម្បីប្រមូលផ្តុំព័ត៌មានសំខាន់ៗជុំវិញជំនាញសិក្សា, សាកលវិទ្យាល័យ
+                (រដ្ឋ និងឯកជន), ព្រមទាំងឱកាសអាហារូបករណ៍ថ្មីៗ នៅកន្លែងតែមួយ
+                ដើម្បីជួយឲ្យសិស្សានុសិស្សធ្វើការសម្រេចចិត្តប្រកបដោយទំនុកចិត្ត និងកាត់បន្ថយហានិភ័យនៃការជ្រើសរើសជំនាញខុស។
+            </p>
+        </section>
+
+        <!-- 2. Vision & Mission -->
+        <section class="row g-4 mb-5">
+            <!-- Vision -->
+            <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white border-top border-primary border-4 text-dark">
+                    <div class="card-body">
+                        <div class="mb-3 fs-1 text-primary">
+                            <i class="bi bi-eye"></i>
+                        </div>
+                        <h3 class="h4 fw-bold mb-3">ចក្ខុវិស័យ (Vision)</h3>
+                        <p class="card-text lh-lg mb-0">
+                            ក្លាយជាគេហទំព័រតម្រង់ទិសការសិក្សា និងការងារឈានមុខគេនៅកម្ពុជា
+                            ដែលជួយឲ្យយុវជនគ្រប់រូបអាចស្វែងរកផ្លូវដើរដ៏ត្រឹមត្រូវសម្រាប់អនាគតរបស់ពួកគេ
+                            ដោយផ្អែកលើព័ត៌មានច្បាស់លាស់ និងសុក្រឹត។
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission -->
+            <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white border-top border-primary border-4">
+                    <div class="card-body">
+                        <div class="mb-3 fs-1 text-primary">
+                            <i class="bi bi-bullseye"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-dark mb-3">បេសកកម្ម (Mission)</h3>
+                        <ul class="list-unstyled text-secondary lh-lg mb-0">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                ផ្ដល់ព័ត៌មានគ្រប់ជ្រុងជ្រោយអំពីសាកលវិទ្យាល័យ និងជំនាញសិក្សានានានៅកម្ពុជា។</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                ធ្វើបច្ចុប្បន្នភាពឱកាសអាហារូបករណ៍ថ្មីៗជាប្រចាំ ដើម្បីជួយសម្រួលបន្ទុកការសិក្សារបស់សិស្ស។
+                            </li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                ជួយសិស្សានុសិស្សឲ្យស្គាល់ពីខ្លួនឯង និងរៀបចំផែនការសិក្សាទៅមុខបានយ៉ាងមានប្រសិទ្ធភាព។</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Team Members -->
+        <section class="mb-5">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold text-dark">
+                    <i class="bi bi-people-fill text-primary me-2"></i> ៣. សមាជិកក្រុម (Our Team)
+                </h2>
+                <p class="text-muted text-center"> ជំហានបន្ទាប់ (Next Step)</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+
+                <!-- Team Member 1: Team Leader -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3">
+                        <div class="card-body">
+                            <div class="rounded-circle bg-primary text-light d-flex align-items-center justify-content-center mx-auto mb-3 shadow"
+                                style="width: 80px; height: 80px; font-size: 32px;">
+                                <i class="bi bi-person-badge"></i>
+                            </div>
+                            <h3 class="h5 fw-bold text-dark mb-1">លឹម មករា</h3>
+                            <span class="badge bg-primary mb-3 px-3 py-2 rounded-pill">ប្រធានក្រុម (Team Leader)</span>
+                            <p class="card-text text-muted small mb-0">
+                                <strong>តួនាទី:</strong> ដឹកនាំគម្រោង,រៀបចំរចនាសម្ព័ន្ធគេហទំព័រ និងការអភិវឌ្ឍន៍
+                                Front-End
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3">
+                        <div class="card-body">
+                            <div class="rounded-circle bg-light text-primary d-flex align-items-center justify-content-center mx-auto mb-3 border border-primary"
+                                style="width: 80px; height: 80px; font-size: 32px;">
+                                <i class="bi bi-person"></i>
+                            </div>
+                            <h3 class="h5 fw-bold text-dark mb-1">យ៉យ អារីយ៉ា</h3>
+                            <span class="badge bg-secondary mb-3 px-3 py-2 rounded-pill">សមាជិកក្រុម (Team
+                                Member)</span>
+                            <p class="card-text text-muted small mb-0">
+                                <strong>តួនាទី:</strong> រចនាទម្រង់ UI/UX និងរៀបចំ Stylings (CSS/Bootstrap)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3">
+                        <div class="card-body">
+                            <div class="rounded-circle bg-light text-primary d-flex align-items-center justify-content-center mx-auto mb-3 border border-primary"
+                                style="width: 80px; height: 80px; font-size: 32px;">
+                                <i class="bi bi-person"></i>
+                            </div>
+                            <h3 class="h5 fw-bold text-dark mb-1">ញុឹប រ៉ានី</h3>
+                            <span class="badge bg-secondary mb-3 px-3 py-2 rounded-pill">សមាជិកក្រុម (Team
+                                Member)</span>
+                            <p class="card-text text-muted small mb-0">
+                                <strong>តួនាទី:</strong> រៀបចំ និងស្រាវជ្រាវខ្លឹមសារព័ត៌មាន (Content & Research)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3">
+                        <div class="card-body">
+                            <div class="rounded-circle bg-light text-primary d-flex align-items-center justify-content-center mx-auto mb-3 border border-primary"
+                                style="width: 80px; height: 80px; font-size: 32px;">
+                                <i class="bi bi-person"></i>
+                            </div>
+                            <h3 class="h5 fw-bold text-dark mb-1">លឹម យិបវៃ</h3>
+                            <span class="badge bg-secondary mb-3 px-3 py-2 rounded-pill">សមាជិកក្រុម (Team
+                                Member)</span>
+                            <p class="card-text text-muted small mb-0">
+                                <strong>តួនាទី:</strong> អភិវឌ្ឍន៍មុខងារគេហទំព័រ និងតេស្តប្រព័ន្ធ (Web Development &
+                                Testing)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 5 -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3">
+                        <div class="card-body">
+                            <div class="rounded-circle bg-light text-primary d-flex align-items-center justify-content-center mx-auto mb-3 border border-primary"
+                                style="width: 80px; height: 80px; font-size: 32px;">
+                                <i class="bi bi-person"></i>
+                            </div>
+                            <h3 class="h5 fw-bold text-dark mb-1">ម៉េង អ៊ុយសួង</h3>
+                            <span class="badge bg-secondary mb-3 px-3 py-2 rounded-pill">សមាជិកក្រុម (Team
+                                Member)</span>
+                            <p class="card-text text-muted small mb-0">
+                                <strong>តួនាទី:</strong> ប្រមូលទិន្នន័យសាកលវិទ្យាល័យ និងអាហារូបករណ៍ (Data Collection)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="components.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+        var swiper = new Swiper('.mySwiper', {
+
+            spaceBetween: 30,
+
+            centeredSlides: true,
+
+            autoplay: {
+
+                delay: 2500,
+
+                disableOnInteraction: false
+
+            },
+
+            pagination: {
+
+                el: '.swiper-pagination',
+
+                clickable: true
+            },
+
+            navigation: {
+
+                nextEl: '.swiper-button-next',
+
+                prevEl: '.swiper-button-prev'
+
+            }
+
+        });
+       
+    </script>
+
+
+    <!-- Bootstrap JS -->
+    <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
