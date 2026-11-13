@@ -24,335 +24,481 @@
 
 </head>
 <style>
-    .back {
-        background-color: beige;
-        padding: 4px 16px;
-        border-radius: 16px;
-        /* position: absolute; */
-        top: 16px;
-        left: 16px;
-        text-decoration: none;
+    :root {
+        --ns-navy: #203f82;
+        --ns-blue: #1769e8;
+        --ns-gold: #f5c84c;
+        --ns-ink: #263b59;
+        --ns-muted: #687b94;
+        --ns-line: #e2e9f2;
+        --ns-bg: #f7f9fc;
     }
-
+    body {
+        background: var(--ns-bg);
+        color: var(--ns-ink);
+        font-family: "Kantumruy Pro", sans-serif;
+        line-height: 1.85;
+    }
+    .scholarship-page {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 36px 18px 30px;
+    }
+    .scholarship-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 8px 15px;
+        background: #eaf1ff;
+        color: var(--ns-navy);
+        border-radius: 9px;
+        text-decoration: none;
+        font-weight: 600;
+        margin-bottom: 22px;
+    }
+    .scholarship-back:hover {
+        background: #dce8ff;
+        color: var(--ns-blue);
+    }
+    /* រៀបចំ Layout ២ ចំហៀង៖ ខាងឆ្វេងជាជួរឈរ (Sidebar) និងខាងស្តាំជាព័ត៌មានលម្អិតទទឹងធំ */
+    .scholarship-layout {
+        display: grid;
+        grid-template-columns: 360px 1fr;
+        /* Sidebar 360px និង Main Content រីកទទឹងពេញ */
+        gap: 24px;
+        align-items: start;
+    }
+    /* ជួរឈរខាងឆ្វេងផ្ទុក Poster, គន្លឹះ និងទំនាក់ទំនង តម្រៀបចុះក្រោម */
+    .scholarship-sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+    .scholarship-poster,
+    .scholarship-info,
+    .info-card {
+        background: #fff;
+        border: 1px solid var(--ns-line);
+        border-radius: 16px;
+        box-shadow: 0 7px 24px rgba(28, 55, 92, .07);
+    }
+    .scholarship-poster {
+        padding: 13px;
+    }
+    .scholarship-poster img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .scholarship-info {
+        padding: 28px 32px;
+        width: 100%;
+    }
+    .scholarship-heading {
+        font-size: clamp(21px, 2.2vw, 28px);
+        line-height: 1.55;
+        font-weight: 700;
+        color: var(--ns-navy);
+        margin: 0 0 12px;
+    }
+    .scholarship-lead {
+        font-size: 15px;
+        color: var(--ns-muted);
+        margin: 0 0 20px;
+    }
+    .scholarship-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 0 0 22px;
+    }
+    .scholarship-tags span {
+        font-size: 12px;
+        font-weight: 600;
+        color: #174b8d;
+        background: #edf4ff;
+        border-radius: 30px;
+        padding: 5px 12px;
+    }
+    .scholarship-section {
+        border-top: 1px solid var(--ns-line);
+        padding: 19px 0 5px;
+        margin-top: 8px;
+    }
+    .scholarship-section h5 {
+        font-weight: 700;
+        color: var(--ns-navy);
+        font-size: 17px;
+        margin: 0 0 12px;
+    }
+    .scholarship-section p {
+        font-size: 14px;
+        color: #485e79;
+        margin: 7px 0;
+    }
     .check-list {
         list-style: none;
-        padding-left: 0
+        padding: 0;
+        margin: 0;
     }
-
     .check-list li {
         position: relative;
-        padding: 5px 0 5px 29px
+        padding: 6px 0 6px 30px;
+        font-size: 14px;
+        color: #405672;
+        line-height: 1.85;
     }
-
     .check-list li:before {
         content: "✓";
         position: absolute;
         left: 0;
-        top: 4px;
-        width: 20px;
-        height: 20px;
+        top: 8px;
+        width: 19px;
+        height: 19px;
         border-radius: 50%;
         background: #e0f5e8;
         color: #19834b;
         display: grid;
         place-items: center;
         font-weight: 800;
-        font-size: 12px
+        font-size: 11px;
     }
-
+    .scholarship-apply {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        margin-top: 22px;
+        padding: 14px 18px;
+        border-radius: 11px;
+        background: var(--ns-navy);
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        box-shadow: 0 7px 16px rgba(32, 63, 130, .18);
+        transition: .2s;
+    }
+    .scholarship-apply:hover {
+        background: var(--ns-blue);
+        color: #fff;
+        transform: translateY(-2px);
+    }
+    .scholarship-note {
+        background: #fff8e5;
+        border: 1px solid #f4e5b5;
+        border-radius: 12px;
+        padding: 15px 17px;
+        color: #6b5a2c;
+        font-size: 13px;
+        margin-top: 18px;
+    }
+    .info-card {
+        padding: 23px 25px;
+    }
+    .info-card h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--ns-navy);
+        margin: 0 0 14px;
+    }
     .contact-line {
         display: flex;
         gap: 12px;
-        padding: 14px 0;
-        border-top: 1px solid var(--line)
+        padding: 13px 0;
+        border-top: 1px solid var(--ns-line);
+        align-items: flex-start;
     }
-
     .contact-line>span {
-        font-size: 22px
+        font-size: 20px;
     }
-
-    .contact-line small,
-    .contact-line b,
-    .contact-line a {
-        display: block
-    }
-
     .contact-line small {
+        display: block;
         font-size: 11px;
-        color: var(--muted)
+        color: var(--ns-muted);
     }
-
     .contact-line b,
     .contact-line a {
-        font-size: 12px;
-        overflow-wrap: anywhere
+        display: block;
+        font-size: 13px;
+        overflow-wrap: anywhere;
     }
-
     .contact-line a {
-        color: var(--blue)
+        color: var(--ns-blue);
+    }
+    /* សម្រាប់ទូរស័ព្ទដៃ និង Tablet */
+    @media (max-width: 991px) {
+        .scholarship-layout {
+            grid-template-columns: 1fr;
+            /* លើអេក្រង់តូច រត់ចុះក្រោមទាំងអស់ */
+        }
+
+        .scholarship-sidebar {
+            order: 2;
+            /* ឱ្យព័ត៌មានលម្អិតឡើងមកលើ រួច sidebar នៅក្រោមវិញលើទូរស័ព្ទ */
+        }
+
+        .scholarship-info {
+            order: 1;
+            padding: 20px;
+        }
     }
 </style>
 
 <body>
-
     <!-- ================= NAVBAR ================= -->
     <header>
-
-        <nav class="navbar navbar-expand-lg bg-light sticky-top py-1">
-            <div class="container">
-
-                <!-- Logo -->
-                <a class="navbar-brand" href="home-page.html">
-                    <img src="../asset/css/photo/logo.png" alt="LOGO" class="logo">
-                </a>
-
-                <!-- Mobile Toggle -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Navbar Menu -->
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-
-                    <div class="offcanvas-header">
-                        <a class="navbar-brand" href="home-page.html">
-                            <img src="../asset/css/photo/logo.png" alt="LOGO" class="logo">
-                        </a>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-
-                    <div class="offcanvas-body">
-
-                        <!-- Menu Center -->
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-
-                            <!-- Home -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="home-page.html">
-                                    <i class="bi bi-house"></i>
-                                    ទំព័រដើម
-                                </a>
-                            </li>
-
-                            <!-- Skill -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="skill.html">
-                                    <i class="bi bi-tools"></i>
-                                    ជំនាញ
-                                </a>
-                            </li>
-
-                            <!-- Scholarship Dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="scholoship.html" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-mortarboard"></i>
-                                    អាហារូបករណ៍
-                                </a>
-
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item border-bottom border-secondary-subtle"
-                                            href="somdach.html">
-                                            អាហារូបករណ៍ សម្ដេចតេជោ
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item border-bottom border-secondary-subtle"
-                                            href="university.html">
-                                            សាកលវិទ្យាល័យ
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="ministry-of-edu.html">
-                                            ក្រសួងអប់រំ យុវជន និងកីឡា
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <!-- About -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="about-us.html">
-                                    <i class="bi bi-info-circle"></i>
-                                    អំពីយើង
-                                </a>
-                            </li>
-
-                        </ul>
-
-                        <!-- Right Icons and Button -->
-                        <div class="navbar-actions d-flex align-items-center gap-3 ">
-
-                            <div class="search-container">
-                                <input type="text" class="search-input" placeholder="Type to search...">
-
-                                <button class="search-icon-btn" aria-label="Search">
-                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M10.5 3a7.5 7.5 0 1 0 5.035 13.064l5.258 5.258 1.414-1.414-5.258-5.258A7.5 7.5 0 0 0 10.5 3zm0 2a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11z" />
-                                    </svg>
-                                </button>
-                            </div>
-
-                            <a href="notification.html" class="nav-icon" aria-label="Notifications">
-                                <i class="bi bi-bell"></i>
+        <!-- ================= NAVBAR ================= -->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light sticky-top py-1">
+                <div class="container">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="home-page.html">
+                        <img src="../asset/css/photo/logo.png" alt="LOGO" class="logo">
+                    </a>
+                    <!-- Mobile Toggle -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Navbar Menu -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <a class="navbar-brand" href="home-page.html">
+                                <img src="../asset/css/photo/logo.png" alt="LOGO" class="logo">
                             </a>
-
-                            <!-- User Authentication -->
-                            <div id="authArea" class="d-flex align-items-center gap-2">
-
-                                <!-- Before Login -->
-                                <!-- <div id="guestMenu" class="d-flex gap-2">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <!-- Menu Center -->
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <!-- Home -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="home-page.html">
+                                        <i class="bi bi-house"></i>
+                                        ទំព័រដើម
+                                    </a>
+                                </li>
+                                <!-- Skill -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="skill.html">
+                                        <i class="bi bi-tools"></i>
+                                        ជំនាញ
+                                    </a>
+                                </li>
+                                <!-- Scholarship Dropdown -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="scholoship.html" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-mortarboard"></i>
+                                        អាហារូបករណ៍
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item border-bottom border-secondary-subtle"
+                                                href="somdach.html">
+                                                អាហារូបករណ៍ សម្ដេចតេជោ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item border-bottom border-secondary-subtle"
+                                                href="university.html">
+                                                សាកលវិទ្យាល័យ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="ministry-of-edu.html">
+                                                ក្រសួងអប់រំ យុវជន និងកីឡា
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- About -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about-us.html">
+                                        <i class="bi bi-info-circle"></i>
+                                        អំពីយើង
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Right Icons and Button -->
+                            <div class="navbar-actions d-flex align-items-center gap-3 ">
+                                <div class="search-container">
+                                    <input type="text" class="search-input" placeholder="Type to search...">
+                                    <button class="search-icon-btn" aria-label="Search">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5 3a7.5 7.5 0 1 0 5.035 13.064l5.258 5.258 1.414-1.414-5.258-5.258A7.5 7.5 0 0 0 10.5 3zm0 2a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a href="notification.html" class="nav-icon" aria-label="Notifications">
+                                    <i class="bi bi-bell"></i>
+                                </a>
+                                <!-- User Authentication -->
+                                <div id="authArea" class="d-flex align-items-center gap-2">
+                                    <!-- Before Login -->
+                                    <!-- <div id="guestMenu" class="d-flex gap-2">
                                     <a href="login.html" class="btn btn-outline-primary">
                                         Login
                                     </a>
-
-
                                 </div> -->
-                                <div >
-                                    <img src="../asset/css/photo/logo-email2.jpg" alt="" class="rounded-circle" style="width: 40px;height: 40px;object-fit: cover;">
-                                </div>
-
-                                <!-- After Login -->
-                                <div id="userMenu" class="d-none align-items-center gap-3">
-
-                                    <!-- Notification -->
-                                    <a href="#" class="text-dark position-relative">
-                                        <i class="bi bi-bell fs-5"></i>
-                                    </a>
-
-                                    <!-- Profile Dropdown -->
-                                    <div class="dropdown">
-
-                                        <button class="btn border-0 dropdown-toggle d-flex
+                                    <div>
+                                        <img src="../asset/css/photo/logo-email.jpg" alt="" class="rounded-circle"
+                                            style="width: 40px;height: 40px;object-fit: cover;">
+                                    </div>
+                                    <!-- After Login -->
+                                    <div id="userMenu" class="d-none align-items-center gap-3">
+                                        <!-- Notification -->
+                                        <a href="#" class="text-dark position-relative">
+                                            <i class="bi bi-bell fs-5"></i>
+                                        </a>
+                                        <!-- Profile Dropdown -->
+                                        <div class="dropdown">
+                                            <button class="btn border-0 dropdown-toggle d-flex
                                                 align-items-center gap-2" data-bs-toggle="dropdown">
+                                                <img id="userPhoto" src="https://placehold.co/40x40"
+                                                    class="rounded-circle" width="38" height="38"
+                                                    style="object-fit: cover;">
+                                                <span id="userName">User</span>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li class="px-3 py-2">
+                                                    <strong id="profileName">User</strong>
+                                                    <br>
+                                                    <small id="profileEmail" class="text-muted">
+                                                        user@gmail.com
+                                                    </small>
+                                                </li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="profile.html">
+                                                        <i class="bi bi-person me-2"></i>
+                                                        My Profile
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="saved.html">
+                                                        <i class="bi bi-bookmark me-2"></i>
+                                                        Saved Universities
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
 
-                                            <img id="userPhoto" src="https://placehold.co/40x40" class="rounded-circle"
-                                                width="38" height="38" style="object-fit: cover;">
-
-                                            <span id="userName">User</span>
-
-                                        </button>
-
-                                        <ul class="dropdown-menu dropdown-menu-end">
-
-                                            <li class="px-3 py-2">
-                                                <strong id="profileName">User</strong>
-                                                <br>
-                                                <small id="profileEmail" class="text-muted">
-                                                    user@gmail.com
-                                                </small>
-                                            </li>
-
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-
-                                            <li>
-                                                <a class="dropdown-item" href="profile.html">
-                                                    <i class="bi bi-person me-2"></i>
-                                                    My Profile
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a class="dropdown-item" href="saved.html">
-                                                    <i class="bi bi-bookmark me-2"></i>
-                                                    Saved Universities
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-
-                                            <li>
-                                                <button class="dropdown-item text-danger" id="logoutBtn">
-                                                    <i class="bi bi-box-arrow-right me-2"></i>
-                                                    Logout
-                                                </button>
-                                            </li>
-
-                                        </ul>
+                                                <li>
+                                                    <button class="dropdown-item text-danger" id="logoutBtn">
+                                                        <i class="bi bi-box-arrow-right me-2"></i>
+                                                        Logout
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-            </div>
-        </nav>
-
-
-    </header>
-    <main>
-        <section class="py-5">
-            <div class="container">
-                <a href="somdach.html" class="back "><i class="bi bi-arrow-left-short"></i> ត្រទ្បប់ទៅអាហាររូបករណ៍</a>
-                <div class="row g-4">
-                    <div class="col-sm-12 col-lg-5 p-4">
-                        <div class="card">
-                            <img src="../asset/css/photo/scholoship_pic_1.jpg" alt="">
+            </nav>
+        </header>
+        <main>
+            <section class="scholarship-page">
+                <a href="somdach.html" class="scholarship-back"><i class="bi bi-arrow-left-short"></i>
+                    ត្រឡប់ទៅអាហារូបករណ៍</a>
+                <div class="scholarship-layout">
+                    <!-- ជួរឈរបញ្ឈរចុះក្រោម (Poster + គន្លឹះ + ទំនាក់ទំនង) -->
+                    <aside class="scholarship-sidebar">
+                        <!-- ប្រអប់ Poster -->
+                        <div class="scholarship-poster">
+                            <img src="../asset/css/photo/private-school.jpg" alt="Poster អាហារូបករណ៍">
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-7 p-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="card-title">
-                                    <p> Paragon International University — អាហារូបករណ៍របស់សម្ដេចតេជោហ៊ុនសែន
-                                        និងសម្ដេចកិត្ដិព្រឹទ្ធបណ្ឌិត</p>
-                                </h3>
-                                <p class="card-title">
-                                    ថ្នាក់បរិញ្ញាបត្រ សម្រាប់ឆ្នាំ២០២៦-២០១៧ ចំនួន១៥កន្លែង ដោយឆ្លងកាត់ការការប្រលង។
-                                </p>
-                                <div class="card-footer">
-                                    <h5 class="fw-bold">🎓លក្ខខណ្ឌនៃការជ្រើសរើស</h5>
-                                    <ul class="check-list">
-                                        <li>ផ្ដល់ជូនបេក្ខជនទូទាំងប្រទ្បងជាប់សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិគ្រប់ឆ្នាំសិក្សា
-                                            និទ្ទេស A ឬB</li>
-                                        <li>មានឆន្ទ:ពិតប្រាកដក្នុងការបន្ដការសិក្សា ខិតខំរៀន</li>
-                                        <li>ពុំមែនជាសិស្សដែលធ្លាប់ ឬកំពុងទទួលបានអាហាររូបករណ៍ពីគណ:គម្មាធិការអាហាររូបករណ៍
-                                        </li>
-                                        <li>ពុំមែនជាសិស្សដែលកំពុងសិក្សានៅសាកវិទ្យាល័យ ពុទ្ធិសាស្រ្ដ</li>
-                                        <li>គោរពតាមការណែនាំ និងព្រមទទួលយកលក្ខខណ្ឌដែលមានចែងរបស់
-                                            គណ:កម្មាធិការអាហាររូបករណ៍សិស្សនិស្សិតក្រីក្រ <span
-                                                class="fw-bold">សម្ដេចអង្គមហាសេនាបតីតេជោ ហ៊ុនសែន </span> និង <span
-                                                class="fw-bold">សម្ដេចកិត្ដិព្រឹទ្ធបណ្ឌិត </span> និង
-                                            គណកម្មាធិការប្រទ្បងថ្នាក់ជាតិសម្រាប់ការបណ្ដុះបណ្ដាលក្នុងវិស័យសុខាភិបាលនិង
-                                            សាកលវិទ្យាល័យ ពុទ្ធិសាស្រ្ដ។</li>
-                                    </ul>
-
-                                    <h5>សម័យប្រទ្បង មណ្ឌលប្រទ្បងនិងព័ត៏មានបន្ថែម</h5>
-                                    <ul class="check-list">
-                                        <li><span>សម័យប្រទ្បង និង មណ្ដ</span></li>
-                                    </ul>
-
+                        <!-- ប្រអប់គន្លឹះ -->
+                        <section class="info-card">
+                            <h4>💡 គន្លឹះសម្រាប់អ្នកដាក់ពាក្យ</h4>
+                            <ul class="check-list">
+                                <li>អានលក្ខខណ្ឌជ្រើសរើសឱ្យបានច្បាស់លាស់។</li>
+                                <li>រៀបចំឯកសារចាំបាច់ជាមុន។</li>
+                                <li>ពិនិត្យថ្ងៃផុតកំណត់ និងព័ត៌មានថ្មីៗពីប្រភពផ្លូវការ។</li>
+                                <li>រក្សាទុកភស្តុតាងនៃការដាក់ពាក្យ។</li>
+                            </ul>
+                        </section>
+                        <!-- ប្រអប់ទំនាក់ទំនង -->
+                        <section class="info-card">
+                            <h4>ព័ត៌មានទំនាក់ទំនង</h4>
+                            <div class="contact-line"><span>🏛️</span>
+                                <div><small>សាកលវិទ្យាល័យ</small><b>Paragon International University</b></div>
+                            </div>
+                            <div class="contact-line"><span>📍</span>
+                                <div><small>ទីតាំង</small><b>អាគារលេខ ៨, សង្កាត់បឹងកក់១, St 315, Phnom Penh 12151</b>
                                 </div>
                             </div>
+                            <div class="contact-line"><span>🌐</span>
+                                <div><small>គេហទំព័រ</small><a href="https://www.paragoniu.edu.kh/" target="_blank"
+                                        rel="noopener">www.paragoniu.edu.kh ↗</a></div>
+                            </div>
+                        </section>
+                    </aside>
+                    <!-- ប្រអប់លម្អិតអាហារូបករណ៍ (រត់ទទឹងធំទូលាយ) -->
+                    <article class="scholarship-info">
+                        <h1 class="scholarship-heading">Paragon International University — អាហារូបករណ៍របស់សម្ដេចតេជោ
+                            ហ៊ុន សែន និងសម្ដេចកិត្តិព្រឹទ្ធបណ្ឌិត</h1>
+                        <p class="scholarship-lead">ថ្នាក់បរិញ្ញាបត្រ សម្រាប់ឆ្នាំសិក្សា ២០២៦–២០២៧ ចំនួន ១៥ កន្លែង
+                            ដោយឆ្លងកាត់ការប្រឡង។</p>
+
+                        <div class="scholarship-tags">
+                            <span>✍🏻 សិស្សនិទ្ទេស A ចំនួន ១០ កន្លែង</span>
+                            <span>✍🏻 សិស្សនិទ្ទេស B ចំនួន ៥ កន្លែង</span>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="card p-4">
-                            <span class="tip-icon">💡</span>
-                            <h2>គន្លឹះសម្រាប់អ្នកដាក់ពាក្យ</h2>
-                            <ul>
-                                <li>អានលក្ខខណ្ឌឱ្យបានច្បាស់</li>
-                                <li>រៀបចំឯកសារជាមុន</li>
-                                <li>ពិនិត្យ Deadline ពីប្រភពផ្លូវការ</li>
-                                <li>កុំបង់ប្រាក់តាមតំណដែលមិនទុកចិត្ត</li>
+                        <section class="scholarship-section">
+                            <h5>🎓 លក្ខខណ្ឌនៃការជ្រើសរើស</h5>
+                            <ul class="check-list">
+                                <li>បេក្ខជនដែលបានប្រឡងជាប់សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឆ្នាំ២០២៥–២០២៦ ដោយទទួលបាននិទ្ទេស
+                                    A ឬ B។</li>
+                                <li>មិនមែនជាសិស្សដែលបានដាក់ពាក្យស្នើសុំអាហារូបករណ៍ពីសាកលវិទ្យាល័យអន្តរជាតិផារ៉ាហ្គនដោយផ្ទាល់។
+                                    ករណីដាក់ពាក្យដោយផ្ទាល់ មិនត្រូវបានយកមកពិចារណាក្នុងអាហារូបករណ៍នេះទេ។</li>
+                                <li>មិនមែនជាសិស្ស ឬនិស្សិតដែលបានចុះឈ្មោះចូលសិក្សា
+                                    ឬកំពុងសិក្សានៅសាកលវិទ្យាល័យអន្តរជាតិផារ៉ាហ្គន។</li>
+                                <li>មានឆន្ទៈពិតប្រាកដក្នុងការបន្តការសិក្សា និងខិតខំរៀនសូត្រ។</li>
+                                <li>គោរពតាមការណែនាំ និងព្រមទទួលយកលក្ខខណ្ឌរបស់គណៈកម្មាធិការអាហារូបករណ៍ និងសាកលវិទ្យាល័យ។
+                                </li>
                             </ul>
-                        </div>
-                    </div>
+                        </section>
+                        <section class="scholarship-section">
+                            <h5>🎓 អំពីជំនាញ និងព័ត៌មានទាក់ទងនឹងគ្រឹះស្ថានឧត្តមសិក្សា</h5>
+                            <p><strong>ចំនួនអាហារូបករណ៍៖</strong></p>
+                            <ul class="check-list">
+                                <li>សិស្សនិទ្ទេស A ចំនួន ១០ កន្លែង</li>
+                                <li>សិស្សនិទ្ទេស B ចំនួន ៥ កន្លែង</li>
+                            </ul>
+                            <p><strong>ផ្ដល់ជូនជំនាញ: </strong>ស្ថាបត្យកម្ម, ស្ថាបត្យកម្មផ្ទៃក្នុង,
+                                វិស្វកម្មសំណង់សុីវិល, វិស្វកម្មឧស្សាហ៍កម្ម, វិទ្យាសាស្រ្ដកុំព្យូទ័រ, សិល្ប:ឌីជីថល
+                                និងការរចនា, គ្រប់គ្រងប្រពន្ធ័ព័ត៌មាន, ធនាគារ និងហិរញ្ញវត្ថុ, គ្រប់គ្រងពាណិជ្ជកម្ម,
+                                សេដ្ឋកិច្ច, ភស្ដុភារ និងពាណិជ្ជកម្មអន្ដរជាតិ, ទំនាក់ទំនងអន្ដរជាតិ, គណិតវិទ្យា
+                                និងវិទ្យាសាស្រ្ដទិន្នន័យ, គ្រប់គ្រងប្រពន្ធ័ផ្សព្វផ្សាយ និង ទំនាក់ទំនង។</p>
+                            <p><strong>📅 ថ្ងៃផុតកំណត់: </strong>ត្រឹមថ្ងៃទី៤ ខែតុលា ឆ្នាំ 2026 វេលាម៉ោង ១៧:០០ នាទី
+                                ជាកំហិត</p>
+                        </section>
+                        <a href="https://reg.amt.live/en/web/signup" target="_blank" rel="noopener"
+                            class="scholarship-apply">
+                            📝 ដាក់ពាក្យឥឡូវនេះ <i class="bi bi-arrow-right"></i>
+                        </a>
+                        <div class="scholarship-note">សូមពិនិត្យលក្ខខណ្ឌ
+                            និងកាលបរិច្ឆេទដាក់ពាក្យនៅក្នុងសេចក្តីប្រកាសផ្លូវការមុនពេលដាក់ពាក្យ។</div>
+                    </article>
                 </div>
-            </div>
-        </section>
-    </main>
-    
-     <!-- Footer -->
+            </section>
+        </main>
+    </header>
+    <!-- Footer -->
     <div id="footer"></div>
 
     <!-- ================= JAVASCRIPT ================= -->

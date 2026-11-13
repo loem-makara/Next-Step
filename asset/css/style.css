@@ -1206,3 +1206,37 @@ section {
         top: 30%;
     }
 }
+<<<<<<< HEAD
+=======
+.image-box1{
+    width: 550px;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-slide{
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    object-fit: cover;
+}
+.location{
+    width: 550px;
+    height:auto;
+}
+.location iframe{
+    width: 100%;
+    height:80%;
+    border-radius: 10px;
+   
+}
+.contact-link{
+    text-decoration:none;
+    color: #475569;
+}
+.contact-link:hover{
+    text-decoration:underline;
+    color: #0a2035;
+    text-underline-offset:3px;
+}
+>>>>>>> 4266a9bb92453447fcfdaaa826f9bd8a407e9d28
