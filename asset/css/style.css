@@ -729,10 +729,10 @@ section {
 
 .card {
     transition: all 0.3s ease;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
-.card:hover {
+.card:hover{
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
@@ -1205,17 +1205,4 @@ section {
         right: 0;
         top: 30%;
     }
-}
-.button {
-    text-decoration: none;
-    border: 1px solid rgb(128, 125, 125);
-    color: black;
-    background-color: aliceblue;
-    border-radius: 8px;
-    padding: 0 5px 0 5px;
-}
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: var(--bs-nav-pills-link-active-color);
-    background-color:#a9cef2;!important
-(--bs-nav-pills-link-active-bg);
 }
