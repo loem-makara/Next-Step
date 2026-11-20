@@ -46,3 +46,11 @@ forgotForm.addEventListener('submit', (e) => {
     message.textContent = 'Email submitted: ' + email;
     message.style.color = 'green';
 });
+// Login Form
+const loginForm = document.querySelector('#loginForm');
+
+loginForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    window.location.href = '../home-page.html';
+});
