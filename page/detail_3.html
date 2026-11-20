@@ -44,22 +44,11 @@
         margin: 0 auto;
         padding: 36px 18px 30px;
     }
-    .scholarship-back {
-        display: inline-flex;
-        align-items: center;
-        gap: 5px;
-        padding: 8px 15px;
-        background: #eaf1ff;
-        color: var(--ns-navy);
-        border-radius: 9px;
-        text-decoration: none;
-        font-weight: 600;
-        margin-bottom: 22px;
+    .breadcrumb{
+        padding:0 16px;margin-top:17px;
     }
-    .scholarship-back:hover {
-        background: #dce8ff;
-        color: var(--ns-blue);
-    }
+    .breadcrumb{max-width:1280px;margin:22px auto 14px;padding:0 24px;display:flex;gap:10px;align-items:center;color:var(--muted);font-size:13px;flex-wrap:wrap}
+    .breadcrumb a{color:var(--blue)}
     /* រៀបចំ Layout ២ ចំហៀង៖ ខាងឆ្វេងជាជួរឈរ (Sidebar) និងខាងស្តាំជាព័ត៌មានលម្អិតទទឹងធំ */
     .scholarship-layout {
         display: grid;
@@ -284,6 +273,14 @@
                                         ទំព័រដើម
                                     </a>
                                 </li>
+
+                                <!-- UNIVERSITY -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="university-navbar.html">
+                                    <i class="bi bi-building"></i>
+                                    សាកលវិទ្យាល័យ
+                                </a>
+                            </li>
                                 <!-- Skill -->
                                 <li class="nav-item">
                                     <a class="nav-link" href="skill.html">
@@ -419,7 +416,7 @@
                     <aside class="scholarship-sidebar">
                         <!-- ប្រអប់ Poster -->
                         <div class="scholarship-poster">
-                            <img src="../asset/css/photo/private-school.jpg" alt="Poster អាហារូបករណ៍">
+                            <img src="../asset/css/photo/scholoship_somdach.jpeg" alt="Poster អាហារូបករណ៍">
                         </div>
                         <!-- ប្រអប់គន្លឹះ -->
                         <section class="info-card">
@@ -435,40 +432,40 @@
                         <section class="info-card">
                             <h4>ព័ត៌មានទំនាក់ទំនង</h4>
                             <div class="contact-line"><span>🏛️</span>
-                                <div><small>សាកលវិទ្យាល័យ</small><b>Paragon International University</b></div>
+                                <div><small>សាកលវិទ្យាល័យ</small><b>សាកលវិទ្យាល័យពុទ្ធិសាស្រ្ដ</b></div>
                             </div>
                             <div class="contact-line"><span>📍</span>
-                                <div><small>ទីតាំង</small><b>អាគារលេខ ៨, សង្កាត់បឹងកក់១, St 315, Phnom Penh 12151</b>
+                                <div><small>ទីតាំង</small><b>អាគារលេខ ៥៥, ផ្លូវ ១៨០និង១៨៤, សង្កាត់បឹងរាំង, ខណ្ឌដូនពេញ, រាជធានីភ្នំពេញ</b>
                                 </div>
                             </div>
                             <div class="contact-line"><span>🌐</span>
-                                <div><small>គេហទំព័រ</small><a href="https://www.paragoniu.edu.kh/" target="_blank"
-                                        rel="noopener">www.paragoniu.edu.kh ↗</a></div>
+                                <div><small>គេហទំព័រ</small><a href="https://www.puthisastra.edu.kh/" target="_blank"
+                                        rel="noopener">www.puthisastra.edu.kh ↗</a></div>
                             </div>
                         </section>
                     </aside>
                     <!-- ប្រអប់លម្អិតអាហារូបករណ៍ (រត់ទទឹងធំទូលាយ) -->
                     <article class="scholarship-info">
-                        <h1 class="scholarship-heading">Paragon International University — អាហារូបករណ៍របស់សម្ដេចតេជោ
+                        <h1 class="scholarship-heading">សាកលវិទ្យាល័យពុទ្ធិសាស្រ្ដ — អាហារូបករណ៍របស់សម្ដេចតេជោ
                             ហ៊ុន សែន និងសម្ដេចកិត្តិព្រឹទ្ធបណ្ឌិត</h1>
-                        <p class="scholarship-lead">ថ្នាក់បរិញ្ញាបត្រ សម្រាប់ឆ្នាំសិក្សា ២០២៦–២០២៧ ចំនួន ១៥ កន្លែង
+                        <p class="scholarship-lead">ថ្នាក់បរិញ្ញាបត្ររង វិស័យសុខាភិបាល សម្រាប់ឆ្នាំសិក្សា ២០២៦–២០២៧ ចំនួន ៣០ កន្លែង
                             ដោយឆ្លងកាត់ការប្រឡង។</p>
 
                         <div class="scholarship-tags">
-                            <span>✍🏻 សិស្សនិទ្ទេស A ចំនួន ១០ កន្លែង</span>
-                            <span>✍🏻 សិស្សនិទ្ទេស B ចំនួន ៥ កន្លែង</span>
+                            <span>✍🏻 សិស្សនិទ្ទេស A ឬ B ចំនួន ៣០ កន្លែង</span>
+                            
                         </div>
                         <section class="scholarship-section">
                             <h5>🎓 លក្ខខណ្ឌនៃការជ្រើសរើស</h5>
                             <ul class="check-list">
-                                <li>បេក្ខជនដែលបានប្រឡងជាប់សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ ឆ្នាំ២០២៥–២០២៦ ដោយទទួលបាននិទ្ទេស
+                                <li>ជាបេក្ខជនដែលបានប្រឡងជាប់សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិគ្រប់ឆ្នាំសិក្សានិទ្ទេស
                                     A ឬ B។</li>
-                                <li>មិនមែនជាសិស្សដែលបានដាក់ពាក្យស្នើសុំអាហារូបករណ៍ពីសាកលវិទ្យាល័យអន្តរជាតិផារ៉ាហ្គនដោយផ្ទាល់។
-                                    ករណីដាក់ពាក្យដោយផ្ទាល់ មិនត្រូវបានយកមកពិចារណាក្នុងអាហារូបករណ៍នេះទេ។</li>
-                                <li>មិនមែនជាសិស្ស ឬនិស្សិតដែលបានចុះឈ្មោះចូលសិក្សា
-                                    ឬកំពុងសិក្សានៅសាកលវិទ្យាល័យអន្តរជាតិផារ៉ាហ្គន។</li>
+                                <li>ពុំមែនជានិស្សិតដែលធ្លាប់ ឬកំពុងទទួលបានអាហារូបករណ៍ពីគណៈកម្មាធិការអាហារូបករណ៍</li>
+                                <li>ពុំមែនជានិស្សិតដែលកំពុងសិក្សានៅសាកលវិទ្យាល័យ ពុទ្ធិសាស្រ្ដ</li>
                                 <li>មានឆន្ទៈពិតប្រាកដក្នុងការបន្តការសិក្សា និងខិតខំរៀនសូត្រ។</li>
-                                <li>គោរពតាមការណែនាំ និងព្រមទទួលយកលក្ខខណ្ឌរបស់គណៈកម្មាធិការអាហារូបករណ៍ និងសាកលវិទ្យាល័យ។
+                                <li>គោរពតាមការណែនាំ និងព្រមទទួលយកលក្ខខណ្ឌដែលមានចែងគណៈកម្មាធិការអាហារូបករណ៍សិស្ស-និស្សិតក្រីក្រ
+                                    <strong>សម្ដេចអង្គមហាសេនាបតីតេជោ ហ៊ុនសែន</strong>និង
+                                    <strong>សម្ដេចកិត្ដិព្រឹទ្ធបណ្ឌិត</strong> គណៈកម្មាធិការប្រទ្បងថ្នាក់ជាតិសម្រាប់ការបណ្ដុះបណ្ដាលក្នុងវិស័យសុខាភិបាល និងសាកលវិទ្យាល័យ ពុទ្ធិសាស្រ្ដ។
                                 </li>
                             </ul>
                         </section>
@@ -476,15 +473,11 @@
                             <h5>🎓 អំពីជំនាញ និងព័ត៌មានទាក់ទងនឹងគ្រឹះស្ថានឧត្តមសិក្សា</h5>
                             <p><strong>ចំនួនអាហារូបករណ៍៖</strong></p>
                             <ul class="check-list">
-                                <li>សិស្សនិទ្ទេស A ចំនួន ១០ កន្លែង</li>
-                                <li>សិស្សនិទ្ទេស B ចំនួន ៥ កន្លែង</li>
+                                <li>ថ្នាក់បរិញ្ញាបត្ររងឆ្មប ១០ កន្លែង</li>
+                                <li>ថ្នាក់បរិញ្ញាបត្ររងគិលានុបដ្ឋាក ១០ កន្លែង</li>
+                                <li>ថ្នាក់បរិញ្ញាបត្ររងបច្ចេកទេសមន្ទីរពិសោធន៍វេជ្ជសាស្រ្ដ ១០ កន្លែង</li>
                             </ul>
-                            <p><strong>ផ្ដល់ជូនជំនាញ: </strong>ស្ថាបត្យកម្ម, ស្ថាបត្យកម្មផ្ទៃក្នុង,
-                                វិស្វកម្មសំណង់សុីវិល, វិស្វកម្មឧស្សាហ៍កម្ម, វិទ្យាសាស្រ្ដកុំព្យូទ័រ, សិល្ប:ឌីជីថល
-                                និងការរចនា, គ្រប់គ្រងប្រពន្ធ័ព័ត៌មាន, ធនាគារ និងហិរញ្ញវត្ថុ, គ្រប់គ្រងពាណិជ្ជកម្ម,
-                                សេដ្ឋកិច្ច, ភស្ដុភារ និងពាណិជ្ជកម្មអន្ដរជាតិ, ទំនាក់ទំនងអន្ដរជាតិ, គណិតវិទ្យា
-                                និងវិទ្យាសាស្រ្ដទិន្នន័យ, គ្រប់គ្រងប្រពន្ធ័ផ្សព្វផ្សាយ និង ទំនាក់ទំនង។</p>
-                            <p><strong>📅 ថ្ងៃផុតកំណត់: </strong>ត្រឹមថ្ងៃទី៤ ខែតុលា ឆ្នាំ 2026 វេលាម៉ោង ១៧:០០ នាទី
+                            <p><strong>📅 ថ្ងៃផុតកំណត់: </strong>ត្រឹមថ្ងៃទី១៣ ខែវិចិ្ឆកា ឆ្នាំ 2026 វេលាម៉ោង ១៧:០០ នាទី
                                 ជាកំហិត</p>
                         </section>
                         <a href="https://reg.amt.live/en/web/signup" target="_blank" rel="noopener"

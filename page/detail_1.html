@@ -315,6 +315,14 @@
                                         ទំព័រដើម
                                     </a>
                                 </li>
+
+                                <!-- UNIVERSITY -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="university-navbar.html">
+                                    <i class="bi bi-building"></i>
+                                    សាកលវិទ្យាល័យ
+                                </a>
+                            </li>
                                 <!-- Skill -->
                                 <li class="nav-item">
                                     <a class="nav-link" href="skill.html">
@@ -443,14 +451,42 @@
         </header>
         <main>
             <section class="scholarship-page">
-                <a href="somdach.html" class="scholarship-back"><i class="bi bi-arrow-left-short"></i>
-                    ត្រឡប់ទៅអាហារូបករណ៍</a>
-
-                <div class="scholarship-top">
-                    <div class="scholarship-poster">
-                        <img src="../asset/css/photo/scholaorship_pic.jpg" alt="Poster អាហារូបករណ៍សម្ដេចតេជោ ហ៊ុន សែន">
-                    </div>
-
+                <div class="breadcrumb"><a href="home-page.html">ទំព័រដើម</a><span>›</span><a href="somdach.html">អាហារូបករណ៍សម្ដេចតេជោ</a><span>›</span><span>RUPP Scholarship</span></div>
+                <div class="scholarship-layout">
+                    <!-- ជួរឈរបញ្ឈរចុះក្រោម (Poster + គន្លឹះ + ទំនាក់ទំនង) -->
+                    <aside class="scholarship-sidebar">
+                        <!-- ប្រអប់ Poster -->
+                        <div class="scholarship-poster">
+                            <img src="../asset/css/photo/scholoarship_AUPP.jpeg" alt="Poster អាហារូបករណ៍">
+                        </div>
+                        <!-- ប្រអប់គន្លឹះ -->
+                        <section class="info-card">
+                            <h4>💡 គន្លឹះសម្រាប់អ្នកដាក់ពាក្យ</h4>
+                            <ul class="check-list">
+                                <li>អានលក្ខខណ្ឌជ្រើសរើសឱ្យបានច្បាស់លាស់។</li>
+                                <li>រៀបចំឯកសារចាំបាច់ជាមុន។</li>
+                                <li>ពិនិត្យថ្ងៃផុតកំណត់ និងព័ត៌មានថ្មីៗពីប្រភពផ្លូវការ។</li>
+                                <li>រក្សាទុកភស្តុតាងនៃការដាក់ពាក្យ។</li>
+                            </ul>
+                        </section>
+                        <!-- ប្រអប់ទំនាក់ទំនង -->
+                        <section class="info-card">
+                            <h4>ព័ត៌មានទំនាក់ទំនង</h4>
+                            <div class="contact-line"><span>🏛️</span>
+                                <div><small>សាកលវិទ្យាល័យ</small><b>សាកលវិទ្យាល័យអាមេរិកាំង</b></div>
+                            </div>
+                            <div class="contact-line"><span>📍</span>
+                                <div><small>ទីតាំង</small><b>អាគារលេខ ២៧៨H, ផ្លូវ ២០១R ភូមិក្រោលគោ,
+                                        សង្កាត់គីទ្បូម៉ែត្រលេខ៦,ខណ្ឌឬស្សីកែវ, រាជធានីភ្នំពេញ</b>
+                                </div>
+                            </div>
+                            <div class="contact-line"><span>🌐</span>
+                                <div><small>គេហទំព័រ</small><a href="https://www.rufa.edu.kh/" target="_blank"
+                                        rel="noopener">www.rufa.edu.kh ↗</a></div>
+                            </div>
+                        </section>
+                    </aside>
+                    <!-- ប្រអប់លម្អិតអាហារូបករណ៍ (រត់ទទឹងធំទូលាយ) -->
                     <article class="scholarship-info">
                         <h1 class="scholarship-heading">The University Of Cambodia — អាហារូបករណ៍របស់សម្ដេចតេជោ ហ៊ុន សែន
                             និងសម្ដេចកិត្តិព្រឹទ្ធបណ្ឌិត</h1>
@@ -477,10 +513,10 @@
                                 <li>គោរពតាមការណែនាំ
                                     និងព្រមទទួលយកលក្ខខណ្ឌរបស់គណៈកម្មាធិការអាហារូបករណ៍សិស្ស-និស្សិតក្រីក្រ
                                     <strong>សម្ដេចអង្គមហាសេនាបតីតេជោ ហ៊ុនសែន</strong>និង
-                                    <strong>សម្ដេចកិត្ដិព្រឹទ្ធបណ្ឌិត</strong> និងសាកលវិទ្យាល័យកម្ពុជា។</li>
+                                    <strong>សម្ដេចកិត្ដិព្រឹទ្ធបណ្ឌិត</strong> និងសាកលវិទ្យាល័យកម្ពុជា។
+                                </li>
                             </ul>
                         </section>
-
                         <section class="scholarship-section">
                             <h5>🎓 អំពីជំនាញ និងព័ត៌មានទាក់ទងនឹងគ្រឹះស្ថានឧត្តមសិក្សា</h5>
                             <p><strong>អាហារូបករណ៍លើថ្លៃសិក្សាថ្នាក់បរិញ្ញាបត្រ១០០% ចំនួន១៥កន្លែង៖</strong></p>
@@ -504,32 +540,6 @@
                         <div class="scholarship-note">សូមពិនិត្យលក្ខខណ្ឌ
                             និងកាលបរិច្ឆេទដាក់ពាក្យនៅក្នុងសេចក្តីប្រកាសផ្លូវការមុនពេលដាក់ពាក្យ។</div>
                     </article>
-                </div>
-
-                <div class="scholarship-bottom">
-                    <section class="info-card">
-                        <h4>💡 គន្លឹះសម្រាប់អ្នកដាក់ពាក្យ</h4>
-                        <ul class="check-list">
-                            <li>អានលក្ខខណ្ឌជ្រើសរើសឱ្យបានច្បាស់លាស់។</li>
-                            <li>រៀបចំឯកសារចាំបាច់ជាមុន។</li>
-                            <li>ពិនិត្យថ្ងៃផុតកំណត់ និងព័ត៌មានថ្មីៗពីប្រភពផ្លូវការ។</li>
-                            <li>រក្សាទុកភស្តុតាងនៃការដាក់ពាក្យ។</li>
-                        </ul>
-                    </section>
-
-                    <section class="info-card">
-                        <h4>ព័ត៌មានទំនាក់ទំនង</h4>
-                        <div class="contact-line"><span>🏛️</span>
-                            <div><small>សាកលវិទ្យាល័យ</small><b>Paragon International University</b></div>
-                        </div>
-                        <div class="contact-line"><span>📍</span>
-                            <div><small>ទីតាំង</small><b>អាគារលេខ ៨, សង្កាត់បឹងកក់១, St 315, Phnom Penh 12151</b></div>
-                        </div>
-                        <div class="contact-line"><span>🌐</span>
-                            <div><small>គេហទំព័រ</small><a href="https://www.paragoniu.edu.kh/" target="_blank"
-                                    rel="noopener">www.paragoniu.edu.kh ↗</a></div>
-                        </div>
-                    </section>
                 </div>
             </section>
         </main>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university-navbar</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FONT ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="asset/css/swiper.css">
+    <link rel="stylesheet" href="asset/css/theme.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    .top-5{
+        top: 200px;
+        /* left: 100px; */
+      
+    }
+
+</style>
+<body>
+
+     <!-- ================= NAVBAR ================= -->
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-light sticky-top py-1">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../asset/css/photo/logo.png" alt="LOGO" class="logo">
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../asset/css/photo/logo.png" alt="LOGO" class="logo">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+
+                        <!-- Menu Center -->
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                            <!-- Home -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="home-page.html">
+                                    <i class="bi bi-house"></i>
+                                    ទំព័រដើម
+                                </a>
+                            </li>
+
+                            <!-- UNIVERSITY -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="university-navbar.html">
+                                   <i class="bi bi-building"></i>
+                                    សាកលវិទ្យាល័យ
+                                </a>
+                            </li>
+
+                            <!-- Skill -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="skill.html">
+                                    <i class="bi bi-tools"></i>
+                                    ជំនាញ
+                                </a>
+                            </li>
+
+                            <!-- Scholarship Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="scholoship.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-mortarboard"></i>
+                                    អាហារូបករណ៍
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item border-bottom border-secondary-subtle"
+                                            href="somdach.html">
+                                            អាហារូបករណ៍ សម្ដេចតេជោ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item border-bottom border-secondary-subtle"
+                                            href="university.html">
+                                            សាកលវិទ្យាល័យ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="ministry-of-edu.html">
+                                            ក្រសួងអប់រំ យុវជន និងកីឡា
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- About -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">
+                                    <i class="bi bi-info-circle"></i>
+                                    អំពីយើង
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <!-- Right Icons and Button -->
+                        <div class="navbar-actions d-flex align-items-center gap-3 ">
+
+                            <div class="search-container">
+                                <input type="text" class="search-input" placeholder="Type to search...">
+
+                                <button class="search-icon-btn" aria-label="Search">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5 3a7.5 7.5 0 1 0 5.035 13.064l5.258 5.258 1.414-1.414-5.258-5.258A7.5 7.5 0 0 0 10.5 3zm0 2a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11z" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <a href="notification.html" class="nav-icon" aria-label="Notifications">
+                                <i class="bi bi-bell"></i>
+                            </a>
+
+                            <!-- User Authentication -->
+                            <div id="authArea" class="d-flex align-items-center gap-2">
+
+                                <!-- Before Login -->
+                                <!-- <div id="guestMenu" class="d-flex gap-2">
+                                    <a href="login.html" class="btn btn-outline-primary">
+                                        Login
+                                    </a>
+
+
+                                </div> -->
+                                <div >
+                                    <img src="../asset/css/photo/logo-email2.jpg" alt="" class="rounded-circle" style="width: 40px;height: 40px;object-fit: cover;">
+                                </div>
+
+                                <!-- After Login -->
+                                <div id="userMenu" class="d-none align-items-center gap-3">
+
+                                    <!-- Notification -->
+                                    <a href="#" class="text-dark position-relative">
+                                        <i class="bi bi-bell fs-5"></i>
+                                    </a>
+
+                                    <!-- Profile Dropdown -->
+                                    <div class="dropdown">
+
+                                        <button class="btn border-0 dropdown-toggle d-flex
+                                                align-items-center gap-2" data-bs-toggle="dropdown">
+
+                                            <img id="userPhoto" src="https://placehold.co/40x40" class="rounded-circle"
+                                                width="38" height="38" style="object-fit: cover;">
+
+                                            <span id="userName">User</span>
+
+                                        </button>
+
+                                        <ul class="dropdown-menu dropdown-menu-end">
+
+                                            <li class="px-3 py-2">
+                                                <strong id="profileName">User</strong>
+                                                <br>
+                                                <small id="profileEmail" class="text-muted">
+                                                    user@gmail.com
+                                                </small>
+                                            </li>
+
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+
+                                            <li>
+                                                <a class="dropdown-item" href="profile.html">
+                                                    <i class="bi bi-person me-2"></i>
+                                                    My Profile
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a class="dropdown-item" href="saved.html">
+                                                    <i class="bi bi-bookmark me-2"></i>
+                                                    Saved Universities
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+
+                                            <li>
+                                                <button class="dropdown-item text-danger" id="logoutBtn">
+                                                    <i class="bi bi-box-arrow-right me-2"></i>
+                                                    Logout
+                                                </button>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+     
+    <div class="row">
+        <div class="col-12">
+            <img src="../asset/css/photo/erika-fletcher-MZxqc6n9qCw-unsplash.jpg" alt="" style="height: 300px;width:100%;object-fit: cover;position: relative;">
+        </div >
+        <!-- <h3 class="position-absolute top-5 "> iste quaerat asperiores nobis aperiam magnam numquam accusamus? Nemo cupiditate dicta non?</h3> -->
+    </div>
+     <!-- ================= UNIVERSITY ================= -->
+        <section class="m-5">
+            <div class="container">
+                <div class=" row g-4">
+
+                    <!-- Title -->
+                    <div>
+                        <h4>
+                            <i class="bi bi-star-fill "></i>សាកលវិទ្យាល័យពេញនិយម
+                        </h4>
+
+                    </div>
+
+                    <!-- Card 1: RUPP -->
+                    <div data-aos="fade-up" data-aos-duration="500" class="col-12 col-md-6 col-lg-3">
+                        <div class="card ">
+
+                            <img src="../asset/css/photo/RUPPPP.jpg" alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5>
+                                    <a href="rupp.html" class="text-decoration-none object-fit-cover">សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ</a>
+                                </h5>
+
+                                <!-- <p class="card-text text-secondary">
+                                    សាកលវិទ្យាល័យ RUPP មានកម្មវិធីសិក្សាជាច្រើន ដូចជា
+                                    បច្ចេកវិទ្យាព័ត៌មាន
+                                </p> -->
+
+                                <!-- <div class="mt-auto pt-3">
+                                    <a href="" class="btn btn-primary text-light ">
+                                        មើលបន្ថែម
+                                    </a>
+                                </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Card 2: ITC -->
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-12 col-md-6 col-lg-3">
+                        <div class="card ">
+
+                            <img src="../asset/css/photo/ITC.jpg" alt="វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា" class="card-img-top ">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5>
+                                    <a href="">វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា</a>
+                                </h5>
+                                <!-- 
+                                <p class="card-text text-secondary">
+                                    វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា (ITC) គឺជាគ្រឹះស្ថាន
+                                    ឧត្តមសិក្សារដ្ឋមួយដែលផ្តោត
+                                </p>
+
+                                <div class="mt-auto pt-3">
+                                    <a href="" class="btn btn-primary text-light text-decoration-none ">
+                                        មើលបន្ថែម
+                                    </a> -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="900" class="col-12 col-md-6 col-lg-3">
+                        <div class="card ">
+
+                            <img src="../asset/css/photo/UHS.jpg" alt="វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា" class="card-img-top ">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5>
+                                    <a href="">វិទ្យាសាស្ដ្រ​សុខាភិបាល</a>
+                                </h5>
+                                <!-- 
+                                <p class="card-text text-secondary">
+                                    វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា (ITC) គឺជាគ្រឹះស្ថាន
+                                    ឧត្តមសិក្សារដ្ឋមួយដែលផ្តោត
+                                </p>
+
+                                <div class="mt-auto pt-3">
+                                    <a href="" class="btn btn-primary text-light text-decoration-none ">
+                                        មើលបន្ថែម
+                                    </a> -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1100" class="col-12 col-md-6 col-lg-3">
+                        <div class="card ">
+
+                            <img src="../asset/css/photo/Rule.jpg" alt="វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា" class="card-img-top ">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5>
+                                    <a href="">វិទ្យាសាស្ដ្រសេដ្ធកិច្ច</a>
+                                </h5>
+
+                                <!-- <p class="card-text text-secondary">
+                                    វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា (ITC) គឺជាគ្រឹះស្ថាន
+                                    ឧត្តមសិក្សារដ្ឋមួយដែលផ្តោត
+                                </p> -->
+
+                                <!-- <div class="mt-auto pt-3">
+                                    <a href="" class="btn btn-primary text-light text-decoration-none ">
+                                        មើលបន្ថែម
+                                    </a>  -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="500" class="col-12 col-md-6 col-lg-3">
+                        <div class="card ">
+
+                            <img src="https://www.aub.edu.kh/tc/assets/image/banner-A-1.jpg"
+                                alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5>
+                                    <a href="" class="text-decoration-none">សាកលវិទ្យាល័យ អេសុីលីដា</a>
+                                </h5>
+
+                                <!-- <p class="card-text text-secondary">
+                                    សាកលវិទ្យាល័យ RUPP មានកម្មវិធីសិក្សាជាច្រើន ដូចជា
+                                    បច្ចេកវិទ្យាព័ត៌មាន
+                                </p> -->
+
+                                <!-- <div class="mt-auto pt-3">
+                                    <a href="" class="btn btn-primary text-light ">
+                                        មើលបន្ថែម
+                                    </a>
+                                </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-12 col-md-6 col-lg-3">
+                        <div class="card ">
+
+                            <img src="../asset/css/photo/Num.jpg" alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5>
+                                    <a href="" class="text-decoration-none">សាកលវិទ្យាល័យ ជាតិគ្រប់គ្រង</a>
+                                </h5>
+
+                                <!-- <p class="card-text text-secondary">
+                                    សាកលវិទ្យាល័យ RUPP មានកម្មវិធីសិក្សាជាច្រើន ដូចជា
+                                    បច្ចេកវិទ្យាព័ត៌មាន
+                                </p> -->
+
+                                <!-- <div class="mt-auto pt-3">
+                                    <a href="" class="btn btn-primary text-light ">
+                                        មើលបន្ថែម
+                                    </a>
+                                </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="900" class="col-12 col-md-6 col-lg-3">
+                        <div class="card ">
+
+                            <img src="../asset/css/photo/ckk2.jpg" alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5>
+                                    <a href="" class="text-decoration-none">វិទ្យាស្ថានពហុបច្ចេកទេសជាតិ</a>
+                                </h5>
+
+                                <!-- <p class="card-text text-secondary">
+                                    សាកលវិទ្យាល័យ RUPP មានកម្មវិធីសិក្សាជាច្រើន ដូចជា
+                                    បច្ចេកវិទ្យាព័ត៌មាន
+                                </p> -->
+
+                                <!-- <div class="mt-auto pt-3">
+                                    <a href="" class="btn btn-primary text-light ">
+                                        មើលបន្ថែម
+                                    </a>
+                                </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1100" class="col-12 col-md-6 col-lg-3">
+                        <div class="card ">
+
+                            <img src="https://www.puthisastra.edu.kh/wp-content/uploads/2018/09/Campus-Information-570-x-300_570x300.jpg"
+                                alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5>
+                                    <a href="" class="text-decoration-none">សាកលវិទ្យាល័យ ពុទ្ធិសាស្ត្រ</a>
+                                </h5>
+
+                                <!-- <p class="card-text text-secondary">
+                                    សាកលវិទ្យាល័យ RUPP មានកម្មវិធីសិក្សាជាច្រើន ដូចជា
+                                    បច្ចេកវិទ្យាព័ត៌មាន
+                                </p> -->
+
+                                <!-- <div class="mt-auto pt-3">
+                                    <a href="" class="btn btn-primary text-light ">
+                                        មើលបន្ថែម
+                                    </a>
+                                </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="500" class="col-12 col-md-6 col-lg-3">
+                        <div class="card ">
+
+                            <img src="https://www.aupp.edu.kh/wp-content/uploads/AUPP-Building.jpg"
+                                alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5>
+                                    <a href="" class="text-decoration-none">សាកលវិទ្យាល័យអាមេរិកាំងភ្នំពេញ</a>
+                                </h5>
+
+                                <!-- <p class="card-text text-secondary">
+                                    សាកលវិទ្យាល័យ RUPP មានកម្មវិធីសិក្សាជាច្រើន ដូចជា
+                                    បច្ចេកវិទ្យាព័ត៌មាន
+                                </p> -->
+
+                                <!-- <div class="mt-auto pt-3">
+                                    <a href="" class="btn btn-primary text-light ">
+                                        មើលបន្ថែម
+                                    </a>
+                                </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="700" class="col-12 col-md-6 col-lg-3">
+                        <div class="card ">
+
+                            <img src="https://www.beltei.edu.kh/asset/img/school/campus/school-B17.jpg"
+                                alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5>
+                                    <a href="" class="text-decoration-none">សាកលវិទ្យាល័យអន្តរជាតិ ប៊ែលធី</a>
+                                </h5>
+
+                                <!-- <p class="card-text text-secondary">
+                                    សាកលវិទ្យាល័យ RUPP មានកម្មវិធីសិក្សាជាច្រើន ដូចជា
+                                    បច្ចេកវិទ្យាព័ត៌មាន
+                                </p> -->
+
+                                <!-- <div class="mt-auto pt-3">
+                                    <a href="" class="btn btn-primary text-light ">
+                                        មើលបន្ថែម
+                                    </a>
+                                </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="900" class="col-12 col-md-6 col-lg-3">
+                        <div class="card ">
+
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh5Ka-j2AACRIXiy8_YLpYg9lDUTLbqgAHpBgXA5kWlBTtDp2SV8edzps&s=10"
+                                alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5>
+                                    <a href="" class="text-decoration-none">សាកលវិទ្យាល័យ ន័រតុន</a>
+                                </h5>
+
+                                <!-- <p class="card-text text-secondary">
+                                    សាកលវិទ្យាល័យ RUPP មានកម្មវិធីសិក្សាជាច្រើន ដូចជា
+                                    បច្ចេកវិទ្យាព័ត៌មាន
+                                </p> -->
+
+                                <!-- <div class="mt-auto pt-3">
+                                    <a href="" class="btn btn-primary text-light ">
+                                        មើលបន្ថែម
+                                    </a>
+                                </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1100" class="col-12 col-md-6 col-lg-3">
+                        <div class="card ">
+
+                            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/The-main-CamEd-Building.jpg/250px-The-main-CamEd-Building.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                                alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" class="card-img-top ">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5>
+                                    <a href="" class="text-decoration-none">សាលាពាណិជ្ជសាស្ត្រ ខេមអេដ</a>
+                                </h5>
+
+                                <!-- <p class="card-text text-secondary">
+                                    សាកលវិទ្យាល័យ RUPP មានកម្មវិធីសិក្សាជាច្រើន ដូចជា
+                                    បច្ចេកវិទ្យាព័ត៌មាន
+                                </p> -->
+
+                                <!-- <div class="mt-auto pt-3">
+                                    <a href="" class="btn btn-primary text-light ">
+                                        មើលបន្ថែម
+                                    </a>
+                                </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+     <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="../asset/bootstrap/js/components.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+        var swiper = new Swiper('.mySwiper', {
+
+            spaceBetween: 30,
+
+            centeredSlides: true,
+
+            autoplay: {
+
+                delay: 2500,
+
+                disableOnInteraction: false
+
+            },
+
+            pagination: {
+
+                el: '.swiper-pagination',
+
+                clickable: true
+
+            },
+
+            navigation: {
+
+                nextEl: '.swiper-button-next',
+
+                prevEl: '.swiper-button-prev'
+
+            }
+
+        });
+
+    </script>
+    <!-- Bootstrap JS -->
+    <!-- ONLY ONE Bootstrap JS -->
+    <script src="../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+
+        });
+    </script>
+    
+</body>
+</html>
