@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../asset/css/style.css">
     <!-- Your CSS -->
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100;200;300;400;500;600;700&display=swap"
@@ -25,16 +25,36 @@
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+<style>
+    .logo-position {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        width: 100px;
+        height: 30px;
+        object-fit: cover;
+    }
+
+    .logo-position-login {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 100px;
+        height: 50px;
+        object-fit: cover;
+
+    }
+</style>
 
 <body>
-    <!-- <img src="photo/photo_2026-10-11_22-10-11.jpg" alt="" class="bg"> -->
-
-
     <div class="login-container">
 
         <!-- Login Form -->
         <div class="form-box login">
-            <form action="index.html">
+            <img src="../../asset/css/photo/logo.png" alt="" class="logo-position-login"
+                style="width:100px ;height: 50px; object-fit: cover;">
+
+            <form action="../home-page.html">
                 <h1>Login</h1>
 
                 <div class="input-box">
@@ -56,6 +76,9 @@
 
         <!-- Register Form -->
         <div class="form-box register">
+            <img src="../../asset/css/photo/logo.png" alt="" class="logo-position"
+                style="width:100px ;height: 50px; object-fit: cover;">
+
             <form action="#">
                 <h1>Registration</h1>
 
@@ -102,7 +125,7 @@
                 </div>
 
                 <button type="submit" class="btn">
-                    Reset Password
+                    <a href="forget-password.html">Reset Password</a>
                 </button>
 
                 <div class="forgot-link">
