@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ព័ត៌មានលម្អិតអាហារូបករណ៍ សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP) - Next Step</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Font: Kantumruy Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-navy: #0d47a1;
+            --secondary-blue: #1565c0;
+            --accent-gold: #f59e0b;
+            --bg-light: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        body {
+            font-family: 'Kantumruy Pro', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-navy) !important;
+            font-size: 1.4rem;
+        }
+
+        /* Breadcrumb Bar */
+        .breadcrumb-bar {
+            background-color: #eef2f6;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 10px 0;
+            font-size: 0.875rem;
+        }
+
+        /* University Header Banner */
+        .uni-detail-header {
+            background: linear-gradient(135deg, #0d47a1 0%, #1e3a8a 100%);
+            color: white;
+            padding: 45px 0;
+            border-bottom: 4px solid var(--accent-gold);
+        }
+        .uni-logo-box {
+            width: 115px;
+            height: 115px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .uni-logo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Content & Sidebar Cards */
+        .content-box {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 26px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+            margin-bottom: 24px;
+        }
+        .section-title {
+            color: var(--primary-navy);
+            font-weight: 700;
+            font-size: 1.25rem;
+            border-left: 4px solid var(--accent-gold);
+            padding-left: 12px;
+            margin-bottom: 18px;
+        }
+
+        /* Table Styling */
+        .table-majors th {
+            background-color: #f1f5f9;
+            color: var(--primary-navy);
+            font-weight: 600;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+        .table-majors td {
+            font-size: 0.9rem;
+            vertical-align: middle;
+        }
+
+        /* Clean Small Buttons */
+        .btn-clean {
+            font-size: 0.875rem;
+            font-weight: 500;
+            padding: 7px 16px;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        /* Stacked Sidebar Cards */
+        .sidebar-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 22px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-graduation-cap text-warning me-2"></i>Next Step
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">ទំព័រដើម</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold text-primary" href="moeys.html">អាហារូបករណ៍ក្រសួងអប់រំ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="somdach.html">អាហារូបករណ៍សម្តេចតេជោ</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="moeys.html" class="btn btn-outline-primary btn-clean">
+                            <i class="fas fa-arrow-left me-1"></i> ត្រឡប់ទៅបញ្ជីសាលា
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-bar">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">ទំព័រដើម</a></li>
+                    <li class="breadcrumb-item"><a href="moeys.html" class="text-decoration-none">អាហារូបករណ៍ MoEYS</a></li>
+                    <li class="breadcrumb-item active text-dark fw-semibold" aria-current="page">សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- University Header Banner -->
+    <header class="uni-detail-header">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-auto">
+                    <div class="uni-logo-box">
+                        <img src="../image/rupp-logo.png" alt="RUPP Logo" onerror="this.src='https://via.placeholder.com/100x100?text=RUPP'">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex flex-wrap gap-2 mb-2">
+                        <span class="badge bg-warning text-dark px-3 py-1 rounded-pill fw-semibold">
+                            គ្រឹះស្ថានឧត្តមសិក្សាសាធារណៈ (រដ្ឋ)
+                        </span>
+                        <span class="badge bg-light text-primary px-3 py-1 rounded-pill fw-semibold">
+                            អាហារូបករណ៍ ១០០% (MoEYS)
+                        </span>
+                    </div>
+                    <h1 class="h2 fw-bold mb-1">សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)</h1>
+                    <p class="mb-0 text-white-50 small">
+                        <i class="fas fa-map-marker-alt text-warning me-1"></i> មហាវិថីសហព័ន្ធរុស្ស៊ី សង្កាត់ទឹកល្អក់ទី១ ខណ្ឌទួលគោក រាជធានីភ្នំពេញ
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container my-5">
+        <div class="row g-4">
+            
+            <!-- Left Column: Majors Table & Requirements (8 Cols) -->
+            <div class="col-lg-8">
+                
+                <!-- Majors & Quotas Table Section -->
+                <div class="content-box">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2">
+                        <div>
+                            <h2 class="section-title mb-1">តារាងមុខជំនាញ និងចំនួនកូតាអាហារូបករណ៍</h2>
+                            <p class="text-muted small mb-0">សូមពិនិត្យមុខវិជ្ជាគោល និងចំនួនកូតាតាមជំនាញនីមួយៗមុនពេលជ្រើសរើស</p>
+                        </div>
+                    </div>
+
+                    <!-- Filter & Search Controls -->
+                    <div class="row g-2 mb-3">
+                        <div class="col-md-6">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-text bg-light"><i class="fas fa-search text-muted"></i></span>
+                                <input type="text" id="majorSearch" class="form-control" placeholder="ស្វែងរកឈ្មោះមុខជំនាញ...">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <select id="facultyFilter" class="form-select form-select-sm">
+                                <option value="all">មហាវិទ្យាល័យទាំងអស់ (All Faculties)</option>
+                                <option value="science">មហាវិទ្យាល័យវិទ្យាសាស្ត្រ</option>
+                                <option value="engineering">មហាវិទ្យាល័យវិស្វកម្ម</option>
+                                <option value="ssh">មហាវិទ្យាល័យសង្គមសាស្ត្រ និងមនុស្សសាស្ត្រ</option>
+                                <option value="ifl">វិទ្យាស្ថានភាសាបរទេស (IFL)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Responsive Table -->
+                    <div class="table-responsive">
+                        <table class="table table-hover table-bordered table-majors mb-0" id="majorsTable">
+                            <thead>
+                                <tr>
+                                    <th style="width: 6%;">#</th>
+                                    <th style="width: 34%;">មុខជំនាញសិក្សា</th>
+                                    <th style="width: 24%;">មហាវិទ្យាល័យ</th>
+                                    <th style="width: 14%;" class="text-center">កូតាសរុប</th>
+                                    <th style="width: 22%;">មុខវិជ្ជាគោល</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Science -->
+                                <tr data-faculty="science">
+                                    <td>១</td>
+                                    <td class="fw-semibold text-primary">វិទ្យាសាស្ត្រកុំព្យូទ័រ (Computer Science)</td>
+                                    <td>វិទ្យាសាស្ត្រ</td>
+                                    <td class="text-center"><span class="badge bg-success-subtle text-success">៤០ នាក់</span></td>
+                                    <td>គណិតវិទ្យា, រូបវិទ្យា</td>
+                                </tr>
+                                <tr data-faculty="science">
+                                    <td>២</td>
+                                    <td class="fw-semibold text-primary">គណិតវិទ្យា (Mathematics)</td>
+                                    <td>វិទ្យាសាស្ត្រ</td>
+                                    <td class="text-center"><span class="badge bg-success-subtle text-success">៣០ នាក់</span></td>
+                                    <td>គណិតវិទ្យា, រូបវិទ្យា</td>
+                                </tr>
+                                <tr data-faculty="science">
+                                    <td>៣</td>
+                                    <td class="fw-semibold text-primary">គីមីវិទ្យា (Chemistry)</td>
+                                    <td>វិទ្យាសាស្ត្រ</td>
+                                    <td class="text-center"><span class="badge bg-success-subtle text-success">២៥ នាក់</span></td>
+                                    <td>គីមីវិទ្យា, គណិតវិទ្យា</td>
+                                </tr>
+                                <tr data-faculty="science">
+                                    <td>៤</td>
+                                    <td class="fw-semibold text-primary">ជីវវិទ្យា (Biology)</td>
+                                    <td>វិទ្យាសាស្ត្រ</td>
+                                    <td class="text-center"><span class="badge bg-success-subtle text-success">២៥ នាក់</span></td>
+                                    <td>ជីវវិទ្យា, គីមីវិទ្យា</td>
+                                </tr>
+                                <tr data-faculty="science">
+                                    <td>៥</td>
+                                    <td class="fw-semibold text-primary">វិទ្យាសាស្ត្របរិស្ថាន (Environmental Science)</td>
+                                    <td>វិទ្យាសាស្ត្រ</td>
+                                    <td class="text-center"><span class="badge bg-success-subtle text-success">២០ នាក់</span></td>
+                                    <td>ជីវវិទ្យា, គីមីវិទ្យា</td>
+                                </tr>
+
+                                <!-- Engineering -->
+                                <tr data-faculty="engineering">
+                                    <td>៦</td>
+                                    <td class="fw-semibold text-primary">វិស្វកម្មព័ត៌មានវិទ្យា (IT Engineering)</td>
+                                    <td>វិស្វកម្ម</td>
+                                    <td class="text-center"><span class="badge bg-success-subtle text-success">៣៥ នាក់</span></td>
+                                    <td>គណិតវិទ្យា, រូបវិទ្យា</td>
+                                </tr>
+                                <tr data-faculty="engineering">
+                                    <td>៧</td>
+                                    <td class="fw-semibold text-primary">វិស្វកម្មទូរគមនាគមន៍ និងអេឡិចត្រូនិក</td>
+                                    <td>វិស្វកម្ម</td>
+                                    <td class="text-center"><span class="badge bg-success-subtle text-success">២៥ នាក់</span></td>
+                                    <td>គណិតវិទ្យា, រូបវិទ្យា</td>
+                                </tr>
+                                <tr data-faculty="engineering">
+                                    <td>៨</td>
+                                    <td class="fw-semibold text-primary">វិស្វកម្មជីវសាស្ត្រ (Bio-Engineering)</td>
+                                    <td>វិស្វកម្ម</td>
+                                    <td class="text-center"><span class="badge bg-success-subtle text-success">២០ នាក់</span></td>
+                                    <td>ជីវវិទ្យា, គីមីវិទ្យា</td>
+                                </tr>
+
+                                <!-- Social Sciences & Humanities -->
+                                <tr data-faculty="ssh">
+                                    <td>៩</td>
+                                    <td class="fw-semibold text-primary">អក្សរសាស្ត្រខ្មែរ (Khmer Literature)</td>
+                                    <td>សង្គមសាស្ត្រ និងមនុស្សសាស្ត្រ</td>
+                                    <td class="text-center"><span class="badge bg-success-subtle text-success">៣០ នាក់</span></td>
+                                    <td>អក្សរសាស្ត្រខ្មែរ, ប្រវត្តិវិទ្យា</td>
+                                </tr>
+                                <tr data-faculty="ssh">
+                                    <td>១០</td>
+                                    <td class="fw-semibold text-primary">ប្រព័ន្ធផ្សព្វផ្សាយ និងសារគមនាគមន៍ (DMC)</td>
+                                    <td>សង្គមសាស្ត្រ និងមនុស្សសាស្ត្រ</td>
+                                    <td class="text-center"><span class="badge bg-success-subtle text-success">១៥ នាក់</span></td>
+                                    <td>អក្សរសាស្ត្រខ្មែរ, ភាសាបរទេស</td>
+                                </tr>
+                                <tr data-faculty="ssh">
+                                    <td>១១</td>
+                                    <td class="fw-semibold text-primary">ចិត្តវិទ្យា (Psychology)</td>
+                                    <td>សង្គមសាស្ត្រ និងមនុស្សសាស្ត្រ</td>
+                                    <td class="text-center"><span class="badge bg-success-subtle text-success">២០ នាក់</span></td>
+                                    <td>អក្សរសាស្ត្រខ្មែរ, ជីវវិទ្យា</td>
+                                </tr>
+                                <tr data-faculty="ssh">
+                                    <td>១២</td>
+                                    <td class="fw-semibold text-primary">ទេសចរណ៍ (Tourism)</td>
+                                    <td>សង្គមសាស្ត្រ និងមនុស្សសាស្ត្រ</td>
+                                    <td class="text-center"><span class="badge bg-success-subtle text-success">២៥ នាក់</span></td>
+                                    <td>ភូមិវិទ្យា, ភាសាបរទេស</td>
+                                </tr>
+
+                                <!-- IFL -->
+                                <tr data-faculty="ifl">
+                                    <td>១៣</td>
+                                    <td class="fw-semibold text-primary">ភាសាអង់គ្លេស (English - B.Ed / TEFL)</td>
+                                    <td>វិទ្យាស្ថានភាសាបរទេស (IFL)</td>
+                                    <td class="text-center"><span class="badge bg-success-subtle text-success">៣០ នាក់</span></td>
+                                    <td>ភាសាអង់គ្លេស, អក្សរសាស្ត្រខ្មែរ</td>
+                                </tr>
+                                <tr data-faculty="ifl">
+                                    <td>១៤</td>
+                                    <td class="fw-semibold text-primary">សិក្សាអន្តរជាតិ (International Studies)</td>
+                                    <td>វិទ្យាស្ថានភាសាបរទេស (IFL)</td>
+                                    <td class="text-center"><span class="badge bg-success-subtle text-success">២០ នាក់</span></td>
+                                    <td>ភាសាអង់គ្លេស, ប្រវត្តិវិទ្យា</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Special University Requirements -->
+                <div class="content-box">
+                    <h3 class="section-title">លក្ខខណ្ឌពិសេសរបស់សាកលវិទ្យាល័យ</h3>
+                    <div class="alert alert-warning border-0 bg-warning-subtle text-dark small mb-3">
+                        <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                        <strong>ចំណាំសំខាន់៖</strong> ចំពោះមុខជំនាញមួយចំនួននៅ RUPP បេក្ខជនដែលជាប់អាហារូបករណ៍ក្រសួងអប់រំ ត្រូវឆ្លងកាត់ការប្រឡងតេស្តសមត្ថភាពបន្ថែមរបស់ដេប៉ាតឺម៉ង់។
+                    </div>
+                    <ul class="small text-secondary mb-0">
+                        <li class="mb-2"><strong>វិទ្យាស្ថានភាសាបរទេស (IFL) និង DMC៖</strong> តម្រូវឱ្យបេក្ខជនប្រឡងតេស្តភាសាអង់គ្លេស និងចំណេះដឹងទូទៅបន្ថែមនៅសាកលវិទ្យាល័យ។</li>
+                        <li class="mb-2"><strong>រយៈពេលសិក្សា៖</strong> ៤ ឆ្នាំ (ថ្នាក់ឆ្នាំសិក្សាមូលដ្ឋាន ១ ឆ្នាំ និងថ្នាក់ជំនាញ ៣ ឆ្នាំ)។</li>
+                        <li><strong>ការរក្សាអាហារូបករណ៍៖</strong> និស្សិតជ័យលាភីត្រូវខិតខំរៀនសូត្រ និងគោរពវិន័យសាលា ដោយមិនត្រូវធ្លាក់មុខវិជ្ជាច្រើនលើសកំណត់ឡើយ ដើម្បីរក្សាសិទ្ធិអាហារូបករណ៍រហូតដល់បញ្ចប់ឆ្នាំទី៤។</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Stacked Sidebar (4 Cols) -->
+            <div class="col-lg-4">
+                
+                <!-- 1. Apply Action Box -->
+                <div class="sidebar-card border-primary border-top border-4">
+                    <h5 class="fw-bold text-primary mb-2">ដាក់ពាក្យចូលរៀនជំនាញនេះ</h5>
+                    <p class="small text-muted mb-3">ជ្រើសរើសឈ្មោះសាកលវិទ្យាល័យ និងមុខជំនាញខាងលើ នៅក្នុងប្រព័ន្ធដាក់ពាក្យអនឡាញរបស់ក្រសួងអប់រំ។</p>
+                    <div class="d-grid gap-2">
+                        <a href="https://scholarship.moeys.gov.kh" target="_blank" class="btn btn-primary fw-semibold py-2">
+                            <i class="fas fa-paper-plane me-2"></i>ដាក់ពាក្យតាមប្រព័ន្ធ MoEYS
+                        </a>
+                        <a href="moeys.html" class="btn btn-outline-secondary btn-sm py-2">
+                            <i class="fas fa-list me-2"></i>មើលសាកលវិទ្យាល័យផ្សេងទៀត
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2. Applicant Tips (Stacked Vertically) -->
+                <div class="sidebar-card">
+                    <h6 class="fw-bold text-dark mb-3">
+                        <i class="fas fa-lightbulb text-warning me-2"></i>គន្លឹះជ្រើសរើសជំនាញនៅ RUPP
+                    </h6>
+                    <ul class="list-unstyled small text-secondary mb-0">
+                        <li class="mb-2 d-flex">
+                            <i class="fas fa-check text-success mt-1 me-2"></i>
+                            <span>ជំនាញផ្នែក <strong>Computer Science</strong> និង <strong>IT Engineering</strong> មានការប្រកួតប្រជែងខ្ពស់ គួរមានពិន្ទុគណិតវិទ្យា និងរូបវិទ្យាល្អ។</span>
+                        </li>
+                        <li class="mb-2 d-flex">
+                            <i class="fas fa-check text-success mt-1 me-2"></i>
+                            <span>សិស្សថ្នាក់សង្គម អាចជ្រើសរើសជំនាញក្នុងមហាវិទ្យាល័យសង្គមសាស្ត្រ និងមនុស្សសាស្ត្រ ដើម្បីទទួលបានអាទិភាពពិន្ទុខ្ពស់។</span>
+                        </li>
+                        <li class="d-flex">
+                            <i class="fas fa-check text-success mt-1 me-2"></i>
+                            <span>តាមដានផេកផ្លូវការរបស់ RUPP ដើម្បីដឹងថ្ងៃប្រឡងតេស្តចូលរៀនបន្ថែម (សម្រាប់ IFL/DMC)។</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 3. University Contact Info (Stacked Vertically) -->
+                <div class="sidebar-card">
+                    <h6 class="fw-bold text-dark mb-3">
+                        <i class="fas fa-university text-primary me-2"></i>ព័ត៌មានទំនាក់ទំនងសាកលវិទ្យាល័យ
+                    </h6>
+                    <ul class="list-unstyled small text-secondary mb-0">
+                        <li class="mb-2">
+                            <i class="fas fa-globe text-primary me-2"></i>
+                            <a href="https://www.rupp.edu.kh" target="_blank" class="text-decoration-none">www.rupp.edu.kh</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone-alt text-success me-2"></i>
+                            <span>023 883 640</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                            <span>មហាវិថីសហព័ន្ធរុស្ស៊ី ខណ្ឌទួលគោក ភ្នំពេញ</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-1 fw-semibold">Next Step - វេទិកាស្វែងរកអាហារូបករណ៍ និងសាកលវិទ្យាល័យនៅកម្ពុជា</p>
+            <p class="small text-white-50 mb-0">&copy; 2026 Next Step. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript សម្រាប់ស្វែងរក និង Filter មុខជំនាញក្នុងតារាង -->
+    <script>
+        const searchInput = document.getElementById('majorSearch');
+        const facultyFilter = document.getElementById('facultyFilter');
+        const tableRows = document.querySelectorAll('#majorsTable tbody tr');
+
+        function filterTable() {
+            const searchText = searchInput.value.toLowerCase();
+            const selectedFaculty = facultyFilter.value;
+
+            tableRows.forEach(row => {
+                const majorName = row.cells[1].textContent.toLowerCase();
+                const faculty = row.getAttribute('data-faculty');
+
+                const matchesSearch = majorName.includes(searchText);
+                const matchesFaculty = (selectedFaculty === 'all' || faculty === selectedFaculty);
+
+                if (matchesSearch && matchesFaculty) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        searchInput.addEventListener('input', filterTable);
+        facultyFilter.addEventListener('change', filterTable);
+    </script>
+</body>
+</html>

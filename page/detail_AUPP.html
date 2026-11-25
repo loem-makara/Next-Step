@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>អាហារូបករណ៍ក្រសួងអប់រំ យុវជន និងកីឡា (MoEYS) - Next Step</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Font: Kantumruy Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-navy: #0d47a1;
+            --secondary-blue: #1565c0;
+            --accent-gold: #f59e0b;
+            --bg-light: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        body {
+            font-family: 'Kantumruy Pro', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-navy) !important;
+            font-size: 1.4rem;
+        }
+
+        /* Page Header Banner */
+        .moeys-header {
+            background: linear-gradient(135deg, #0d47a1 0%, #1e3a8a 100%);
+            color: white;
+            padding: 50px 0;
+            border-bottom: 4px solid var(--accent-gold);
+        }
+        .moeys-logo-box {
+            width: 110px;
+            height: 110px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .moeys-logo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* University Cards Styling (Clean Logo Display) */
+        .uni-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            background: #ffffff;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            overflow: hidden;
+            height: 100%;
+        }
+        .uni-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(13, 71, 161, 0.1);
+            border-color: var(--secondary-blue);
+        }
+        .uni-img-wrapper {
+            height: 150px;
+            background-color: #f1f5f9;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .uni-img-wrapper img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        /* Clean Small Buttons */
+        .btn-clean {
+            font-size: 0.875rem;
+            font-weight: 500;
+            padding: 7px 16px;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        /* Content & Sidebar Cards */
+        .content-box {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 28px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+            margin-bottom: 24px;
+        }
+        .section-title {
+            color: var(--primary-navy);
+            font-weight: 700;
+            font-size: 1.25rem;
+            border-left: 4px solid var(--accent-gold);
+            padding-left: 12px;
+            margin-bottom: 20px;
+        }
+        .quota-card {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 16px;
+            height: 100%;
+        }
+        .quota-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background-color: rgba(13, 71, 161, 0.1);
+            color: var(--primary-navy);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+
+        /* Sidebar Styling */
+        .sidebar-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 22px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-graduation-cap text-warning me-2"></i>Next Step
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">ទំព័រដើម</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold text-primary" href="moeys.html">អាហារូបករណ៍ក្រសួងអប់រំ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="somdach.html">អាហារូបករណ៍សម្តេចតេជោ</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="https://scholarship.moeys.gov.kh" target="_blank" class="btn btn-primary btn-clean">
+                            គេហទំព័រ MoEYS <i class="fas fa-external-link-alt ms-1"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header Banner -->
+    <header class="moeys-header">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-auto">
+                    <div class="moeys-logo-box">
+                        <!-- ជំនួស src ដោយទីតាំងរូប Logo ក្រសួងអប់រំរបស់អ្នក -->
+                        <img src="../image/moeys-logo.png" alt="MoEYS Logo" onerror="this.src='https://via.placeholder.com/100x100?text=MoEYS'">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex flex-wrap gap-2 mb-2">
+                        <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-semibold">
+                            <i class="fas fa-check-circle me-1"></i> បង់ថ្លៃសិក្សា ០% (១០០% Tuition Waiver)
+                        </span>
+                        <span class="badge bg-light text-primary px-3 py-2 rounded-pill fw-semibold">
+                            កម្រិត៖ បរិញ្ញាបត្រ
+                        </span>
+                    </div>
+                    <h1 class="h2 fw-bold mb-2">អាហារូបករណ៍ក្រសួងអប់រំ យុវជន និងកីឡា (MoEYS)</h1>
+                    <p class="mb-0 text-white-50">ឱកាសសិក្សាថ្នាក់បរិញ្ញាបត្រដោយឥតគិតថ្លៃនៅតាមគ្រឹះស្ថានឧត្តមសិក្សាសាធារណៈ និងឯកជនទូទាំងប្រទេសកម្ពុជា</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container my-5">
+
+        <!-- Section 1: Partner Universities Grid -->
+        <section class="mb-5">
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
+                <div>
+                    <h2 class="section-title mb-1">គ្រឹះស្ថានឧត្តមសិក្សាដែលផ្តល់អាហារូបករណ៍</h2>
+                    <p class="text-muted small mb-0">ជ្រើសរើសសាកលវិទ្យាល័យខាងក្រោម ដើម្បីពិនិត្យមើលមុខជំនាញ និងចំនួនកូតា</p>
+                </div>
+                <div class="w-auto">
+                    <select class="form-select form-select-sm" id="uniFilter">
+                        <option value="all">បង្ហាញសាកលវិទ្យាល័យទាំងអស់</option>
+                        <option value="public">គ្រឹះស្ថានសាធារណៈ (រដ្ឋ)</option>
+                        <option value="private">គ្រឹះស្ថានឯកជន</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card 1: RUPP -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="uni-card d-flex flex-column">
+                        <div class="uni-img-wrapper">
+                            <img src="../image/rupp-logo.png" alt="RUPP Logo" onerror="this.src='https://via.placeholder.com/150x100?text=RUPP'">
+                        </div>
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <span class="badge bg-primary-subtle text-primary align-self-start mb-2">សាកលវិទ្យាល័យរដ្ឋ</span>
+                            <h5 class="fw-bold fs-6 mb-1">សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)</h5>
+                            <p class="text-muted small mb-3">ផ្តល់ជូនលើមុខជំនាញវិទ្យាសាស្ត្រ បច្ចេកវិទ្យា វិស្វកម្ម ភាសាបរទេស និងសង្គមសាស្ត្រ។</p>
+                            <div class="mt-auto pt-2 border-top d-flex justify-content-between align-items-center">
+                                <span class="small text-secondary"><i class="fas fa-book-open me-1"></i> ៣៥+ ជំនាញ</span>
+                                <a href="detail_2.html" class="btn btn-outline-primary btn-clean">មើលលម្អិត</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: ITC -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="uni-card d-flex flex-column">
+                        <div class="uni-img-wrapper">
+                            <img src="../image/itc-logo.png" alt="ITC Logo" onerror="this.src='https://via.placeholder.com/150x100?text=ITC'">
+                        </div>
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <span class="badge bg-primary-subtle text-primary align-self-start mb-2">គ្រឹះស្ថានសាធារណៈ</span>
+                            <h5 class="fw-bold fs-6 mb-1">វិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា (ITC)</h5>
+                            <p class="text-muted small mb-3">ផ្តល់ជូនលើមុខជំនាញវិស្វកម្មសំណង់ស៊ីវិល ព័ត៌មានវិទ្យា អគ្គិសនី និងឧស្សាហកម្ម។</p>
+                            <div class="mt-auto pt-2 border-top d-flex justify-content-between align-items-center">
+                                <span class="small text-secondary"><i class="fas fa-book-open me-1"></i> ២០+ ជំនាញ</span>
+                                <a href="detail_2.html" class="btn btn-outline-primary btn-clean">មើលលម្អិត</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: NUM -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="uni-card d-flex flex-column">
+                        <div class="uni-img-wrapper">
+                            <img src="../image/num-logo.png" alt="NUM Logo" onerror="this.src='https://via.placeholder.com/150x100?text=NUM'">
+                        </div>
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <span class="badge bg-primary-subtle text-primary align-self-start mb-2">សាកលវិទ្យាល័យរដ្ឋ</span>
+                            <h5 class="fw-bold fs-6 mb-1">សាកលវិទ្យាល័យជាតិគ្រប់គ្រង (NUM)</h5>
+                            <p class="text-muted small mb-3">ផ្តល់ជូនលើមុខជំនាញគ្រប់គ្រងពាណិជ្ជកម្ម ធនាគារ និងហិរញ្ញវត្ថុ សេដ្ឋកិច្ច និងទេសចរណ៍។</p>
+                            <div class="mt-auto pt-2 border-top d-flex justify-content-between align-items-center">
+                                <span class="small text-secondary"><i class="fas fa-book-open me-1"></i> ១៨+ ជំនាញ</span>
+                                <a href="detail_2.html" class="btn btn-outline-primary btn-clean">មើលលម្អិត</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Main Content (8 Cols) & Stacked Sidebar (4 Cols) -->
+        <div class="row g-4">
+            
+            <!-- Left Column: Main Information -->
+            <div class="col-lg-8">
+                
+                <!-- Overview -->
+                <div class="content-box">
+                    <h3 class="section-title">សេចក្តីផ្តើមអំពីអាហារូបករណ៍</h3>
+                    <p>
+                        <strong>អាហារូបករណ៍រដ្ឋាភិបាល តាមរយៈក្រសួងអប់រំ យុវជន និងកីឡា (MoEYS)</strong> គឺជាកម្មវិធីផ្តល់ឱកាសសិក្សាថ្នាក់បរិញ្ញាបត្រដោយឥតគិតថ្លៃសិក្សា ១០០% នៅតាមគ្រឹះស្ថានឧត្តមសិក្សាសាធារណៈ និងឯកជននានាទូទាំងប្រទេសកម្ពុជា។ កម្មវិធីនេះបង្កើតឡើងក្នុងគោលបំណងជំរុញ និងលើកទឹកចិត្តដល់សិស្សានុសិស្សដែលបានប្រឡងជាប់សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ (បាក់ឌុប) ឱ្យទទួលបានការអប់រំកម្រិតឧត្តមសិក្សាប្រកបដោយគុណភាព និងសមធម៌។
+                    </p>
+                </div>
+
+                <!-- 4 Quota Categories -->
+                <div class="content-box">
+                    <h3 class="section-title">ប្រភេទកូតាអាហារូបករណ៍ទាំង ៤</h3>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="quota-card">
+                                <div class="quota-icon"><i class="fas fa-award"></i></div>
+                                <h6 class="fw-bold">១. អាហារូបករណ៍សិស្សពូកែ</h6>
+                                <p class="small text-muted mb-0">ផ្តល់ជូនជាអាទិភាពដល់បេក្ខជនដែលទទួលបាននិទ្ទេស A ឬមានពិន្ទុប្រឡងបាក់ឌុបខ្ពស់តាមលំដាប់ពិន្ទុ និងជម្រើសជំនាញ។</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="quota-card">
+                                <div class="quota-icon"><i class="fas fa-female"></i></div>
+                                <h6 class="fw-bold">២. អាហារូបករណ៍សិស្សនារី</h6>
+                                <p class="small text-muted mb-0">កូតាពិសេសបម្រុងទុកសម្រាប់បេក្ខជនជានារី ដើម្បីលើកកម្ពស់ការចូលរួមរបស់ស្ត្រីក្នុងការសិក្សាថ្នាក់ឧត្តមសិក្សា ជាពិសេសជំនាញ STEM។</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="quota-card">
+                                <div class="quota-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                                <h6 class="fw-bold">៣. អាហារូបករណ៍សិស្សក្រីក្រ</h6>
+                                <p class="small text-muted mb-0">ផ្តល់ជូនសិស្សដែលមានជីវភាពខ្វះខាត ដោយមានការបញ្ជាក់ទទួលស្គាល់ពីអាជ្ញាធរមូលដ្ឋាន (ប័ណ្ណសមធម៌ ឬលិខិតបញ្ជាក់ភាពក្រីក្រ)។</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="quota-card">
+                                <div class="quota-icon"><i class="fas fa-map-marked-alt"></i></div>
+                                <h6 class="fw-bold">៤. អាហារូបករណ៍តំបន់ជួបការលំបាក</h6>
+                                <p class="small text-muted mb-0">ផ្តល់ជូនសិស្សដែលមកពីបណ្តាខេត្តដាច់ស្រយាល ឬតំបន់ជួបការលំបាក ដើម្បីបង្កើនធនធានមនុស្សនៅតាមមូលដ្ឋាន។</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eligibility & Required Documents -->
+                <div class="content-box">
+                    <h3 class="section-title">លក្ខខណ្ឌ និងឯកសារតម្រូវ</h3>
+                    <h6 class="fw-bold text-dark mb-2"><i class="fas fa-user-check text-primary me-2"></i>លក្ខខណ្ឌជ្រើសរើស៖</h6>
+                    <ul class="mb-4">
+                        <li>មានសញ្ជាតិខ្មែរ និងបានប្រឡងជាប់សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ (បាក់ឌុប) ក្នុងឆ្នាំសិក្សាបច្ចុប្បន្ន។</li>
+                        <li>មានលក្ខខណ្ឌសមស្របទៅតាមប្រភេទកូតានីមួយៗដែលបានជ្រើសរើស។</li>
+                        <li>មានសុខភាពល្អ និងកាយសម្បទាមាំមួនសម្រាប់ការសិក្សា។</li>
+                    </ul>
+
+                    <h6 class="fw-bold text-dark mb-2"><i class="fas fa-file-alt text-primary me-2"></i>ឯកសារត្រូវត្រៀមសម្រាប់បញ្ចូល (Upload)៖</h6>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-sm align-middle mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th style="width: 30%;">ដំណាក់កាល</th>
+                                    <th>សកម្មភាព និងឯកសារត្រូវត្រៀម</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="fw-semibold">១. ត្រៀមឯកសារ</td>
+                                    <td>រូបថត 4x6 (ផ្ទៃខៀវ ឬស), អត្តសញ្ញាណប័ណ្ណ/សំបុត្រកំណើត, វិញ្ញាបនបត្របណ្តោះអាសន្នបាក់ឌុប និងលិខិតបញ្ជាក់ភាពក្រីក្រ (បើមាន)។</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-semibold">២. បំពេញពាក្យអនឡាញ</td>
+                                    <td>ចូលទៅកាន់ <code>scholarship.moeys.gov.kh</code> បង្កើតគណនី និងបំពេញព័ត៌មានផ្ទាល់ខ្លួន។</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-semibold">៣. ជ្រើសរើសជំនាញ</td>
+                                    <td>ជ្រើសរើសគ្រឹះស្ថានឧត្តមសិក្សា និងមុខជំនាញតាមលំដាប់អាទិភាព (ពី ១ ដល់ ៣ ជម្រើស)។</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-semibold">៤. ផ្ទៀងផ្ទាត់ និងដាក់ស្នើ</td>
+                                    <td>ពិនិត្យព័ត៌មានឱ្យបានត្រឹមត្រូវ រួចចុចបញ្ជូនពាក្យ និងរក្សាទុកបង្កាន់ដៃចុះឈ្មោះ។</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- FAQ Accordion -->
+                <div class="content-box">
+                    <h3 class="section-title">សំណួរដែលសួរញឹកញាប់ (FAQ)</h3>
+                    <div class="accordion" id="moeysFaq">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    តើសិស្សទទួលបាននិទ្ទេស C, D ឬ E អាចដាក់ពាក្យអាហារូបករណ៍ក្រសួងអប់រំបានដែរឬទេ?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#moeysFaq">
+                                <div class="accordion-body small text-secondary">
+                                    <strong>បាន!</strong> ឱ្យតែបេក្ខជនប្រឡងជាប់សញ្ញាបត្រមធ្យមសិក្សាទុតិយភូមិ (បាក់ឌុប) ក្នុងឆ្នាំសិក្សាបច្ចុប្បន្ន គឺមានសិទ្ធិដាក់ពាក្យស្នើសុំអាហារូបករណ៍ក្រសួងអប់រំបាន ដោយការជ្រើសរើសផ្អែកលើលំដាប់ពិន្ទុប្រឡង និងប្រភេទកូតាដែលបានជ្រើសរើស។
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    តើអាចជ្រើសរើសមុខជំនាញ និងសាកលវិទ្យាល័យបានប៉ុន្មានជម្រើស?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#moeysFaq">
+                                <div class="accordion-body small text-secondary">
+                                    ជាទូទៅ បេក្ខជនអាចជ្រើសរើសជំនាញ និងគ្រឹះស្ថានសិក្សាបានរហូតដល់ <strong>៣ ជម្រើស</strong> តាមលំដាប់អាទិភាព (ជម្រើសទី១ ទី២ និងទី៣)។ ប្រសិនបើធ្លាក់ជម្រើសទី១ ប្រព័ន្ធនឹងពិនិត្យជម្រើសទី២ និងទី៣ ជាបន្តបន្ទាប់។
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Stacked Sidebar -->
+            <div class="col-lg-4">
+                
+                <!-- 1. Apply Action Box -->
+                <div class="sidebar-card border-primary border-top border-4">
+                    <h5 class="fw-bold text-primary mb-2">ដាក់ពាក្យស្នើសុំអាហារូបករណ៍</h5>
+                    <p class="small text-muted mb-3">ការដាក់ពាក្យត្រូវធ្វើឡើងតាមប្រព័ន្ធអនឡាញរបស់ក្រសួងអប់រំ ក្រោយថ្ងៃប្រកាសលទ្ធផលបាក់ឌុប។</p>
+                    <div class="d-grid gap-2">
+                        <a href="https://scholarship.moeys.gov.kh" target="_blank" class="btn btn-primary fw-semibold py-2">
+                            <i class="fas fa-paper-plane me-2"></i>ដាក់ពាក្យតាមប្រព័ន្ធ MoEYS
+                        </a>
+                        <a href="#" class="btn btn-outline-secondary btn-sm py-2">
+                            <i class="fas fa-file-pdf text-danger me-2"></i>ទាញយកសេចក្តីជូនដំណឹង (PDF)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2. Applicant Tips (Stacked Vertically) -->
+                <div class="sidebar-card">
+                    <h6 class="fw-bold text-dark mb-3">
+                        <i class="fas fa-lightbulb text-warning me-2"></i>គន្លឹះសំខាន់ៗសម្រាប់បេក្ខជន
+                    </h6>
+                    <ul class="list-unstyled small text-secondary mb-0">
+                        <li class="mb-2 d-flex">
+                            <i class="fas fa-check text-success mt-1 me-2"></i>
+                            <span>ស្កេន (Scan) ឯកសារឱ្យបានច្បាស់ល្អ និងមានទំហំត្រឹមត្រូវតាមការកំណត់របស់ប្រព័ន្ធ។</span>
+                        </li>
+                        <li class="mb-2 d-flex">
+                            <i class="fas fa-check text-success mt-1 me-2"></i>
+                            <span>ពិនិត្យមើលមុខវិជ្ជាគោលរបស់ជំនាញនីមួយៗ (ឧទាហរណ៍៖ ជំនាញវិស្វកម្ម ត្រូវការពិន្ទុគណិតវិទ្យា និងរូបវិទ្យាខ្ពស់)។</span>
+                        </li>
+                        <li class="d-flex">
+                            <i class="fas fa-check text-success mt-1 me-2"></i>
+                            <span>រក្សាទុកលេខសម្ងាត់គណនី និងបង្កាន់ដៃចុះឈ្មោះ (Receipt) ឱ្យបានគង់វង្ស។</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 3. Contact Information (Stacked Vertically) -->
+                <div class="sidebar-card bg-white">
+                    <h6 class="fw-bold text-dark mb-3">
+                        <i class="fas fa-headset text-primary me-2"></i>ព័ត៌មានទំនាក់ទំនង និងសាកសួរ
+                    </h6>
+                    <p class="small text-muted mb-2">នាយកដ្ឋានឧត្តមសិក្សា នៃក្រសួងអប់រំ យុវជន និងកីឡា៖</p>
+                    <ul class="list-unstyled small mb-0">
+                        <li class="mb-2">
+                            <i class="fas fa-globe text-primary me-2"></i>
+                            <a href="https://moeys.gov.kh" target="_blank" class="text-decoration-none">www.moeys.gov.kh</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fab fa-facebook text-primary me-2"></i>
+                            <span>MoEYS Cambodia (ផេកផ្លូវការ)</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                            <span>មហាវិថីព្រះនរោត្តម រាជធានីភ្នំពេញ</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-1 fw-semibold">Next Step - វេទិកាស្វែងរកអាហារូបករណ៍ និងសាកលវិទ្យាល័យនៅកម្ពុជា</p>
+            <p class="small text-white-50 mb-0">&copy; 2026 Next Step. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
