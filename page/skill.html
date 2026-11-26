@@ -33,7 +33,7 @@
         }
     </style>
 
-     <!-- ================= NAVBAR ================= -->
+    <!-- ================= NAVBAR ================= -->
     <header>
 
         <nav class="navbar navbar-expand-lg bg-light sticky-top py-1">
@@ -245,8 +245,9 @@
             <div class="position-absolute text-conten ">
                 <div class="row">
                     <div class="col-9">
-                        <p class="text-banner fs-1 fw-bold">ស្វែងរកជំនាញនិងអនាគតរបស់អ្នកជាមួយ និងសកលវិទ្យាល័យល្បី</p>
-                        <p>ប្រព័ន្ធតម្រង់ទិស និងផ្តល់ព័ត៌មានលម្អិតអំពីគ្រប់ជំនាញសិក្សា មហាវិទ្យាល័យ ឱកាសការងារ
+                        <p class="text-banner fs-1 fw-bold">ស្វែងរកជំនាញនិងអនាគតរបស់អ្នក</p>
+                        <p class="d-none d-lg-block">ប្រព័ន្ធតម្រង់ទិស និងផ្តល់ព័ត៌មានលម្អិតអំពីគ្រប់ជំនាញសិក្សា
+                            មហាវិទ្យាល័យ ឱកាសការងារ
                             និងលក្ខខណ្ឌចុះឈ្មោះនៅសាកលវិទ្យាល័យនីមួយៗ។</p>
                     </div>
                 </div>
@@ -255,7 +256,7 @@
     </section>
     <section class="subject-section py-5">
         <div class="container">
-            <div data-aos="fade-up" class="row g-3 justify-content-center">
+            <div class="row g-3 justify-content-center">
                 <!-- Information Technology -->
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="bg-banner text-center rounded-3">
@@ -310,7 +311,7 @@
 
     <section class="pt-5">
         <div class="container">
-            <div class="row">
+            <div class="row" data-aos="fade-down" data-aos-duration="2000">
                 <div class="text-center">
                     <h2 class="text-banner">ជំនាញសិក្សានៅសកលដែលមាន</h2>
                     <p class="text-center">ជ្រើសរើសប្រភេទជំនាញ
@@ -324,7 +325,7 @@
             <div class="row g-3">
                 <ul class="nav nav-pills justify-content-center g-3 text-center " id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link  bg-body-secondary text-body me-2" id="home-tab"
+                        <button class="nav-link active bg-body-secondary text-body me-2 " id="home-tab"
                             data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab"
                             aria-controls="home-tab-pane" aria-selected="true">វិទ្យាសាស្ត្រនិងបច្ចេកវិទ្យា</button>
                     </li>
@@ -354,7 +355,7 @@
                     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                         tabindex="0">
                         <div class="container py-4">
-                            <div class="row g-3">
+                            <div class="row g-3" data-aos="fade-down-right">
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
                                         <img src="../asset/css/photo/technology.jpg" alt="" class="card-img-top">
@@ -365,7 +366,7 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិទ្យាសាស្ត្រនិងបច្ចេកវិទ្យា</span>
                                             </div>
                                             <h5>
-                                                <a href="Industrial.html">វិស្វកម្មព័ត៌មានវិទ្យា</a>
+                                                <a href="industrial.html">វិស្វកម្មព័ត៌មានវិទ្យា</a>
                                             </h5>
                                         </div>
                                     </div>
@@ -380,12 +381,11 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិទ្យាសាស្ត្រ</span>
                                             </div>
                                             <h5>
-                                                <a href="Physics.html"> រូបវិទ្យា (Physics)</a>
+                                                <a href="physics.html">រូបវិទ្យា (Physics)</a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
                                         <img src="../asset/css/photo/Chemistry.jpg" alt="" class="card-img-top">
@@ -396,14 +396,15 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិទ្យាសាស្ត្រ</span>
                                             </div>
                                             <h5>
-                                                <a href="Chemistry.html">គីមីវិទ្យា</a>
+                                                <a href="chemistry.html">គីមីវិទ្យា</a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Agricultural Science.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Agricultural Science.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -411,15 +412,16 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិទ្យាសាស្ត្រនិងបច្ចេកវិទ្យា</span>
                                             </div>
                                             <h5>
-                                                <a href="Biology.html">ជីវវិទ្យា</a>
+                                                <a href="biology.html">ជីវវិទ្យា</a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Earth & Space Sciences.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Earth & Space Sciences.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -427,7 +429,7 @@
                                                     class="border bg-light btn-primary p-1 text-secondary">វិទ្យាសាស្ត្រ</span>
                                             </div>
                                             <h5>
-                                                <a href="Earth_Space_Sciences.html"> វិទ្យាសាស្ត្រផែនដី និងអវកាស</a>
+                                                <a href="earth_Space_Sciences.html"> វិទ្យាសាស្ត្រផែនដី និងអវកាស</a>
                                             </h5>
                                         </div>
                                     </div>
@@ -442,14 +444,15 @@
                                                     bg-light btn-primary p-1 text-secondary">វិទ្យាសាស្ត្រ</span>
                                             </div>
                                             <h5>
-                                                <a href="Mathematics.html">គណិតវិទ្យា </a>
+                                                <a href="mathematics.html">គណិតវិទ្យា </a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Engineering & Industrial Tech.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Engineering & Industrial Tech.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -457,14 +460,15 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិទ្យាសាស្ត្រនិងបច្ចេកវិទ្យា</span>
                                             </div>
                                             <h5>
-                                                <a href="Engineering.html"> វិស្វកម្ម និងបច្ចេកវិទ្យាឧស្សាហកម្ម</a>
+                                                <a href="engineering.html"> វិស្វកម្ម និងបច្ចេកវិទ្យាឧស្សាហកម្ម</a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Computer Science & IT.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Computer Science & IT.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -472,7 +476,7 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិទ្យាសាស្ត្រនិងបច្ចេកវិទ្យា</span>
                                             </div>
                                             <h5>
-                                                <a href="Computer _Science.html">ព័ត៌មានវិទ្យា</a>
+                                                <a href="computer_science.html">ព័ត៌មានវិទ្យា</a>
                                             </h5>
                                         </div>
                                     </div>
@@ -495,7 +499,7 @@
                                                     bg-light btn-primary p-1 text-secondary">វិស័យសុខាភិបាល</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">ជំនាញវេជ្ជសាស្ត្រ </a>
+                                                <a href="general.html">ជំនាញវេជ្ជសាស្ត្រទូទៅ</a>
                                             </h5>
                                         </div>
                                     </div>
@@ -510,7 +514,7 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិស័យសុខាភិបាល</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">ជំនាញទន្តសាស្ត្រ</a>
+                                                <a href="dentistry.html">ជំនាញទន្តសាស្ត្រ</a>
                                             </h5>
                                         </div>
                                     </div>
@@ -525,14 +529,15 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិស័យសុខាភិបាល</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">ជំនាញឱសថសាស្ត្រ</a>
+                                                <a href="pharmacy.html">ជំនាញឱសថសាស្ត្រ</a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Nursing & Midwifery.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Nursing & Midwifery.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -540,14 +545,15 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិស័យសុខាភិបាល</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">ថែទាំវេជ្ជសាស្ត្រ និងសម្ភព </a>
+                                                <a href="nursing_midwifery.html">ថែទាំវេជ្ជសាស្ត្រ និងសម្ភព </a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Medical Technology & Laboratory.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Medical Technology & Laboratory.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -555,14 +561,16 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិស័យសុខាភិបាល</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">បច្ចេកវិទ្យាវេជ្ជសាស្ត្រ និងមន្ទីរពិសោធន៍</a>
+                                                <a href="medical_technology.html">បច្ចេកវិទ្យាវេជ្ជសាស្ត្រ
+                                                    និងមន្ទីរពិសោធន៍</a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Rehabilitation & Allied Health.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Rehabilitation & Allied Health.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -570,36 +578,25 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិស័យសុខាភិបាល</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">ស្តារលទ្ធភាពពលកម្ម និងការព្យាបាលបន្ថែម</a>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div><div class=" col-md-6 col-lg-3 ">
-                                    <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Public Health & Administration.jpg" alt="" class="card-img-top">
-                                        <div class="card-body ">
-                                            <div class="d-flex justify-content-between">
-                                                <i class="bi bi-laptop text-primary "></i>
-                                                <span
-                                                    class="border  bg-light btn-primary p-1 text-secondary">វិស័យសុខាភិបាល</span>
-                                            </div>
-                                            <h5>
-                                                <a href="General.html">សុខភាពសាធារណៈ និងការគ្រប់គ្រង</a>
+                                                <a href="rehabilitation _rllied _Health.html">ស្តារលទ្ធភាពពលកម្ម
+                                                    និងការព្យាបាលបន្ថែម</a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
                     <!-- Science&person -->
                     <div class="tab-pane fade" id="securty-tab-pane" role="tabpanel" aria-labelledby="securty-tab"
                         tabindex="0">
-                         <div class="container">
+                        <div class="container">
                             <div class="row g-3">
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Literature & Linguistics.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Literature & Linguistics.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -607,7 +604,7 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">ផ្នែកមនុស្សសាស្ត្រ</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">អក្សរសាស្ត្រ</a>
+                                                <a href="literature.html">អក្សរសាស្ត្រ</a>
                                             </h5>
                                         </div>
                                     </div>
@@ -622,7 +619,7 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">ផ្នែកមនុស្សសាស្ត្រ</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">ប្រវត្តិវិទ្យា</a>
+                                                <a href="history.html">ប្រវត្តិវិទ្យា</a>
                                             </h5>
                                         </div>
                                     </div>
@@ -637,7 +634,7 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">ផ្នែកមនុស្សសាស្ត្រ</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">សាសនានិងវប្បធម៌</a>
+                                                <a href="philosophy.html">សាសនានិងវប្បធម៌</a>
                                             </h5>
                                         </div>
                                     </div>
@@ -652,7 +649,7 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">ផ្នែកមនុស្សសាស្ត្រ</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">សិល្បៈ</a>
+                                                <a href="arts.html">សិល្បៈ</a>
                                             </h5>
                                         </div>
                                     </div>
@@ -667,12 +664,8 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">សង្គមសាស្ត្រ</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">ចិត្តវិទ្យា</a>
+                                                <a href="psychology.html">ចិត្តវិទ្យា</a>
                                             </h5>
-                                            <!-- <p class="card-title text-secondary">
-                                សិក្សាស៊ីជម្រៅអំពីការពិនិត្យ ព្យាបាល និងថែទាំសុខភាពមនុស្ស រោគសាស្ត្រ ឱសថសាស្ត្រ
-                                និងការវះកាត់ទូទៅ ដើម្បីក្លាយជាវេជ្ជបណ្ឌិតជំនាញ។
-                            </p> -->
                                         </div>
                                     </div>
                                 </div>
@@ -686,7 +679,7 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">សង្គមសាស្ត្រ</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">វិទ្យាសាស្ត្រនយោបាយ</a>
+                                                <a href="political_science.html">វិទ្យាសាស្ត្រនយោបាយ</a>
                                             </h5>
                                         </div>
                                     </div>
@@ -701,7 +694,7 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">សង្គមសាស្ត្រ</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">សេដ្ឋកិច្ចវិទ្យា</a>
+                                                <a href="economics.html">សេដ្ឋកិច្ចវិទ្យា</a>
                                             </h5>
                                         </div>
                                     </div>
@@ -716,7 +709,7 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">សង្គមសាស្ត្រ</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">មនុស្សវិទ្យា</a>
+                                                <a href="anthropology.html">មនុស្សវិទ្យា</a>
                                             </h5>
                                         </div>
                                     </div>
@@ -731,7 +724,7 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">សង្គមសាស្ត្រ</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">ច្បាប់</a>
+                                                <a href="law.html">ច្បាប់</a>
                                             </h5>
                                         </div>
                                     </div>
@@ -739,14 +732,15 @@
                             </div>
                         </div>
                     </div>
-                     <!-- engineering-->
-                    <div class="tab-pane fade" id="engineeriing-tab-pane" role="tabpanel" aria-labelledby="engineeriing-tab"
-                        tabindex="0">
+                    <!-- engineering-->
+                    <div class="tab-pane fade" id="engineeriing-tab-pane" role="tabpanel"
+                        aria-labelledby="engineeriing-tab" tabindex="0">
                         <div class="container">
                             <div class="row g-3">
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Civil Engineering & Architecture.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Civil Engineering & Architecture.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -754,14 +748,15 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិស្វកម្ម</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">វិស្វកម្មសំណង់ស៊ីវិល និងស្ថាបត្យកម្ម</a>
+                                                <a href="architecture.html">វិស្វកម្មសំណង់ស៊ីវិល និងស្ថាបត្យកម្ម</a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/photo/Electrical & Electronic Engineering.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Electrical_Electronic_Engineering.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -769,14 +764,15 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិស្វកម្ម</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">វិស្វកម្មអគ្គិសនី និងអេឡិចត្រូនិក</a>
+                                                <a href="electrica.html">វិស្វកម្មអគ្គិសនី និងអេឡិចត្រូនិក</a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Mechanical & Industrial Engineering.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Mechanical & Industrial Engineering.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -784,14 +780,15 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិស្វកម្ម</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">វិស្វកម្មមេកានិក និងឧស្សាហកម្ម</a>
+                                                <a href="mechanical.html">វិស្វកម្មមេកានិក និងឧស្សាហកម្ម</a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Computer & Software Engineering.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Computer & Software Engineering.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -799,14 +796,15 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិស្វកម្ម</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">វិស្វកម្មកុំព្យូទ័រ និងបច្ចេកវិទ្យា</a>
+                                                <a href="software_engineering.html">វិស្វកម្មកុំព្យូទ័រ និងបច្ចេកវិទ្យា</a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Chemical & Environmental Engineering.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Chemical & Environmental Engineering.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -814,14 +812,15 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិស្វកម្ម</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">វិស្វកម្មគីមី និងបរិស្ថាន</a>
+                                                <a href="chemical_environmental.html">វិស្វកម្មគីមី និងបរិស្ថាន</a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Biomedical-Agricultural-Engineering.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Biomedical-Agricultural-Engineering.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -829,7 +828,7 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិស្វកម្ម</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">វិស្វកម្មជីវវេជ្ជសាស្ត្រ និងកសិកម្ម</a>
+                                                <a href="Biomedical_Agricultural.html">វិស្វកម្មជីវវេជ្ជសាស្ត្រ និងកសិកម្ម</a>
                                             </h5>
                                         </div>
                                     </div>
@@ -837,14 +836,15 @@
                             </div>
                         </div>
                     </div>
-                     <!-- agriculture -->
+                    <!-- agriculture -->
                     <div class="tab-pane fade" id="agriculture-tab-pane" role="tabpanel"
                         aria-labelledby="agriculture-tab" tabindex="0">
                         <div class="container">
                             <div class="row g-3">
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Agronomy & Crop Science.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Agronomy & Crop Science.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -852,14 +852,15 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិស័យសុខាភិបាល</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">បច្ចេកវិទ្យា និងវិទ្យាសាស្ត្រដំណាំ</a>
+                                                <a href="agronomy_crop_science.html">បច្ចេកវិទ្យា និងវិទ្យាសាស្ត្រដំណាំ</a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Animal-Science-Aquaculture.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Animal-Science-Aquaculture.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -867,14 +868,15 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិស័យសុខាភិបាល</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">ចិញ្ចឹមសត្វ និងវារីវប្បកម្ម</a>
+                                                <a href="animal_science.html">ចិញ្ចឹមសត្វ និងវារីវប្បកម្ម</a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Agricultural-Engineering-Technology.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Agricultural-Engineering-Technology.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -882,14 +884,15 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិស័យសុខាភិបាល</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">វិស្វកម្ម និងបច្ចេកវិទ្យាកសិកម្ម</a>
+                                                <a href="agricultural_engineering.html">វិស្វកម្ម និងបច្ចេកវិទ្យាកសិកម្ម</a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Agricultural-Economics-Agribusiness.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Agricultural-Economics-Agribusiness.jpg" alt=""
+                                            class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -897,14 +900,15 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិស័យសុខាភិបាល</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">សេដ្ឋកិច្ច និងធុរកិច្ចកសិកម្ម</a>
+                                                <a href="agricultural_economics.html">សេដ្ឋកិច្ច និងធុរកិច្ចកសិកម្ម</a>
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" col-md-6 col-lg-3 ">
                                     <div class="card rounded-4">
-                                        <img src="../asset/css/photo/Food-Technology-Agricultural-Environment.jpg" alt="" class="card-img-top">
+                                        <img src="../asset/css/photo/Food-Technology-Agricultural-Environment.jpg"
+                                            alt="" class="card-img-top">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between">
                                                 <i class="bi bi-laptop text-primary "></i>
@@ -912,7 +916,7 @@
                                                     class="border  bg-light btn-primary p-1 text-secondary">វិស័យសុខាភិបាល</span>
                                             </div>
                                             <h5>
-                                                <a href="General.html">បច្ចេកវិទ្យាអាហារ និងបរិស្ថានកសិកម្ម</a>
+                                                <a href="food_technology.html">បច្ចេកវិទ្យាអាហារ និងបរិស្ថានកសិកម្ម</a>
                                             </h5>
                                         </div>
                                     </div>
